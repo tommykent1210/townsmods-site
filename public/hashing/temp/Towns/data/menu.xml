@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<menu>
+	<test name="Test">
+		<item name="Mete aldeano" code="TEST" />
+		<item name="Lunch time !!" code="TEST2" />
+		<item name="Siege!" code="TEST3" />
+		<item name="Sleep time !!" code="TEST4" />
+		<item name="Caravan" code="TEST5" />
+		<item name="Reveal map" code="TEST6" />
+		<item name="Back" esES="Atrás" code="BACK" icon="ui_back" />
+	</test>
+
+	<item name="Harvest" esES="Recolectar" code="CUSTOMACTION" parameter="qharvestapple,qharvestpear,qharvestwheat,qharvestplanttrap,qharvestwildwheat,qharvestblueradish,qharvestsnowcherry,qharvestbanana,qpickmushroom,qpickcavemushroom,qharvestcactus,qgatherredflower,qgatherplantedredflower,qgatherblueflower,qgatherplantedblueflower,qgatheryellowflower,qgatherplantedyellowflower,qharvestppear,qharvestpapple,qharvestpbanana,qharvestpblueradish,qharvestpcactus,qharvestpsnowcherry,qpickpcavemushroom,qpickpmushroom" icon="ui_harvest" />
+	<item name="Chop" esES="Talar" code="CUSTOMACTION" parameter="qchop,qchopplantedtree,qchopplantedtree2,qchopplantedsnowtree,qchopplantedjungletree,qchopplantedpalmtree,qchopsleeper,qchopsleeper2" icon="ui_chop" />
+	<item name="Cut" esES="Cortar" code="CUSTOMACTION" parameter="qcut" icon="ui_cut" />
+	<item name="Dig" esES="Cavar" code="DIG" icon="ui_dig" />
+	<item name="Mine" esES="Minar" code="MINE" icon="ui_mine" />
+	<item name="Till" esES="Arar" code="CUSTOMACTION" parameter="qtill,qtilljungle,qtillsand,qtillsnow" icon="ui_till" />
+
+	<stockpiles name="Stockpiles" esES="Pilas" icon="ui_stockpile">
+		<item name="Raw materials" esES="Materia prima" code="STOCKPILE" parameter="rawmaterials" icon="ui_srawmaterials" />
+		<item name="Raw food" esES="Comida cruda" code="STOCKPILE" parameter="rawfood" icon="ui_srawfood" />
+		<item name="Prepared food" esES="Comida preparada" code="STOCKPILE" parameter="prepfood" icon="ui_sprepfood" />
+		<item name="Utilities" esES="Útiles" code="STOCKPILE" parameter="utils" icon="ui_sutils" />
+		<item name="Furniture" esES="Muebles" code="STOCKPILE" parameter="furniture" icon="ui_sfurniture" />
+		<item name="ITEs" esES="ITEs" code="STOCKPILE" parameter="ites" icon="ui_sites" />
+		<item name="Armor" esES="Armaduras" code="STOCKPILE" parameter="armor" icon="ui_sarmor" />
+		<item name="Weapons" esES="Armas" code="STOCKPILE" parameter="weapon" icon="ui_sweapon" />
+		<item name="Decorations" esES="Decorativo" code="STOCKPILE" parameter="decorative" icon="ui_sdecorative" />
+		<item name="Back" esES="Atrás" code="BACK" icon="ui_back" />
+	</stockpiles>
+
+	<zones name="Zones" esES="Zonas" icon="ui_zones">
+		<item code="CREATEZONE" parameter="zcarpentry" icon="ui_zonescarpentry" />
+		<item code="CREATEZONE" parameter="zmasonry" icon="ui_zonesmasonry" />
+		<item code="CREATEZONE" parameter="zbakery" icon="ui_zonesbakery" />
+		<item code="CREATEZONE" parameter="zdining" icon="ui_zonesdining" />
+		<item code="CREATEZONE" parameter="zforge" icon="ui_zonesforge" />
+		<item code="CREATEZONE" parameter="zpersonal" icon="ui_zonespersonal" />
+		<item code="CREATEZONE" parameter="zkitchen" icon="ui_zoneskitchen" />
+		<item code="CREATEZONE" parameter="zhospital" icon="ui_zoneshospital" />
+		<item code="CREATEZONE" parameter="zatelier" icon="ui_zonesatelier" />
+		<item code="CREATEZONE" parameter="zarena" icon="ui_zonesarena" />
+		<item code="CREATEZONE" parameter="zbalcony" icon="ui_zonesbalcony" />
+		<item code="CREATEZONE" parameter="ztavern" icon="ui_zonestavern" />
+		<item code="CREATEZONE" parameter="ztavernroom" icon="ui_zonestavernroom" />
+		<item code="CREATEZONE" parameter="zmarket" icon="ui_zonesmarket" />
+		<item code="CREATEZONE" parameter="zbarracks" icon="ui_zonesbarracks" />
+
+		<item name="Back" esES="Atrás" code="BACK" icon="ui_back" />
+	</zones>
+	<item code="CUSTOMACTION" parameter="destroyscaffold" icon="ui_destroyscaffold"/>
+	<item name="Cancel order" esES="Cancelar orden" code="CANCELORDER" icon="ui_cancel" />
+</menu>

@@ -1,0 +1,6567 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<items>
+	<!-- CONTAINERS -->
+	<rmbarrel>
+		<name esES="Barril para materiales">Raw materials barrel</name>
+		<type>rawmaterials</type>
+		<container>true</container>
+		<containerSize>10</containerSize>
+		<value>90</value>
+	</rmbarrel>
+
+	<rawfoodbarrel>
+		<name esES="Barril para comida cruda">Raw food barrel</name>
+		<type>rawfood</type>
+		<container>true</container>
+		<containerSize>10</containerSize>
+		<value>90</value>
+	</rawfoodbarrel>
+
+	<prepfoodbarrel>
+		<name esES="Barril para comida preparada">Prepared food barrel</name>
+		<type>prepfood</type>
+		<container>true</container>
+		<containerSize>10</containerSize>
+		<value>90</value>
+	</prepfoodbarrel>
+
+	<utilschest>
+		<name esES="Caja de herramientas">Tool chest</name>
+		<type>utils</type>
+		<container>true</container>
+		<containerSize>10</containerSize>
+		<value>90</value>
+	</utilschest>
+
+	<decorativechest>
+		<name esES="Cofre decorativo">Decorative chest</name>
+		<type>decorative</type>
+		<container>true</container>
+		<containerSize>10</containerSize>
+		<value>90</value>
+	</decorativechest>
+
+	<itechest>
+		<name esES="Cofre para Ites">ITE chest</name>
+		<type>ites</type>
+		<container>true</container>
+		<containerSize>10</containerSize>
+		<value>90</value>
+	</itechest>
+
+	<armorcabinet>
+		<name esES="Mostrador de armaduras">Armor cabinet</name>
+		<type>armor</type>
+		<container>true</container>
+		<containerSize>10</containerSize>
+		<value>90</value>
+	</armorcabinet>
+
+	<weaponcabinet>
+		<name esES="Mostrador de armas">Weapon cabinet</name>
+		<type>weapon</type>
+		<container>true</container>
+		<containerSize>10</containerSize>
+		<value>90</value>
+	</weaponcabinet>
+	<!-- /CONTAINERS -->
+
+	<!-- RESOURCES -->
+	<rmcoal>
+		<name esES="Carbón">Coal</name>
+		<type>rawmaterials.materials</type>
+		<buildingTime>5760</buildingTime>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</rmcoal>
+
+	<rmcopper>
+		<name esES="Cobre">Copper</name>
+		<type>rawmaterials.materials</type>
+		<buildingTime>5760</buildingTime>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</rmcopper>
+
+	<rmgold>
+		<name esES="Oro">Gold</name>
+		<type>rawmaterials.materials</type>
+		<buildingTime>5760</buildingTime>
+
+		<stackable>true</stackable>
+		<stackableSize>2</stackableSize>
+		<value>75</value>
+	</rmgold>
+
+	<rmsilver>
+		<name esES="Plata">Silver</name>
+		<type>rawmaterials.materials</type>
+		<buildingTime>5760</buildingTime>
+
+		<stackable>true</stackable>
+		<stackableSize>2</stackableSize>
+		<value>65</value>
+	</rmsilver>
+
+	<rmflint>
+		<name esES="Pedernal">Flint</name>
+		<type>rawmaterials.materials</type>
+		<buildingTime>5760</buildingTime>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>25</value>
+	</rmflint>
+
+	<rmiron>
+		<name esES="Hierro">Iron</name>
+		<type>rawmaterials.materials</type>
+		<buildingTime>5760</buildingTime>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</rmiron>
+
+	<rmmud>
+		<name esES="Barro">Mud</name>
+		<type>rawmaterials.materials</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>20</value>
+	</rmmud>
+
+	<rmstone>
+		<name esES="Piedra">Stone</name>
+		<type>rawmaterials.materials</type>
+		<buildingTime>5760</buildingTime>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>25</value>
+	</rmstone>
+
+	<rmwood>
+		<name esES="Madera">Wood</name>
+		<type>rawmaterials.materials</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>25</value>
+	</rmwood>
+
+	<rmsand>
+		<name esES="Arena">Sand</name>
+		<type>rawmaterials.materials</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>20</value>
+	</rmsand>
+
+	<glass>
+		<name esES="Cristal">Glass</name>
+		<type>rawmaterials.materials</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</glass>
+
+	<greengel>
+		<name esES="Gel verde">Green gel</name>
+		<type>rawmaterials.colors</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>40</value>
+	</greengel>
+
+	<redgel>
+		<name esES="Gel rojo">Red gel</name>
+		<type>rawmaterials.colors</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>40</value>
+	</redgel>
+
+	<bluegel>
+		<name esES="Gel azul">Blue gel</name>
+		<type>rawmaterials.colors</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>40</value>
+	</bluegel>
+
+	<snowpile>
+		<name esES="Pila de nieve">Snow pile</name>
+
+		<type>rawmaterials.materials</type>
+
+		<action>qgathersnowpile</action>
+
+		<value>25</value>
+	</snowpile>
+
+	<redcolor>
+		<name esES="Color rojo">Red color</name>
+
+		<type>rawmaterials.colors</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</redcolor>
+
+	<bluecolor>
+		<name esES="Color azul">Blue color</name>
+
+		<type>rawmaterials.colors</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</bluecolor>
+
+	<yellowcolor>
+		<name esES="Color amarillo">Yellow color</name>
+
+		<type>rawmaterials.colors</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</yellowcolor>
+
+	<greencolor>
+		<name esES="Color verde">Green color</name>
+
+		<type>rawmaterials.colors</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</greencolor>
+
+	<purplecolor>
+		<name esES="Color lila">Purple color</name>
+
+		<type>rawmaterials.colors</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>60</value>
+	</purplecolor>
+
+	<orangecolor>
+		<name esES="Color naranja">Orange Color</name>
+
+		<type>rawmaterials.colors</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>60</value>
+	</orangecolor>
+
+
+
+	<!--/RESOURCES -->
+
+	<!--ITEs -->
+
+	<burnite>
+		<name esES="Burnite">Burnite</name>
+		<type>ites</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>500</value>
+	</burnite>
+
+	<direite>
+		<name esES="Direite">Direite</name>
+		<type>ites</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>70</value>
+	</direite>
+
+	<ghoulite>
+		<name esES="Ghoulite">Ghoulite</name>
+		<type>ites</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>100</value>
+	</ghoulite>
+
+	<goblinite>
+		<name esES="Goblinite">Goblinite</name>
+		<type>ites</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>50</value>
+	</goblinite>
+
+	<hobgoblinite>
+		<name esES="Hobgoblinite">Hobgoblinite</name>
+		<type>ites</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>60</value>
+	</hobgoblinite>
+
+	<ogreite>
+		<name esES="Ogreite">Ogreite</name>
+		<type>ites</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>110</value>
+	</ogreite>
+
+	<snickerite>
+		<name esES="Snickerite">Snickerite</name>
+		<type>ites</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>80</value>
+	</snickerite>
+
+	<spiderite>
+		<name esES="Spiderite">Spiderite</name>
+		<type>ites</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>40</value>
+	</spiderite>
+
+	<zombite>
+		<name esES="Zombite">Zombite</name>
+		<type>ites</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>90</value>
+	</zombite>
+
+	<!--/ITEs -->
+
+	<!-- FOOD -->
+	<banana>
+		<name>Banana</name>
+		<type>prepfood.fruit</type>
+
+		<canBeEaten>true</canBeEaten>
+
+		<maxAge>1d2880+2880</maxAge>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>2</foodValue>
+		<foodFillPCT>20</foodFillPCT>
+		<foodEatTime>16</foodEatTime>
+		<value>35</value>
+	</banana>
+
+	<blueradish>
+		<name esES="Rábano azul">Blue radish</name>
+		<type>prepfood.fruit</type>
+
+		<canBeEaten>true</canBeEaten>
+
+		<maxAge>1d2880+2880</maxAge>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>2</foodValue>
+		<foodFillPCT>20</foodFillPCT>
+		<foodEatTime>16</foodEatTime>
+		<value>35</value>
+	</blueradish>
+
+	<snowcherry>
+		<name esES="Cereza de nieve">Snowcherry</name>
+		<type>prepfood.fruit</type>
+
+		<canBeEaten>true</canBeEaten>
+
+		<maxAge>1d2880+2880</maxAge>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>2</foodValue>
+		<foodFillPCT>20</foodFillPCT>
+		<foodEatTime>16</foodEatTime>
+		<value>35</value>
+	</snowcherry>
+
+	<snowcherrypie>
+		<name esES="Tarta de cereza de nieve">Snowcherry pie</name>
+		<type>prepfood.baked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>110</foodFillPCT>
+		<foodEatTime>88</foodEatTime>
+		<value>80</value>
+	</snowcherrypie>
+
+	<bananapie>
+		<name esES="Tarta de banana">Banana pie</name>
+		<type>prepfood.baked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>3</foodValue>
+		<foodFillPCT>80</foodFillPCT>
+		<foodEatTime>64</foodEatTime>
+		<value>80</value>
+	</bananapie>
+
+	<apple>
+		<name esES="Manzana">Apple</name>
+		<type>prepfood.fruit</type>
+
+		<canBeEaten>true</canBeEaten>
+
+		<maxAge>1d2880+2880</maxAge>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>2</foodValue>
+		<foodFillPCT>20</foodFillPCT>
+		<foodEatTime>16</foodEatTime>
+		<value>35</value>
+	</apple>
+
+	<applepie>
+		<name esES="Pastel de manzana">Apple pie</name>
+		<type>prepfood.baked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>85</foodFillPCT>
+		<foodEatTime>88</foodEatTime>
+		<value>80</value>
+	</applepie>
+
+	<bread>
+		<name esES="Pan">Bread</name>
+		<description esES="Algo insípido, pero llena">Kind of stale, but it'll still fill you up</description>
+		<type>prepfood.baked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>3</foodValue>
+		<foodFillPCT>75</foodFillPCT>
+		<foodEatTime>60</foodEatTime>
+		<value>80</value>
+	</bread>
+
+	<cookie>
+		<name esES="Galleta">Cookie</name>
+
+		<type>prepfood.baked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>6</foodValue>
+		<foodFillPCT>50</foodFillPCT>
+		<foodEatTime>40</foodEatTime>
+		<value>70</value>
+	</cookie>
+
+	<cookedbadgermeat>
+		<name esES="Carne de tejón cocida">Cooked badger meat</name>
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>90</foodFillPCT>
+		<foodEatTime>72</foodEatTime>
+		<value>90</value>
+	</cookedbadgermeat>
+
+	<cookedpoultry>
+		<name esES="Ave cocinada">Cooked poultry</name>
+		<description esES="Está de rechupete!">Finger-licken good!</description>
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>100</foodFillPCT>
+		<foodEatTime>80</foodEatTime>
+		<value>90</value>
+	</cookedpoultry>
+
+	<cookedpork>
+		<name esES="Carne de cerdo cocida">Cooked pork</name>
+		<description esES="Oink Oink">Oink Oink</description>
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>105</foodFillPCT>
+		<foodEatTime>84</foodEatTime>
+		<value>90</value>
+	</cookedpork>
+
+	<cookedsteak>
+		<name esES="Filete cocido">Cooked steak</name>
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>105</foodFillPCT>
+		<foodEatTime>84</foodEatTime>
+		<value>90</value>
+	</cookedsteak>
+
+	<bakedbanana>
+		<name esES="Banana horneada">Baked banana</name>
+		<type>prepfood.baked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>115</foodFillPCT>
+		<foodEatTime>92</foodEatTime>
+		<value>95</value>
+	</bakedbanana>
+
+	<milk>
+		<name esES="Leche">Milk</name>
+
+		<type>rawfood</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>2</foodValue>
+		<foodFillPCT>15</foodFillPCT>
+		<foodEatTime>12</foodEatTime>
+		<value>35</value>
+	</milk>
+
+	<soup>
+		<name esES="Sopa de seta de selva">Mushroom soup</name>
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>3</foodValue>
+		<foodFillPCT>75</foodFillPCT>
+		<foodEatTime>60</foodEatTime>
+		<value>85</value>
+	</soup>
+
+	<mountainstew>
+		<name esES="Guiso montañés">Mountain stew</name>
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>125</foodFillPCT>
+		<foodEatTime>100</foodEatTime>
+		<value>100</value>
+	</mountainstew>
+
+	<meatpie>
+		<name esES="Pastel de carne">Meat pie</name>
+		<description esES="Ese es MI pastel de carne!">That's MY pot pie!</description>
+		<type>prepfood.baked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>5</foodValue>
+		<foodFillPCT>100</foodFillPCT>
+		<foodEatTime>80</foodEatTime>
+		<value>90</value>
+	</meatpie>
+
+	<junglesalad>
+		<name esES="Ensalada selvática">Jungle salad</name>
+		<description esES="Espero que hayas quitado los bichos">I hope you washed all the insects off</description>
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>90</foodFillPCT>
+		<foodEatTime>72</foodEatTime>
+		<value>80</value>
+	</junglesalad>
+
+	<bananabread>
+		<name esES="Pan de banana">Banana bread</name>
+		<type>prepfood.baked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>5</foodValue>
+		<foodFillPCT>130</foodFillPCT>
+		<foodEatTime>104</foodEatTime>
+		<value>105</value>
+	</bananabread>
+
+	<omelette>
+		<name esES="Tortilla">Omelette</name>
+		<description esES="Tortilla de queso, deliciosa!">Cheese omelette, its deedeelicious!</description>
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>3</foodValue>
+		<foodFillPCT>90</foodFillPCT>
+		<foodEatTime>72</foodEatTime>
+		<value>82</value>
+	</omelette>
+
+	<hamandeggs>
+		<name esES="Huevos con jamón">Ham and eggs</name>
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>5</foodValue>
+		<foodFillPCT>120</foodFillPCT>
+		<foodEatTime>96</foodEatTime>
+		<value>93</value>
+	</hamandeggs>
+
+	<egg>
+		<name esES="Huevo">Egg</name>
+
+		<type>rawfood</type>
+		<canBeEaten>true</canBeEaten>
+		<maxAge>1d2880+2880</maxAge>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>1</foodValue>
+		<foodFillPCT>5</foodFillPCT>
+		<foodEatTime>4</foodEatTime>
+		<value>35</value>
+	</egg>
+
+	<unifallowhide>
+		<name esES="Piel de unifallow">Unifallow hide</name>
+
+		<type>rawmaterials.hides</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</unifallowhide>
+
+	<badgerhide>
+		<name esES="Piel de tejón">Badger hide</name>
+
+		<type>rawmaterials.hides</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</badgerhide>
+
+	<skootenfeather>
+		<name esES="Piel de skootenbeeten">Skootenbeeten Feather</name>
+
+		<type>rawmaterials.hides</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</skootenfeather>
+	
+	<snaketooth>
+		<name esES="Diente de serpiente">Snake teeth</name>
+
+		<type>rawmaterials.hides</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>85</value>
+	</snaketooth>
+
+	<animalhide>
+		<name esES="Piel de animal">Animal hide</name>
+
+		<type>rawmaterials.hides</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>35</value>
+	</animalhide>
+
+	<pear>
+		<name esES="Pera">Pear</name>
+
+		<type>prepfood.fruit</type>
+		<canBeEaten>true</canBeEaten>
+		<maxAge>1d2880+2880</maxAge>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>2</foodValue>
+		<foodFillPCT>25</foodFillPCT>
+		<foodEatTime>20</foodEatTime>
+		<value>35</value>
+	</pear>
+
+	<pearpie>
+		<name esES="Pastel de pera">Pear pie</name>
+		<type>prepfood.baked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>85</foodFillPCT>
+		<foodEatTime>88</foodEatTime>
+		<value>80</value>
+	</pearpie>
+
+	
+	<cookedfish>
+		<name esES="Pescado cocido">Cooked fish</name>
+		<description esES="Realmente quieres comértelo!">You really want to eat this!</description>
+
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>125</foodFillPCT>
+		<foodEatTime>80</foodEatTime>
+		
+		<value>95</value>
+	</cookedfish>
+
+	<rawpork>
+		<name esES="Carne de cerdo cruda">Raw pork</name>
+		<description esES="¿Vas a comerte ésto?">Do you really want to eat this?</description>
+		<type>rawfood</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>1</foodValue>
+		<foodFillPCT>25</foodFillPCT>
+		<foodEatTime>180</foodEatTime>
+		<foodEffects>bellyache,slow</foodEffects>
+		<value>35</value>
+	</rawpork>
+
+	<rawsteak>
+		<name esES="Filete crudo">Raw steak</name>
+		<description esES="¿Vas a comerte ésto?">Do you really want to eat this?</description>
+		<type>rawfood</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>1</foodValue>
+		<foodFillPCT>25</foodFillPCT>
+		<foodEatTime>180</foodEatTime>
+		<foodEffects>bellyache,slow</foodEffects>
+		<value>35</value>
+	</rawsteak>
+
+	<rawdeersteak>
+		<name esES="Carne cruda de reno">Raw deer steak</name>
+		<description esES="¿Vas a comerte ésto?">Do you really want to eat this?</description>
+		<type>rawfood</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>1</foodValue>
+		<foodFillPCT>25</foodFillPCT>
+		<foodEatTime>180</foodEatTime>
+		<foodEffects>bellyache,slow</foodEffects>
+		<value>35</value>
+	</rawdeersteak>
+
+	<rawfish>
+		<name esES="Pescado crudo">Raw fish</name>
+		<description esES="¿Vas a comerte ésto?">Do you really want to eat this?</description>
+
+		<type>rawfood</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>1</foodValue>
+		<foodFillPCT>50</foodFillPCT>
+		<foodEatTime>40</foodEatTime>
+		<foodEffects>bellyache,slow</foodEffects>
+		<value>35</value>
+	</rawfish>
+
+	<rawpoultry>
+		<name esES="Carne cruda de ave">Raw poultry</name>
+		<description esES="¿Vas a comerte ésto?">Do you really want to eat this?</description>
+
+		<type>rawfood</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>1</foodValue>
+		<foodFillPCT>25</foodFillPCT>
+		<foodEatTime>180</foodEatTime>
+		<foodEffects>bellyache,slow</foodEffects>
+		<value>35</value>
+	</rawpoultry>
+
+	<rawbadgermeat>
+		<name esES="Carne de tejón cruda">Raw badger meat</name>
+		<description esES="¿Vas a comerte ésto?">Do you really want to eat this?</description>
+
+		<type>rawfood</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>1</foodValue>
+		<foodFillPCT>25</foodFillPCT>
+		<foodEatTime>180</foodEatTime>
+		<foodEffects>bellyache,slow</foodEffects>
+		<value>35</value>
+	</rawbadgermeat>
+
+	<roast>
+		<name esES="Asado">Roast</name>
+		<description esES="Un infarto garantizado">They call this the massive coronary back in the east</description>
+
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>5</foodValue>
+		<foodFillPCT>150</foodFillPCT>
+		<foodEatTime>120</foodEatTime>
+		<value>120</value>
+	</roast>
+
+	<cactusfruit>
+		<name esES="Fruta de cactus">Cactus fruit</name>
+
+		<type>prepfood.fruit</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>2</foodValue>
+		<foodFillPCT>25</foodFillPCT>
+		<foodEatTime>20</foodEatTime>
+		<value>35</value>
+	</cactusfruit>
+
+	<cactussoup>
+		<name esES="Sopa de cactus">Cactus soup</name>
+		<type>prepfood.cooked</type>
+		<canBeEaten>true</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>4</foodValue>
+		<foodFillPCT>100</foodFillPCT>
+		<foodEatTime>80</foodEatTime>
+		<value>80</value>
+	</cactussoup>
+
+	<junglemushroom>
+		<name esES="Seta de selva">Jungle mushroom</name>
+
+		<type>prepfood.fruit</type>
+		<canBeEaten>true</canBeEaten>
+		<!-- <building>mushroomfarm</building> <buildingTime>1440</buildingTime> <prerequisite>rmmud</prerequisite> -->
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>2</foodValue>
+		<foodFillPCT>25</foodFillPCT>
+		<foodEatTime>20</foodEatTime>
+		<value>25</value>
+	</junglemushroom>
+
+	<pickedcavemushroom>
+		<name esES="Seta de caverna">Cave mushroom</name>
+
+		<type>prepfood.fruit</type>
+		<canBeEaten>true</canBeEaten>
+		<!-- <building>cavemushroomfarm</building> <buildingTime>1440</buildingTime> <prerequisite>rmmud</prerequisite> -->
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<foodValue>2</foodValue>
+		<foodFillPCT>35</foodFillPCT>
+		<foodEatTime>28</foodEatTime>
+		<value>25</value>
+	</pickedcavemushroom>
+
+
+	<!-- /FOOD -->
+
+	<!--/ITEMS -->
+
+	<bones>
+		<name esES="Huesos">Bones</name>
+		<type>rawmaterials.misc</type>
+		<canBeEaten>false</canBeEaten>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>15</value>
+	</bones>
+
+	<snowbucket>
+		<name esES="Cubo de nieve">Bucket of snow</name>
+		<type>utils.materials</type>
+		<canBeEaten>false</canBeEaten>
+
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>waterbucket</maxAgeItem>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>25</value>
+	</snowbucket>
+
+	<waterbucket>
+		<name esES="Cubo de agua">Bucket of water</name>
+		<type>utils.materials</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>30</value>
+	</waterbucket>
+
+	<appleseed>
+		<name esES="Semilla de manzano">Apple seedling</name>
+		<habitat>humus</habitat>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbushapple</maxAgeItem>
+		<action>qcut</action>
+	</appleseed>
+
+	<plantedbushapple>
+		<name esES="Arbusto de manzano plantado">Planted apple bush</name>
+		<habitat>humus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedappletree</maxAgeItem>
+		<action>qcut</action>
+	</plantedbushapple>
+
+	<plantedappletree>
+		<name esES="Manzano plantado">Planted apple tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestpapple</action>
+	</plantedappletree>
+
+	<plantedharvestingappletree>
+		<name esES="Manzano plantado">Planted apple tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+		<spawn>apple</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedappletree</maxAgeItem>
+		<action>qchop</action>
+	</plantedharvestingappletree>
+
+	<plantedharvestedappletree>
+		<name esES="Manzano plantado">Planted apple tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>plantedappletree</maxAgeItem>
+		<action>qchop</action>
+	</plantedharvestedappletree>
+
+	<bushapple>
+		<name esES="Arbusto de manzano">Apple bush</name>
+		<habitat>grass1</habitat>
+		<maxAge>1d14400+14400</maxAge>
+		<maxAgeItem>appletree</maxAgeItem>
+		<action>qcut</action>
+	</bushapple>
+
+	<appletree>
+		<name esES="Manzano">Apple tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+		<maxAge>1d57600+28800</maxAge>
+		<spawn>bushapple</spawn>
+		<spawnMaxItems>2</spawnMaxItems>
+		<spawnTurns>1d43200</spawnTurns>
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestapple</action>
+	</appletree>
+
+	<harvestingappletree>
+		<name esES="Manzano">Apple tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+		<spawn>apple</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>harvestedappletree</maxAgeItem>
+		<action>qchop</action>
+	</harvestingappletree>
+
+	<harvestedappletree>
+		<name esES="Manzano">Apple tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>appletree</maxAgeItem>
+		<action>qchop</action>
+	</harvestedappletree>
+
+
+	<pearseed>
+		<name esES="Semilla de peral">Pear seedling</name>
+		<habitat>humus</habitat>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbushpear</maxAgeItem>
+		<action>qcut</action>
+	</pearseed>
+
+	<plantedbushpear>
+		<name esES="Arbusto de peral plantado">Planted pear bush</name>
+		<habitat>humus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedpeartree</maxAgeItem>
+		<action>qcut</action>
+	</plantedbushpear>
+
+	<plantedpeartree>
+		<name esES="Peral plantado">Planted pear tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestppear</action>
+	</plantedpeartree>
+
+	<plantedharvestingpeartree>
+		<name esES="Peral plantado">Planted pear tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+		<spawn>pear</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedpeartree</maxAgeItem>
+		<action>qchop</action>
+	</plantedharvestingpeartree>
+
+	<plantedharvestedpeartree>
+		<name esES="Peral plantado">Planted pear tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>plantedpeartree</maxAgeItem>
+		<action>qchop</action>
+	</plantedharvestedpeartree>
+
+	<bushpear>
+		<name esES="Arbusto de peral">Pear bush</name>
+		<habitat>grass1</habitat>
+		<maxAge>1d14400+14400</maxAge>
+		<maxAgeItem>peartree</maxAgeItem>
+		<action>qcut</action>
+	</bushpear>
+
+	<peartree>
+		<name esES="Peral">Pear tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+		<maxAge>1d57600+28800</maxAge>
+		<spawn>bushpear</spawn>
+		<spawnMaxItems>2</spawnMaxItems>
+		<spawnTurns>1d43200</spawnTurns>
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestpear</action>
+	</peartree>
+
+	<harvestingpeartree>
+		<name esES="Peral">Pear tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+		<spawn>pear</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>harvestedpeartree</maxAgeItem>
+		<action>qchop</action>
+	</harvestingpeartree>
+
+	<harvestedpeartree>
+		<name esES="Peral">Pear tree</name>
+		<habitat>grass1</habitat>
+		<habitat>humus</habitat>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>peartree</maxAgeItem>
+		<action>qchop</action>
+	</harvestedpeartree>
+
+	<wheatseed>
+		<name esES="Semilla de grano">Wheat seedling</name>
+		<habitat>humus</habitat>
+		<maxAge>1d720+2160</maxAge>
+		<maxAgeItem>plantedwheat</maxAgeItem>
+		<action>qcut</action>
+		<value>25</value>
+	</wheatseed>
+
+	<wheat>
+		<name esES="Grano">Wheat</name>
+		<type>rawfood</type>
+		<canBeEaten>false</canBeEaten>
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>25</value>
+	</wheat>
+
+	<wildwheat>
+		<name esES="Grano salvaje">Wild wheat</name>
+		<habitatGroup>grassGroup</habitatGroup>
+		<maxAge>1d28800+28800</maxAge>
+		<maxAgeItem>wheatseed</maxAgeItem>
+		<action>qcut</action>
+		<action>qharvestwildwheat</action>
+		<value>25</value>
+	</wildwheat>
+
+	<plantedwheat>
+		<name esES="Grano">Wheat</name>
+		<habitat>humus</habitat>
+
+		<action>qcut</action>
+		<action>qharvestwheat</action>
+	</plantedwheat>
+
+	<bush>
+		<name esES="Arbusto">Bush</name>
+		<habitat>grass2</habitat>
+		<maxAge>1d12400+12400</maxAge>
+		<maxAgeItem>tree</maxAgeItem>
+		<action>qcut</action>
+	</bush>
+
+	<tree>
+		<name esES="Árbol">Tree</name>
+		<habitat>grass2</habitat>
+		<maxAge>1d57600+28800</maxAge>
+		<spawn>bush</spawn>
+		<spawnMaxItems>2</spawnMaxItems>
+		<spawnTurns>1d33200</spawnTurns>
+		<action>qchop</action>
+		<locked>true</locked>
+	</tree>
+
+	<treekeepersleep>
+		<name esES="Árbol">Tree</name>
+		<habitat>grass2</habitat>
+		<action>qchopsleeper</action>
+		<locked>true</locked>
+	</treekeepersleep>
+
+
+	<treeseed>
+		<name esES="Semilla de árbol">Tree seedling</name>
+		<habitat>humus</habitat>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbush</maxAgeItem>
+		<action>qcut</action>
+	</treeseed>
+
+	<plantedbush>
+		<name esES="Arbusto plantado">Planted bush</name>
+		<habitat>humus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedtree</maxAgeItem>
+		<action>qcut</action>
+	</plantedbush>
+
+	<plantedtree>
+		<name esES="Árbol plantado">Planted tree</name>
+		<habitat>humus</habitat>
+		<action>qchopplantedtree</action>
+	</plantedtree>
+
+	<bush3>
+		<name esES="Arbusto seta">Mushroom Bush</name>
+		<habitat>grass3</habitat>
+		<habitat>grass2</habitat>
+		<habitat>grass</habitat>
+		<habitat>grassnoflower1</habitat>
+		<habitat>grassnoflower2</habitat>
+		<habitat>grassnoflower</habitat>
+		<maxAge>1d32400+22400</maxAge>
+		<spawn>bush3</spawn>
+		<spawnMaxItems>2</spawnMaxItems>
+		<spawnTurns>1d26400+26400</spawnTurns>
+
+		<action>qcut</action>
+	</bush3>
+
+	<bush2>
+		<name esES="Arbusto de pino">Pine tree bush</name>
+		<habitat>grass3</habitat>
+		<maxAge>1d12400+12400</maxAge>
+		<maxAgeItem>tree2</maxAgeItem>
+		<action>qcut</action>
+	</bush2>
+
+	<tree2>
+		<name esES="Pino">Pine tree</name>
+		<habitat>grass3</habitat>
+		<habitat>humus</habitat>
+		<maxAge>1d57600+28800</maxAge>
+		<spawn>bush2</spawn>
+		<spawnMaxItems>2</spawnMaxItems>
+		<spawnTurns>1d33200</spawnTurns>
+		<action>qchop</action>
+		<locked>true</locked>
+	</tree2>
+
+	<treekeepersleep2>
+		<name esES="Pino">Pine tree</name>
+		<habitat>grass3</habitat>
+		<action>qchopsleeper2</action>
+		<locked>true</locked>
+	</treekeepersleep2>
+
+	<tree2seed>
+		<name esES="Semilla de pino">Pine tree seedling</name>
+		<habitat>humus</habitat>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbush2</maxAgeItem>
+		<action>qcut</action>
+	</tree2seed>
+
+	<plantedbush2>
+		<name esES="Arbusto de pino plantado">Planted pine bush</name>
+		<habitat>humus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedtree2</maxAgeItem>
+		<action>qcut</action>
+	</plantedbush2>
+
+	<plantedtree2>
+		<name esES="Pino plantado">Planted pine tree</name>
+		<habitat>humus</habitat>
+		<action>qchopplantedtree2</action>
+	</plantedtree2>
+
+	<snowcherryseed>
+		<name esES="Semilla de cerezo de nieve">Snowcherry seedling</name>
+		<habitat>snowhumus</habitat>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbushsnowcherry</maxAgeItem>
+		<action>qcut</action>
+	</snowcherryseed>
+
+	<plantedbushsnowcherry>
+		<name esES="Arbusto de cerezo de nieve plantado">Planted snowcherry bush</name>
+		<habitat>snowhumus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedsnowcherrytree</maxAgeItem>
+		<action>qcut</action>
+	</plantedbushsnowcherry>
+
+	<plantedsnowcherrytree>
+		<name esES="Cerezo de nieve plantado">Planted snowcherry tree</name>
+		<habitat>snow</habitat>
+		<habitat>snowhumus</habitat>
+
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestpsnowcherry</action>
+	</plantedsnowcherrytree>
+
+	<plantedharvestingsnowcherrytree>
+		<name esES="Cerezo de nieve plantado">Planted snowcherry tree</name>
+		<habitat>snow</habitat>
+		<habitat>snowhumus</habitat>
+		<spawn>snowcherry</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedsnowcherrytree</maxAgeItem>
+		<action>qchop</action>
+	</plantedharvestingsnowcherrytree>
+
+	<plantedharvestedsnowcherrytree>
+		<name esES="Cerezo de nieve plantado">Planted snowcherry tree</name>
+		<habitat>snow</habitat>
+		<habitat>snowhumus</habitat>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>plantedsnowcherrytree</maxAgeItem>
+		<action>qchop</action>
+	</plantedharvestedsnowcherrytree>
+
+
+	<bushsnowcherry>
+		<name esES="Arbusto de cerezo de nieve">Snowcherry bush</name>
+		<habitat>snow</habitat>
+		<maxAge>1d14400+14400</maxAge>
+		<maxAgeItem>snowcherrytree</maxAgeItem>
+		<action>qcut</action>
+	</bushsnowcherry>
+
+	<snowcherrytree>
+		<name esES="Cerezo de nieve">Snowcherry tree</name>
+		<habitat>snow</habitat>
+		<habitat>snowhumus</habitat>
+		<maxAge>1d57600+28800</maxAge>
+		<spawn>bushsnowcherry</spawn>
+		<spawnMaxItems>2</spawnMaxItems>
+		<spawnTurns>1d43200</spawnTurns>
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestsnowcherry</action>
+	</snowcherrytree>
+
+	<harvestingsnowcherrytree>
+		<name esES="Cerezo de nieve">Snowcherry tree</name>
+		<habitat>snow</habitat>
+		<habitat>snowhumus</habitat>
+		<spawn>snowcherry</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>harvestedsnowcherrytree</maxAgeItem>
+		<action>qchop</action>
+	</harvestingsnowcherrytree>
+
+	<harvestedsnowcherrytree>
+		<name esES="Cerezo de nieve">Snowcherry tree</name>
+		<habitat>snow</habitat>
+		<habitat>snowhumus</habitat>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>snowcherrytree</maxAgeItem>
+		<action>qchop</action>
+	</harvestedsnowcherrytree>
+
+	<bananaseed>
+		<name esES="Semilla de banano">Banana tree seedling</name>
+		<habitat>junglehumus</habitat>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbushbanana</maxAgeItem>
+		<action>qcut</action>
+	</bananaseed>
+
+	<bushbanana>
+		<name esES="Arbusto de banano">Banana bush</name>
+		<habitat>jungle</habitat>
+		<maxAge>1d14400+14400</maxAge>
+		<maxAgeItem>bananatree</maxAgeItem>
+		<action>qcut</action>
+	</bushbanana>
+
+	<plantedbushbanana>
+		<name esES="Arbusto de banano plantado">Planted banana bush</name>
+		<habitat>junglehumus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedbananatree</maxAgeItem>
+		<action>qcut</action>
+	</plantedbushbanana>
+
+	<plantedbananatree>
+		<name esES="Banano plantado">Planted banana tree</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestpbanana</action>
+	</plantedbananatree>
+
+	<plantedharvestingbananatree>
+		<name esES="Banano plantado">Planted banana tree</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+		<spawn>banana</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedbananatree</maxAgeItem>
+		<action>qchop</action>
+	</plantedharvestingbananatree>
+
+	<plantedharvestedbananatree>
+		<name esES="Banano plantado">Planted banana tree</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>plantedbananatree</maxAgeItem>
+		<action>qchop</action>
+	</plantedharvestedbananatree>
+
+	<bananatree>
+		<name esES="Banano">Banana tree</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+		<maxAge>1d57600+28800</maxAge>
+		<spawn>bushbanana</spawn>
+		<spawnMaxItems>2</spawnMaxItems>
+		<spawnTurns>1d43200</spawnTurns>
+		<locked>true</locked>
+		<action>qchopfruittrees</action>
+		<action>qharvestbanana</action>
+	</bananatree>
+
+	<harvestingbananatree>
+		<name esES="Banano">Banana tree</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+		<spawn>banana</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>harvestedbananatree</maxAgeItem>
+		<action>qchop</action>
+	</harvestingbananatree>
+
+	<harvestedbananatree>
+		<name esES="Banano">Banana tree</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>bananatree</maxAgeItem>
+		<action>qchop</action>
+	</harvestedbananatree>
+
+	<blueradishseed>
+		<name esES="Semilla de rábano azul">Blue radish seedling</name>
+		<habitat>junglehumus</habitat>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedsproutblueradish</maxAgeItem>
+		<action>qcut</action>
+	</blueradishseed>
+
+	<plantedsproutblueradish>
+		<name esES="Brote de rábano azul">Blue radish sprout</name>
+		<habitat>junglehumus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedblueradishplant</maxAgeItem>
+		<action>qcut</action>
+	</plantedsproutblueradish>
+
+	<plantedblueradishplant>
+		<name esES="Planta de rábano azul">Blue radish plant</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+
+		<locked>true</locked>
+		<action>qcut</action>
+		<action>qharvestpblueradish</action>
+	</plantedblueradishplant>
+
+
+	<plantedharvestingblueradishplant>
+		<name esES="Planta de rábano azul">Blue radish plant</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+		<spawn>blueradish</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedblueradishplant</maxAgeItem>
+		<action>qcut</action>
+	</plantedharvestingblueradishplant>
+
+	<plantedharvestedblueradishplant>
+		<name esES="Planta de rábano azul">Blue radish plant</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>plantedblueradishplant</maxAgeItem>
+		<action>qcut</action>
+	</plantedharvestedblueradishplant>
+
+	<sproutblueradish>
+		<name esES="Brote de rábano azul">Blue radish sprout</name>
+		<habitat>jungle</habitat>
+		<maxAge>1d14400+14400</maxAge>
+		<maxAgeItem>blueradishplant</maxAgeItem>
+		<action>qcut</action>
+	</sproutblueradish>
+
+	<blueradishplant>
+		<name esES="Planta de rábano azul">Blue radish plant</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+		<maxAge>1d57600+28800</maxAge>
+		<spawn>sproutblueradish</spawn>
+		<spawnMaxItems>2</spawnMaxItems>
+		<spawnTurns>1d43200</spawnTurns>
+		<locked>true</locked>
+		<action>qcut</action>
+		<action>qharvestblueradish</action>
+	</blueradishplant>
+
+	<harvestingblueradishplant>
+		<name esES="Planta de rábano azul">Blue radish plant</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+		<spawn>blueradish</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>harvestedblueradishplant</maxAgeItem>
+		<action>qcut</action>
+	</harvestingblueradishplant>
+
+	<harvestedblueradishplant>
+		<name esES="Planta de rábano azul">Blue radish plant</name>
+		<habitat>jungle</habitat>
+		<habitat>junglehumus</habitat>
+		<maxAge>1d2880+6400</maxAge>
+		<maxAgeItem>blueradishplant</maxAgeItem>
+		<action>qcut</action>
+	</harvestedblueradishplant>
+
+	<plantedjunglemushroomseed>
+		<name esES="Semilla de seta de jungla">Jungle mushroom seedling</name>
+		<habitat>junglehumus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedmushroom</maxAgeItem>
+		<locked>true</locked>
+		<action>qcut</action>
+	</plantedjunglemushroomseed>
+
+	<plantedmushroom>
+		<name esES="Seta de jungla">Jungle mushroom</name>
+		<habitat>junglehumus</habitat>
+
+		<locked>true</locked>
+		<action>qcut</action>
+		<action>qpickpmushroom</action>
+	</plantedmushroom>
+
+
+	<mushroom>
+		<name esES="Seta de jungla">Jungle mushroom</name>
+		<habitat>jungle</habitat>
+		<habitat>brownievillage</habitat>
+		<habitat>junglehumus</habitat>
+
+		<locked>true</locked>
+		<action>qcut</action>
+		<action>qpickmushroom</action>
+	</mushroom>
+
+
+	<junglemushroomseed>
+		<name esES="Semilla de seta de jungla">Jungle mushroom seedling</name>
+		<habitat>junglehumus</habitat>
+		<maxAge>720</maxAge>
+		<maxAgeItem>mushroom</maxAgeItem>
+		<locked>true</locked>
+		<action>qcut</action>
+	</junglemushroomseed>
+
+	<cavemushroomseed>
+		<name esES="Semilla de seta de caverna">Cave mushroom seedling</name>
+		<habitat>snowhumus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedcavemushroom</maxAgeItem>
+		<locked>true</locked>
+		<action>qcut</action>
+	</cavemushroomseed>
+
+	<plantedcavemushroom>
+		<name esES="Seta de caverna">Cave mushroom</name>
+		<habitat>snowhumus</habitat>
+
+		<locked>true</locked>
+		<action>qcut</action>
+		<action>qpickpcavemushroom</action>
+	</plantedcavemushroom>
+
+	<cavemushroom>
+		<name esES="Seta de caverna">Cave mushroom</name>
+		<habitat>snow</habitat>
+		<habitat>snowhumus</habitat>
+
+		<action>qcut</action>
+		<action>qpickcavemushroom</action>
+	</cavemushroom>
+
+	<cactusseed>
+		<name esES="Semilla de cactus">Cactus seedling</name>
+		<habitat>sandhumus</habitat>
+		<maxAge>1d1440+320</maxAge>
+		<maxAgeItem>plantedharvestedcactus</maxAgeItem>
+		<locked>true</locked>
+		<action>qcut</action>
+	</cactusseed>
+
+	<plantedcactus>
+		<name>Cactus</name>
+		<habitat>sand</habitat>
+		<habitat>sandhumus</habitat>
+
+		<locked>true</locked>
+		<action>qcut</action>
+		<action>qharvestpcactus</action>
+	</plantedcactus>
+
+	<plantedharvestingcactus>
+		<name>Cactus</name>
+		<habitat>sand</habitat>
+		<habitat>sandhumus</habitat>
+		<spawn>cactusfruit</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>plantedharvestedcactus</maxAgeItem>
+		<action>qcut</action>
+	</plantedharvestingcactus>
+
+	<plantedharvestedcactus>
+		<name>Cactus</name>
+		<habitat>sand</habitat>
+		<habitat>sandhumus</habitat>
+		<maxAge>1d2880+2880</maxAge>
+		<maxAgeItem>plantedcactus</maxAgeItem>
+		<action>qcut</action>
+	</plantedharvestedcactus>
+
+
+	<cactus>
+		<name>Cactus</name>
+		<habitat>sand</habitat>
+		<habitat>sandhumus</habitat>
+		<maxAge>1d57600+28800</maxAge>
+		<locked>true</locked>
+		<action>qcut</action>
+		<action>qharvestcactus</action>
+	</cactus>
+
+	<harvestingcactus>
+		<name>Cactus</name>
+		<habitat>sand</habitat>
+		<habitat>sandhumus</habitat>
+		<spawn>cactusfruit</spawn>
+		<spawnTurns>1</spawnTurns>
+		<maxAge>2</maxAge>
+		<maxAgeItem>harvestedcactus</maxAgeItem>
+		<action>qcut</action>
+	</harvestingcactus>
+
+	<harvestedcactus>
+		<name>Cactus</name>
+		<habitat>sand</habitat>
+		<habitat>sandhumus</habitat>
+		<maxAge>1d2880+1440</maxAge>
+		<maxAgeItem>cactus</maxAgeItem>
+		<action>qcut</action>
+	</harvestedcactus>
+
+	<jungleseed>
+		<name esES="Semilla de árbol de jungla">Jungle tree seedling</name>
+		<habitat>junglehumus</habitat>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedjunglebush</maxAgeItem>
+		<action>qcut</action>
+	</jungleseed>
+
+	<plantedjunglebush>
+		<name esES="Arbusto de árbol de jungla plantado">Planted jungle tree bush</name>
+		<habitat>junglehumus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedjungletree</maxAgeItem>
+		<action>qcut</action>
+	</plantedjunglebush>
+
+	<plantedjungletree>
+		<name esES="Árbol de jungla plantado">Planted jungle tree</name>
+		<habitat>junglehumus</habitat>
+		<action>qchopplantedjungletree</action>
+	</plantedjungletree>
+
+	<junglebush>
+		<name esES="Arbusto de árbol de jungla">Jungle tree bush</name>
+		<habitat>jungle</habitat>
+		<habitat>brownievillage</habitat>
+		<maxAge>1d14400+14400</maxAge>
+		<maxAgeItem>jungletree</maxAgeItem>
+		<action>qcut</action>
+	</junglebush>
+
+	<jungletree>
+		<name esES="Árbol de jungla">Jungle tree</name>
+		<habitat>jungle</habitat>
+		<habitat>brownievillage</habitat>
+		<maxAge>1d57600+28800</maxAge>
+		<spawn>junglebush</spawn>
+		<spawnMaxItems>1</spawnMaxItems>
+		<spawnTurns>1d43200</spawnTurns>
+		<action>qchop</action>
+	</jungletree>
+
+
+	<snowseed>
+		<name esES="Semilla de árbol de nieve">Snow tree seedling</name>
+		<habitat>snowhumus</habitat>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedsnowbush</maxAgeItem>
+		<action>qcut</action>
+	</snowseed>
+
+	<snowbush>
+		<name esES="Arbusto de árbol de nieve">Snow tree bush</name>
+		<habitat>snow</habitat>
+		<maxAge>1d14400+14400</maxAge>
+		<maxAgeItem>snowtree</maxAgeItem>
+		<action>qcut</action>
+	</snowbush>
+
+	<plantedsnowbush>
+		<name esES="Arbusto de árbol de nieve plantado">Planted snow tree bush</name>
+		<habitat>snowhumus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedsnowtree</maxAgeItem>
+		<action>qcut</action>
+	</plantedsnowbush>
+
+	<snowtree>
+		<name esES="Árbol de nieve">Snow tree</name>
+		<habitat>snow</habitat>
+		<maxAge>1d57600+28800</maxAge>
+		<spawn>snowbush</spawn>
+		<spawnMaxItems>2</spawnMaxItems>
+		<spawnTurns>1d43200</spawnTurns>
+		<action>qchop</action>
+	</snowtree>
+
+	<plantedsnowtree>
+		<name esES="Árbol de nieve plantado">Planted snow tree</name>
+		<habitat>snowhumus</habitat>
+		<action>qchopplantedsnowtree</action>
+	</plantedsnowtree>
+
+	<palmtreeseed>
+		<name esES="Semilla de palmera">Palm tree seedling</name>
+		<habitat>sandhumus</habitat>
+		<maxAge>100</maxAge>
+		<maxAgeItem>plantedbushpalmtree</maxAgeItem>
+		<action>qcut</action>
+	</palmtreeseed>
+
+	<bushpalmtree>
+		<name esES="Arbusto de palmera">Palm tree bush</name>
+		<habitat>sand</habitat>
+		<maxAge>1d14400+14400</maxAge>
+		<maxAgeItem>palmtree</maxAgeItem>
+		<action>qcut</action>
+	</bushpalmtree>
+
+	<plantedbushpalmtree>
+		<name esES="Arbusto de palmera plantado">Planted palm tree bush</name>
+		<habitat>sandhumus</habitat>
+		<maxAge>1d1440+1440</maxAge>
+		<maxAgeItem>plantedpalmtree</maxAgeItem>
+		<action>qcut</action>
+	</plantedbushpalmtree>
+
+	<plantedpalmtree>
+		<name esES="Arbusto de palmera plantado">Planted palm tree</name>
+		<habitat>sandhumus</habitat>
+		<action>qchopplantedpalmtree</action>
+	</plantedpalmtree>
+
+	<palmtree>
+		<name esES="Palmera">Palm tree</name>
+		<habitat>sand</habitat>
+		<maxAge>1d57600+28800</maxAge>
+		<spawn>bushpalmtree</spawn>
+		<spawnMaxItems>1</spawnMaxItems>
+		<spawnTurns>1d43200</spawnTurns>
+		<locked>true</locked>
+		<action>qchop</action>
+	</palmtree>
+
+
+	<mill>
+		<name esES="Molino">Mill</name>
+		<description esES="Se usa para obtener harina">Use this to create flour</description>
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+	</mill>
+
+	<flour>
+		<name esES="Harina">Flour</name>
+
+		<type>rawfood</type>
+		<canBeEaten>false</canBeEaten>
+
+<!--
+		<building>mill</building>
+		<buildingTime>120</buildingTime>
+		<prerequisite>wheat</prerequisite>
+		<prerequisite>wheat</prerequisite>
+-->
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>27</value>
+	</flour>
+	<!-- Still to be done -->
+
+	<!-- End of Automation and get rid of buildings -->
+
+	<browniehouse>
+		<name esES="Tronco de árbol">Tree stump</name>
+		<description esES="Un tronco de árbol con ventanas y... ¿una puerta?">A tiny tree stump, with windows and... a door?</description>
+		<habitat>brownievillage</habitat>
+	</browniehouse>
+
+	<goblinhead>
+		<name esES="Cabeza de goblin">Goblin head</name>
+
+		<ranged>true</ranged>
+		<rangedAmmo>goblinhead</rangedAmmo>
+		<rangedCharges>1</rangedCharges>
+
+		<location>WEAPON</location>
+		<attack>1d444+428</attack>
+		<defense>1d14+43</defense>
+		<damage>1d89+255</damage>
+		<LOS>1d5</LOS>
+		<verb esES="golpea">hit</verb>
+		<verbInfinitive esES="golpear">hits</verbInfinitive>
+
+		<tags>misc</tags>
+	</goblinhead>
+
+	<hobgoblinhead>
+		<name esES="Cabeza de hobgoblin">Hobgoblin head</name>
+
+		<ranged>true</ranged>
+		<rangedAmmo>hobgoblinhead</rangedAmmo>
+		<rangedCharges>1</rangedCharges>
+
+		<location>WEAPON</location>
+		<attack>1d444+428</attack>
+		<defense>1d14+43</defense>
+		<damage>1d89+255</damage>
+		<LOS>1d5</LOS>
+		<verb esES="golpea">hit</verb>
+		<verbInfinitive esES="golpear">hits</verbInfinitive>
+
+		<tags>misc</tags>
+	</hobgoblinhead>
+
+	<ghoulhead>
+		<name esES="Cabeza de ghoul">Ghoul head</name>
+
+		<ranged>true</ranged>
+		<rangedAmmo>ghoulhead</rangedAmmo>
+		<rangedCharges>1</rangedCharges>
+
+		<location>WEAPON</location>
+		<attack>1d444+428</attack>
+		<defense>1d14+43</defense>
+		<damage>1d89+255</damage>
+		<LOS>1d5</LOS>
+		<verb esES="golpea">hit</verb>
+		<verbInfinitive esES="golpear">hits</verbInfinitive>
+
+		<tags>misc</tags>
+	</ghoulhead>
+
+	<trollhead>
+		<name esES="Cabeza de troll">Troll head</name>
+
+		<ranged>true</ranged>
+		<rangedAmmo>trollhead</rangedAmmo>
+		<rangedCharges>1</rangedCharges>
+
+		<location>WEAPON</location>
+		<attack>1d444+428</attack>
+		<defense>1d14+43</defense>
+		<damage>1d89+255</damage>
+		<LOS>1d5</LOS>
+		<verb esES="golpea">hit</verb>
+		<verbInfinitive esES="golpear">hits</verbInfinitive>
+
+		<tags>misc</tags>
+	</trollhead>
+
+	<snickerhead>
+		<name esES="Cabeza de snicker">Snicker head</name>
+
+		<ranged>true</ranged>
+		<rangedAmmo>snickerhead</rangedAmmo>
+		<rangedCharges>1</rangedCharges>
+
+		<location>WEAPON</location>
+		<attack>1d444+428</attack>
+		<defense>1d14+43</defense>
+		<damage>1d89+255</damage>
+		<LOS>1d5</LOS>
+		<verb esES="golpea">hit</verb>
+		<verbInfinitive esES="golpear">hits</verbInfinitive>
+
+		<tags>misc</tags>
+	</snickerhead>
+
+	<icewall>
+		<name esES="Muro de hielo">Ice wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+		<wall>true</wall>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</icewall>
+
+	<logblock>
+		<name esES="Muro de troncos">Log wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</logblock>
+
+	<ancientblockmoss>
+		<name esES="Muro antiguo">Ancient wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</ancientblockmoss>
+
+	<ancientblock>
+		<name esES="Muro antiguo">Ancient wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</ancientblock>
+
+	<mayanblock>
+		<name esES="Muro antiguo">Ancient wall</name>
+
+ 		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</mayanblock>
+
+	<mayanblock1>
+		<name esES="Muro antiguo">Ancient wall</name>
+
+ 		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</mayanblock1>
+
+	<mayanblock2>
+		<name esES="Muro antiguo">Ancient wall</name>
+
+ 		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</mayanblock2>
+
+	<mayanblock3>
+		<name esES="Muro antiguo">Ancient wall</name>
+
+ 		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</mayanblock3>
+
+	<mayanblock4>
+		<name esES="Muro antiguo">Ancient wall</name>
+
+ 		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</mayanblock4>
+
+	<mayanblock5>
+		<name esES="Muro antiguo">Ancient wall</name>
+
+ 		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</mayanblock5>
+
+	<clayblock>
+		<name esES="Muro de arcilla">Clay wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</clayblock>
+
+	<pillar>
+		<name esES="Pilar">Pillar</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+	</pillar>
+
+	<woodenstoneblock>
+		<name esES="Piedra cubierta de madera">Wood covered stone</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</woodenstoneblock>
+
+	<woodsticks>
+		<name esES="Muro de madera">Wooden wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</woodsticks>
+
+	<woodspikes>
+		<name esES="Muro de madera con pinchos">Wooden spiked wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</woodspikes>
+
+
+	<sandwallblock>
+		<name esES="Muro de arena">Sand wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</sandwallblock>
+
+	<woodenglasswindow>
+		<name esES="Ventana de cristal">Glass window</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</woodenglasswindow>
+
+	<stonebrickblock>
+		<name esES="Muro de ladrillos">Stone bricks wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</stonebrickblock>
+
+	<whitebrickblock>
+		<name esES="Muro de ladrillos">Stone bricks wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</whitebrickblock>
+
+	<goldenblock>
+		<name esES="Muro de oro">Golden wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</goldenblock>
+
+
+	<ancientwall>
+		<name esES="Muro antiguo">Ancient wall</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</ancientwall>
+
+	<roughbricks>
+		<name esES="Ladrillos duros">Rough bricks</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</roughbricks>
+
+	<flagblockyellow>
+		<name esES="Bloque amarillo">Yellow flag block</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</flagblockyellow>
+
+	<flagblockred>
+		<name esES="Bloque rojo">Red flag block</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</flagblockred>
+
+	<flagblockgray>
+		<name esES="Bloque gris">Gray flag block</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</flagblockgray>
+
+	<flagblockwhite>
+		<name esES="Bloque blanco">White flag block</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</flagblockwhite>
+
+	<flagblockwhitearc>
+		<name esES="Arco blanco">White flag block arc</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+	</flagblockwhitearc>
+
+	<roughbrickarc>
+		<name esES="Arco de ladrillos">Rough brick arc</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+	</roughbrickarc>
+
+	<limestoneblock>
+		<name esES="Caliza">Limestone block</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</limestoneblock>
+
+	<colombages>
+		<name esES="Celosía">Colombages</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</colombages>
+
+	<colombagesx>
+		<name esES="Celosía con forma de X">Colombages with an X frame</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</colombagesx>
+
+
+	<limestoneramp>
+		<name esES="Rampa de caliza">Limestone ramp</name>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		
+		<glue>true</glue>
+		<base>true</base>
+		<zoneMergerUp>true</zoneMergerUp>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+	</limestoneramp>
+
+	<lapedrera>
+		<name esES="Muro tipo La Pedrera">La Pedrera wall</name>
+		<description esES="Tributo a un genio">A tribute to a true genius</description>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+	</lapedrera>
+
+	<lapedrera2>
+		<name esES="Muro tipo La Pedrera">La Pedrera wall</name>
+		<description esES="Tributo a un genio">A tribute to a true genius</description>
+
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+	</lapedrera2>
+
+
+	<scaffold>
+		<name esES="Andamio">Scaffold</name>
+		<description esES="Fácil de construir, fácil de romperse">Easy come, easy go</description>
+
+		<type>utils.misc</type>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<base>true</base>
+		<action>destroyscaffold</action>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>0</value>
+	</scaffold>
+
+	<verticalladder>
+		<name esES="Escalera vertical">Vertical ladder</name>
+
+		<type>utils.misc</type>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>90</value>
+	</verticalladder>
+
+	<ladder>
+		<name esES="Escalera">Ladder</name>
+		<description esES="Va en ambas direcciones">It goes both ways...</description>
+
+		<type>utils.misc</type>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>0</value>
+	</ladder>
+
+	<woodenladder>
+		<name esES="Escalera de madera">Wooden ladder</name>
+		<description esES="Va en ambas direcciones">It goes both ways...</description>
+
+		<type>utils.misc</type>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>0</value>
+	</woodenladder>
+
+	<strawroofitem>
+		<name esES="Techo de paja">Straw roof</name>
+
+		<type>utils.misc</type>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>		
+		
+		<alwaysOperative>false</alwaysOperative>
+		<value>40</value>
+	</strawroofitem>
+
+	<marketroof>
+		<name esES="Techo del mercado">Market roof</name>
+
+		<type>utils.misc</type>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>		
+		
+		<alwaysOperative>false</alwaysOperative>
+		<value>40</value>
+	</marketroof>
+
+	<woodendarkroofitem>
+		<name esES="Techo de madera">Wooden roof</name>
+
+		<type>utils.misc</type>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>		
+		
+		<alwaysOperative>false</alwaysOperative>
+		<value>40</value>
+	</woodendarkroofitem>
+
+	<clayroof>
+		<name esES="Techo de arcilla">Clay roof</name>
+
+		<type>utils.misc</type>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>		
+		
+		<alwaysOperative>false</alwaysOperative>
+		<value>40</value>
+	</clayroof>
+
+	<brokenroof>
+		<name esES="Techo roto">Broken roof</name>
+		<description esES="Para dormir bajo las estrellas">For sleeping under the stars</description>
+
+		<type>utils.misc</type>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>		
+		
+		<alwaysOperative>false</alwaysOperative>
+		<value>40</value>
+	</brokenroof>
+
+	<redtileroof>
+		<name esES="Techo rojo">Red roof</name>
+		<description esES="Luce genial con una valla blanca">Goes best with a white fence</description>
+
+		<type>utils.misc</type>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>		
+		
+		<alwaysOperative>false</alwaysOperative>
+		<value>40</value>
+	</redtileroof>
+
+	<bluetileroof>
+		<name esES="Techo azul">Blue roof</name>
+		<description esES="Azul divertido">A happy blue that is</description>
+
+		<type>utils.misc</type>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>		
+		
+		<alwaysOperative>false</alwaysOperative>
+		<value>40</value>
+	</bluetileroof>
+
+	<greentileroof>
+		<name esES="Techo verde">Green roof</name>
+		<description esES="Es un nuevo tipo de techo">It is a new kind of roof</description>
+
+		<type>utils.misc</type>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>		
+		
+		<alwaysOperative>false</alwaysOperative>
+		<value>40</value>
+	</greentileroof>
+
+	<purpletileroof>
+		<name esES="Techo púrpura">Purple roof</name>
+		<description esES="Orgulloso de vivir ahí!">Proud to live here</description>
+
+		<type>utils.misc</type>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>		
+		
+		<alwaysOperative>false</alwaysOperative>
+		<value>40</value>
+	</purpletileroof>
+
+	<yellowtileroof>
+		<name esES="Techo amarillo">Yellow roof</name>
+		<description esES="Es genial para un refugio">Great for a shelter</description>
+
+		<type>utils.misc</type>
+		<wall>true</wall>
+		<glue>true</glue>
+		<base>true</base>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>		
+		
+		<alwaysOperative>false</alwaysOperative>
+		<value>40</value>
+	</yellowtileroof>
+
+
+	<stoneladder>
+		<name esES="Escalera de piedra">Stone ladder</name>
+		<description esES="Va en ambas direcciones">It goes both ways...</description>
+
+		<type>utils.misc</type>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>0</value>
+	</stoneladder>
+
+	<logladder>
+		<name esES="Escalera de troncos">Log ladder</name>
+		<description esES="Va en ambas direcciones">It goes both ways...</description>
+
+		<type>utils.misc</type>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>0</value>
+	</logladder>
+
+	<dirtladder>
+		<name esES="Escalera de barro">Dirt ladder</name>
+		<description esES="Va en ambas direcciones">It goes both ways...</description>
+
+		<type>utils.misc</type>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>0</value>
+	</dirtladder>
+
+	<stonespindleladder>
+		<name esES="Escalera de piedra">Stone spindle ladder</name>
+		<description esES="Va en ambas direcciones">It goes both ways...</description>
+
+		<type>utils.misc</type>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>0</value>
+	</stonespindleladder>
+
+	<ancientladder>
+		<name esES="Escalera antigua">Ancient ladder</name>
+		<description esES="Va en ambas direcciones">It goes both ways...</description>
+
+		<type>utils.misc</type>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>0</value>
+	</ancientladder>
+
+	<bonestairs>
+		<name esES="Escalera de huesos">Bone stairs</name>
+		<description esES="Va en ambas direcciones">It goes both ways...</description>
+
+		<type>utils.misc</type>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>0</value>
+	</bonestairs>
+
+	<hedge>
+		<name esES="Seto">Hedge</name>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>35</value>
+	</hedge>
+
+
+	<redflowerhedge>
+		<name esES="Seto de flores rojas">Red flower hedge</name>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>0</value>
+		<value>50</value>
+	</redflowerhedge>
+
+	<yellowflowerhedge>
+		<name esES="Seto de flores amarillas">Yellow flower hedge</name>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>50</value>
+	</yellowflowerhedge>
+
+	<blueflowerhedge>
+		<name esES="Seto de flores azules">Blue flower hedge</name>
+
+		<wall>true</wall>
+		<glue>true</glue>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>50</value>
+	</blueflowerhedge>
+
+	<hedgegate>
+		<name esES="Portal de seto">Hedge gate</name>
+
+		<type>furniture</type>
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>65</value>
+	</hedgegate>
+
+	<logwall>
+		<name esES="Muro de troncos">Log wall</name>
+		<description esES="Muro básico">Basic wall</description>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+	</logwall>
+
+	<junglefence>
+		<name esES="Valla de jungla">Jungle fence</name>
+
+		<habitat>junglefrog4</habitat>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+		<locked>true</locked>
+	</junglefence>
+
+	<hedgebrickfence>
+		<name esES="Valla seto con ladrillos">Hedge brick fence</name>
+		
+		<wall>true</wall>
+		
+		<alwaysOperative>false</alwaysOperative>
+		<locked>true</locked>
+	</hedgebrickfence>
+
+	<fancybrickfence>
+		<name esES="Valla de ladrillos de lujo">Fancy brick fence</name>
+		
+		<wall>true</wall>
+		
+		<alwaysOperative>false</alwaysOperative>
+		<locked>true</locked>
+	</fancybrickfence>
+
+	<farmfence>
+		<name esES="Valla de granja">Farm fence</name>
+		
+		<wall>true</wall>
+		
+		<alwaysOperative>false</alwaysOperative>
+		<locked>true</locked>
+	</farmfence>
+
+	<totem>
+		<name esES="Tótem">Totem pole</name>
+
+		<habitat>junglefrog2</habitat>
+
+		<alwaysOperative>false</alwaysOperative>
+		<locked>true</locked>
+	</totem>
+
+	<skullfence>
+		<name esES="Valla de calaveras">Skull fence</name>
+		<description esES="Valla hecha de enemigos">Fence carved from enemies</description>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+	</skullfence>
+
+	<lightwoodblock>
+		<name esES="Bloque de madera clara">Light wood block</name>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</lightwoodblock>
+
+	<stonewall>
+		<name esES="Muro de piedra">Stone wall</name>
+		<description esES="Muro básico">Basic wall</description>
+		<description esES="No se deteriora">It does not decay</description>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+	</stonewall>
+
+	<bonewall>
+		<name esES="Muro de hueso">Bone wall</name>
+		<description esES="No se deteriora">It does not decay</description>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+	</bonewall>
+
+
+	<mudwall>
+		<name esES="Muro de barro">Mud wall</name>
+		<description esES="Te ahorras tener que limpiarlo">It save up in cleaning</description>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+	</mudwall>
+
+	<sandwall>
+		<name esES="Muro de arena">Sand wall</name>
+		<description esES="Ideal para construir castillos">Used to build castles</description>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</sandwall>
+
+	<woodenblock>
+		<name esES="Bloque de madera">Wooden block</name>
+
+		<wall>true</wall>
+		<type>utils.misc</type>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>35</value>
+	</woodenblock>
+
+	<woodenmossblock>
+		<name esES="Bloque de madera musgoso">Wooden moss block</name>
+
+		<wall>true</wall>
+		<type>utils.misc</type>
+		<zoneMergerUp>true</zoneMergerUp>
+		<glue>true</glue>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>38</value>
+	</woodenmossblock>
+
+	<ironbars>
+		<name esES="Barras de hierro">Iron bars</name>
+
+		<wall>true</wall>
+		<type>utils.misc</type>
+		<wallConnector>true</wallConnector>
+
+		<glue>true</glue>
+		
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>97</value>
+	</ironbars>
+
+
+	<engravedstonewall>
+		<name esES="Muro de piedra grabado">Engraved stone wall</name>
+		<description esES="No se deteriora">It does not decay</description>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</engravedstonewall>
+
+	<engravedgreenwall>
+		<name esES="Muro verde grabado con gel">Gel engraved green wall</name>
+		<description esES="Aún vibra">It still vibrates</description>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</engravedgreenwall>
+
+	<engravedredwall>
+		<name esES="Muro rojo grabado con gel">Gel engraved red wall</name>
+		<description esES="Aún vibra">It still vibrates</description>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</engravedredwall>
+
+	<engravedbluewall>
+		<name esES="Muro azul grabado con gel">Gel engraved blue wall</name>
+		<description esES="Aún vibra">It still vibrates</description>
+
+		<wall>true</wall>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<glue>true</glue>
+		<base>true</base>
+		<blocky>true</blocky>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</engravedbluewall>
+
+	<pavementroadtile>
+		<name esES="Carretera pavimentada">Pavement road</name>
+		<description esES="Mantedrá tus pies secos">A road tile, to keep your feet dry</description>
+
+		<floorWalkSpeed>65</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</pavementroadtile>
+
+	<redpavementroadtile>
+		<name esES="Carretera pavimentada roja">Red pavement road</name>
+		<description esES="Mantedrá tus pies secos">A road tile, to keep your feet dry</description>
+
+		<floorWalkSpeed>65</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</redpavementroadtile>
+
+	<whitepavementroadtile>
+		<name esES="Carretera pavimentada blanca">White pavement road</name>
+		<description esES="Mantedrá tus pies secos">A road tile, to keep your feet dry</description>
+
+		<floorWalkSpeed>65</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</whitepavementroadtile>
+
+	<greenpavementroadtile>
+		<name esES="Carretera pavimentada verde">Green pavement road</name>
+		<description esES="Mantedrá tus pies secos">A road tile, to keep your feet dry</description>
+
+		<floorWalkSpeed>65</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</greenpavementroadtile>
+
+	<bluepavementroadtile>
+		<name esES="Carretera pavimentada azul">Blue pavement road</name>
+		<description esES="Mantedrá tus pies secos">A road tile, to keep your feet dry</description>
+
+		<floorWalkSpeed>65</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</bluepavementroadtile>
+
+	<purplepavementroadtile>
+		<name esES="Carretera pavimentada lila">Purple pavement road</name>
+		<description esES="Mantedrá tus pies secos">A road tile, to keep your feet dry</description>
+
+		<floorWalkSpeed>65</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</purplepavementroadtile>
+
+	<orangepavementroadtile>
+		<name esES="Carretera pavimentada naranja">Orange pavement road</name>
+		<description esES="Mantedrá tus pies secos">A road tile, to keep your feet dry</description>
+
+		<floorWalkSpeed>65</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</orangepavementroadtile>
+
+	<yellowpavementroadtile>
+		<name esES="Carretera pavimentada amarilla">Yellow pavement road</name>
+		<description esES="Mantedrá tus pies secos">Follow the yellow brick road!</description>
+
+		<floorWalkSpeed>65</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</yellowpavementroadtile>
+
+	<stoneroadtile>
+		<name esES="Carretera de piedra">Stone road</name>
+		<description esES="Mantedrá tus pies secos">A road tile, to keep your feet dry</description>
+
+		<floorWalkSpeed>75</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</stoneroadtile>
+
+	<greenroadtile>
+		<name esES="Carretera de gel verde">Green gel road</name>
+		<description esES="Mantedrá tus pies secos">A road tile, to keep your feet dry</description>
+
+		<floorWalkSpeed>55</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</greenroadtile>
+
+	<redroadtile>
+		<name esES="Carretera de gel rojo">Red gel road</name>
+		<description esES="Mantedrá tus pies secos">A road tile, to keep your feet dry</description>
+
+		<floorWalkSpeed>55</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</redroadtile>
+
+	<blueroadtile>
+		<name esES="Carretera de gel azul">Blue gel road</name>
+		<description esES="Mantedrá tus pies secos">A road tile, to keep your feet dry</description>
+
+		<floorWalkSpeed>55</floorWalkSpeed>
+		<alwaysOperative>false</alwaysOperative>
+	</blueroadtile>
+
+	<redflower>
+		<name esES="Flores rojas">Red flowers</name>
+		<habitat>grassnoflower</habitat>
+		<action>qcut</action>
+		<action>qgatherredflower</action>
+	</redflower>
+
+	<redflowerseed>
+		<name esES="Semilla de flor roja">Red flower seedling</name>
+		<habitat>humus</habitat>
+		<maxAge>1d720+720</maxAge>
+		<maxAgeItem>plantedredflower</maxAgeItem>
+		<action>qcut</action>
+		<value>35</value>
+	</redflowerseed>
+
+	<plantedredflower>
+		<name esES="Flores rojas">Red flowers</name>
+		<habitat>humus</habitat>
+		<action>qcut</action>
+		<action>qgatherplantedredflower</action>
+	</plantedredflower>
+
+	<blueflower>
+		<name esES="Flores azules">Blue flowers</name>
+		<habitat>grassnoflower1</habitat>
+		<action>qcut</action>
+		<action>qgatherblueflower</action>
+	</blueflower>
+
+	<blueflowerseed>
+		<name esES="Semilla de flor azul">Blue flower seedling</name>
+		<habitat>humus</habitat>
+		<maxAge>1d720+720</maxAge>
+		<maxAgeItem>plantedblueflower</maxAgeItem>
+		<action>qcut</action>
+		<value>35</value>
+	</blueflowerseed>
+
+	<plantedblueflower>
+		<name esES="Flores azules">Blue flowers</name>
+		<habitat>humus</habitat>
+		<action>qcut</action>
+		<action>qgatherplantedblueflower</action>
+	</plantedblueflower>
+
+	<yellowflower>
+		<name esES="Flores amarillas">Yellow flowers</name>
+		<habitat>grassnoflower2</habitat>
+		<action>qcut</action>
+		<action>qgatheryellowflower</action>
+	</yellowflower>
+
+	<yellowflowerseed>
+		<name esES="Semilla de flor amarilla">Yellow flower seedling</name>
+		<habitat>humus</habitat>
+		<maxAge>1d720+720</maxAge>
+		<maxAgeItem>plantedyellowflower</maxAgeItem>
+		<action>qcut</action>
+		<value>35</value>
+	</yellowflowerseed>
+
+	<plantedyellowflower>
+		<name esES="Flores amarillas">Yellow flowers</name>
+		<habitat>humus</habitat>
+		<action>qcut</action>
+		<action>qgatherplantedyellowflower</action>
+	</plantedyellowflower>
+
+	<gatheredredflower>
+		<name esES="Flores rojas">Red flowers</name>
+		<type>rawmaterials.colors</type>
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>38</value>
+	</gatheredredflower>
+
+	<gatheredblueflower>
+		<name esES="Flores azules">Blue flowers</name>
+		<type>rawmaterials.colors</type>
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>38</value>
+	</gatheredblueflower>
+
+	<gatheredyellowflower>
+		<name esES="Flores amarillas">Yellow flowers</name>
+		<type>rawmaterials.colors</type>
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>38</value>
+	</gatheredyellowflower>
+
+	<torch>
+		<name esES="Antorcha">Torch</name>
+		<description esES="Brilla como un gusilú">Star bright, star light...</description>
+		<type>utils.misc</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>118</value>
+	</torch>
+
+	<!--/ITEMS -->
+
+	<!--/CARPENTRY -->
+
+	<woodenbed>
+		<name esES="Cama de madera">Wooden bed</name>
+
+		<type>furniture</type>
+
+		<usedToSleep>true</usedToSleep>
+		<happiness>1</happiness>
+		<alwaysOperative>false</alwaysOperative>
+
+		<zone>zpersonal</zone>
+		<zone>ztavernroom</zone>
+		<zone>zhospital</zone>
+		<zone>zbarracks</zone>
+		<value>102</value>
+	</woodenbed>
+
+	<woodendormbed>
+		<name esES="Litera de madera">Wooden dormitory bed</name>
+		<description esES="Me pido la de arriba!">Calling dibs on the bottom bed!</description>
+
+		<type>furniture</type>
+
+		<usedToSleep>true</usedToSleep>
+		
+		<alwaysOperative>false</alwaysOperative>
+
+		<zoneMergerUp>true</zoneMergerUp>
+		<base>true</base>
+
+		<value>205</value>
+	</woodendormbed>
+
+	<bonebed>
+		<name esES="Cama de hueso">Bone bed</name>
+
+		<type>furniture</type>
+
+		<usedToSleep>true</usedToSleep>
+		<happiness>1</happiness>
+		<alwaysOperative>false</alwaysOperative>
+
+		<zone>zpersonal</zone>
+		<zone>ztavernroom</zone>
+		<zone>zhospital</zone>
+		<zone>zbarracks</zone>
+		<value>102</value>
+	</bonebed>
+
+	<stonechair>
+		<name esES="Silla de piedra">Stone chair</name>
+		<description esES="Conocida como -El trono helado-">Also known as -The frozen throne-</description>
+
+		<type>furniture</type>
+		<usedToSit>true</usedToSit>
+		<happiness>1</happiness>
+		<alwaysOperative>false</alwaysOperative>
+		<value>46</value>
+	</stonechair>
+
+	<purplethrone>
+		<name esES="Trono púrpura">Purple throne</name>
+		<description esES="No es como el de hierro">Not unlike the iron throne</description>
+		<type>furniture</type>
+		<usedToSit>true</usedToSit>
+		<happiness>2</happiness>
+		<alwaysOperative>false</alwaysOperative>
+		<value>200</value>
+	</purplethrone>
+
+	<woodenchair>
+		<name esES="Silla de madera">Wooden chair</name>
+		<description esES="Llámame Astillator">Call me Splinter</description>
+
+		<type>furniture</type>
+		<usedToSit>true</usedToSit>
+		<happiness>1</happiness>
+		<alwaysOperative>false</alwaysOperative>
+		<value>46</value>
+	</woodenchair>
+
+	<woodencupboard>
+		<name esES="Estantería">Cupboard</name>
+		<description esES="Ostras, que raro, no tiene ni una sola taza.">Oddly enough, contains no cups.</description>
+
+		<type>furniture</type>
+		<happiness>1</happiness>
+		<alwaysOperative>false</alwaysOperative>
+		<base>true</base>
+		<value>97</value>
+	</woodencupboard>
+
+	
+	<floodgate>
+		<name esES="Compuerta">Flood gate</name>
+		<description esES="Una puerta de piedra para mantener el agua">A stone door to keep the water out</description>
+
+		<type>furniture</type>
+		<wallConnector>true</wallConnector>
+		<door>true</door>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>89</value>
+	</floodgate>
+
+	<fencedoor>
+		<name esES="Valla puerta">Fence door</name>
+		<description esES="Mantiene a los animales fuera!">It keeps the pigs and cows out, but thats all</description>
+
+		<type>furniture</type>
+		<wallConnector>true</wallConnector>
+		<door>true</door>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>49</value>
+	</fencedoor>
+	
+	<halfdoor>
+		<name esES="Media puerta">Half door</name>
+		<description esES="Ideal para halflings">Best for halflings</description>
+
+		<type>furniture</type>
+		<wallConnector>true</wallConnector>
+		<door>true</door>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>49</value>
+	</halfdoor>
+
+	<blockdoor>
+		<name esES="Puerta-bloque de madera">Block wooden door</name>
+		<description esES="Encaja en las mazmorras">Fit for caves</description>
+
+		<type>furniture</type>
+		<wallConnector>true</wallConnector>
+		<door>true</door>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>49</value>
+	</blockdoor>
+
+
+	<jungledoor>
+		<name esES="Puerta de jungla">Jungle door</name>
+		<description esES="Mantiene a los animales fuera!">It keeps the pigs and cows out, but thats all</description>
+
+		<habitat>junglefrog5</habitat>
+
+		<wallConnector>true</wallConnector>
+
+		<locked>true</locked>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>49</value>
+	</jungledoor>
+
+	<logdoor>
+		<name esES="Puerta de troncos">Log door</name>
+		<description esES="Puerta básica">Basic door</description>
+
+		<type>furniture</type>
+		<wallConnector>true</wallConnector>
+		<door>true</door>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>49</value>
+	</logdoor>
+
+	<woodendoor>
+		<name esES="Puerta de madera">Wooden door</name>
+
+		<type>furniture</type>
+		<wallConnector>true</wallConnector>
+		<door>true</door>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>49</value>
+	</woodendoor>
+
+	<bonedoor>
+		<name esES="Puerta de hueso">Bone door</name>
+
+		<type>furniture</type>
+		<wallConnector>true</wallConnector>
+		<door>true</door>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>47</value>
+	</bonedoor>
+
+	<architecttable>
+		<name esES="La mesa de Caprontos, el arquitecto">Caprontos the architect's table</name>
+		<description esES="Los mundos se crearon con ella">Worlds are made with this</description>
+
+		<type>furniture</type>
+		<happiness>2</happiness>
+		<alwaysOperative>false</alwaysOperative>
+		<value>200</value>
+	</architecttable>
+
+	<stonetable>
+		<name esES="Mesa de piedra">Stone table</name>
+		<description esES="Robusta, pero fria">Sturdy, but cold</description>
+
+		<type>furniture</type>
+		<happiness>1</happiness>
+		<alwaysOperative>false</alwaysOperative>
+		<value>92</value>
+	</stonetable>
+
+	<woodentable>
+		<name esES="Mesa de madera">Wooden table</name>
+		<description esES="Cojea de una pata">Oh great, one of the legs is shorter than the others</description>
+
+		<type>furniture</type>
+		<happiness>1</happiness>
+		<alwaysOperative>false</alwaysOperative>
+		<value>92</value>
+	</woodentable>
+
+	<squarestable>
+		<name esES="Mesa de madera a cuadros">Wooden squares table</name>
+
+		<type>furniture</type>
+		<happiness>1</happiness>
+		<alwaysOperative>false</alwaysOperative>
+		<value>95</value>
+	</squarestable>
+
+	<taverntable>
+		<name esES="Mesa de taverna">Tavern table</name>
+		<description esES="Larga vida a la mesa">Long live the table</description>
+
+		<wallConnector>true</wallConnector>
+		<happiness>1</happiness>
+		<alwaysOperative>false</alwaysOperative>
+	</taverntable>
+
+	<claybrickwall>
+		<name esES="Muro de arcilla">Clay brick wall</name>
+		<description esES="Muro español!">Spanish looking wall</description>
+		
+		<wall>true</wall>
+		<glue>true</glue>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+	</claybrickwall>
+
+	<woodenwall>
+		<name esES="Muro de madera">Wooden wall</name>
+		<description esES="Muro básico">Basic wall</description>
+		<description esES="No se deteriora">It does not decay</description>
+
+		<wall>true</wall>
+		<glue>true</glue>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+	</woodenwall>
+
+	<woodendarkwall>
+		<name esES="Muro de madera">Wooden dark wall</name>
+		<description esES="Muro básico">Basic wall</description>
+		<description esES="No se deteriora">It does not decay</description>
+
+		<wall>true</wall>
+		<glue>true</glue>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<base>true</base>
+
+		<alwaysOperative>false</alwaysOperative>
+	</woodendarkwall>
+
+	<woodenwindow>
+		<name esES="Ventana de madera">Wooden window</name>
+
+		<wallConnector>true</wallConnector>
+		<wall>true</wall>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</woodenwindow>
+
+	<stonewindow>
+		<name esES="Ventana de piedra">Stone window</name>
+
+		<wallConnector>true</wallConnector>
+		<wall>true</wall>
+
+		<blockFluids>true</blockFluids>
+
+		<alwaysOperative>false</alwaysOperative>
+	</stonewindow>
+
+	<stonearcdoor1>
+		<name esES="Puerta con arco de piedra">Stone arced door</name>
+
+		<wallConnector>true</wallConnector>
+		<alwaysOperative>false</alwaysOperative>
+	</stonearcdoor1>
+
+	<stonearcdoor2>
+		<name esES="Puerta con arco de piedra">Stone arced door</name>
+
+		<wallConnector>true</wallConnector>
+		<alwaysOperative>false</alwaysOperative>
+	</stonearcdoor2>
+
+	<!--/CARPENTRY -->
+
+	<!--/WORKSHOPS AND WORKSHOP ITEMS -->
+
+	<anvil>
+		<name esES="Yunque">Anvil</name>
+		<description esES="Se usa en la fabricación de objetos de hierro">Used in the construction of iron based items</description>
+		<type>utils.misc</type>
+		<alwaysOperative>false</alwaysOperative>
+		<zone>zforge</zone>
+		<value>212</value>
+	</anvil>
+
+	<itesmithy>
+		<name esES="Forjador de Ite">ITE smithy</name>
+		<description esES="Una mesa magica que irradia poder">A magical bench</description>
+		<description esES="Se usa en la fabricacion de objetos Ite">Used in the construction of Ite based items</description>
+		<type>utils.workshops</type>
+		<alwaysOperative>false</alwaysOperative>
+		<zone>zforge</zone>
+		<value>212</value>
+	</itesmithy>
+
+	<kitchentable>
+		<name esES="Mesa de cocina">Kitchen table</name>
+		<description esES="Se usa en la fabricación de comida preparada a base de carne">Used to make meat based foods</description>
+		<type>utils.workshops</type>
+		<alwaysOperative>false</alwaysOperative>
+
+		<zone>zkitchen</zone>
+		<value>212</value>
+	</kitchentable>
+
+	<butchertable>
+		<name esES="Mesa de matadero">Butcher's table</name>
+		<description esES="Se usa para matar animales para conseguir comida">Used to butcher animals for their meat</description>
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+
+		<zone>zkitchen</zone>
+		<value>212</value>
+	</butchertable>
+
+	<cookingbowl>
+		<name esES="Cuenco de cocina">Cooking bowl</name>
+		<description esES="Remuévelo">Stir it up</description>
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+
+		<zone>zkitchen</zone>
+		<value>212</value>
+	</cookingbowl>
+
+	<medicinecabinet>
+		<name esES="Mueble de primeros auxilios">Medicine cabinet</name>
+		<description esES="Aquí se guardan las pastillas">Pill's here!</description>
+		<type>furniture</type>
+		<zone>zhospital</zone>
+		<value>212</value>
+	</medicinecabinet>
+
+	<smelter>
+		<name esES="Fundidor">Smelter</name>
+		<description esES="Se usa para fabricar objetos de hierro">Used in the construction of iron based items</description>
+		<type>utils.workshops</type>
+		<alwaysOperative>false</alwaysOperative>
+
+		<zone>zforge</zone>
+		<value>212</value>
+	</smelter>
+
+	<stonehammer>
+		<level>2</level>
+		<name esES="Martillo de piedra">Stone hammer</name>
+		<description esES="Menudo pedrolo!">It's a stone luigi, you didn't make it...</description>
+		<description esES="Úsalo para crear una albañilería">But you can use it to make a masonry</description>
+		<type>weapon.stone</type>
+
+		<location>WEAPON</location>
+		<attack>1d209+595</attack>
+		<defense>1d29+85</defense>
+		<damage>1d149+425</damage>
+		<attackSpeed>-1</attackSpeed>
+		<verb esES="aporrea">bludgeons</verb>
+		<verbInfinitive esES="aporrear">bludgeon</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>2</stackableSize>
+		<tags>hammer</tags>
+		<value>100</value>
+	</stonehammer>
+
+	<bonecarver>
+		<name esES="Tallador de hueso">Bone carving knife</name>
+		<description esES="Herramienta para tallar objetos de hueso">A tool for carving bone items</description>
+		<type>utils.misc</type>
+		<stackable>true</stackable>
+		<stackableSize>2</stackableSize>
+		<value>100</value>
+	</bonecarver>
+
+	<cookingfire>
+		<name esES="Fuego para cocinar">Cooking fire</name>
+		<description esES="Un pequeño fuego para preparar comida">A small fire to prepare meat based food</description>
+		<description esES="Parece que no va a durar mucho">It looks like it wont last long</description>
+
+		<maxAge>1d4320+8640</maxAge>
+		<maxAgeItem>cookingfirelow</maxAgeItem>
+		<speedUpPCT>50</speedUpPCT> <!-- 50% slower -->
+		<alwaysOperative>false</alwaysOperative>
+	</cookingfire>
+	
+	<cookingfirelow>
+		<name esES="Fuego para cocinar">Low cooking fire</name>
+		<description esES="Un pequeño fuego para preparar comida">A small fire to prepare meat based food</description>
+		<description esES="Parece que no va a durar mucho">It looks like it wont last long</description>
+
+		<maxAge>1d4320+4640</maxAge>
+		<maxAgeItem>cookingfireburnt</maxAgeItem>
+		<speedUpPCT>75</speedUpPCT> <!-- 50% slower -->
+		<alwaysOperative>false</alwaysOperative>
+		<action>qrenewfire</action>
+	</cookingfirelow>
+
+	<cookingfireburnt>
+		<name esES="Fuego para cocinar">Burnt cooking fire</name>
+		<description esES="Un pequeño fuego para preparar comida">A small fire to prepare meat based food</description>
+		<description esES="Parece que no va a durar mucho">It looks like it wont last long</description>
+
+		<alwaysOperative>false</alwaysOperative>
+		<action>qrenewburnt</action>
+	</cookingfireburnt>
+
+	<stove>
+		<name esES="Horno de cocina">Stove</name>
+		<description esES="Se usa en la fabricación de comida preparada a base de carne">Used to make meat based foods</description>
+		<type>utils.workshops</type>
+		<alwaysOperative>false</alwaysOperative>
+		<zone>zkitchen</zone>
+		<value>212</value>
+	</stove>
+
+	<tongs>
+		<name esES="Tenazas">Tongs</name>
+		<type>utils.misc</type>
+
+		<stackable>true</stackable>
+		<stackableSize>2</stackableSize>
+		<value>100</value>
+	</tongs>
+
+	<!--/WORKSHOPS AND WORKSHOP ITEMS -->
+
+	<firewand>
+		<level>5</level>
+		<name esES="Varita de fuego">Fire wand</name>
+		<type>weapon.misc</type>
+
+		<ranged>true</ranged>
+		<rangedAmmo>fireball</rangedAmmo>
+		<rangedCharges>INFINITE</rangedCharges>
+		
+		<wearEffects>flameattack</wearEffects>
+
+		<location>WEAPON</location>
+		<attackSpeed>2</attackSpeed>
+		<defense>0</defense>
+		<damage>1d150+150</damage>
+		<LOS>0</LOS>
+		<verb esES="quema">burns</verb>
+		<verbInfinitive esES="quemar">burn</verbInfinitive>
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>wand</tags>
+		<value>300</value>
+	</firewand>
+
+	<sipswand>
+		<level>6</level>
+		<name esES="Varita de Sips">Sips wand</name>
+		<type>weapon.misc</type>
+
+		<ranged>true</ranged>
+		<rangedAmmo>sipsball</rangedAmmo>
+		<rangedCharges>INFINITE</rangedCharges>
+
+		<location>WEAPON</location>
+		<attackSpeed>3</attackSpeed>
+		<defense>0</defense>
+		<damage>1d170+170</damage>
+		<LOS>0</LOS>
+		<verb esES="corrompe">corrupts</verb>
+		<verbInfinitive esES="corromper">corrupt</verbInfinitive>
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>wand</tags>
+		<value>100</value>
+	</sipswand>
+
+	<fireball>
+		<name esES="Bola de fuego">Fire ball</name>
+	</fireball>
+
+	<sipsball>
+		<name esES="Bola corrupta">Corrupting ball</name>
+	</sipsball>
+
+	<throwingrock>
+		<name esES="Piedra para lanzar">Throwing rock</name>
+		<type>weapon.misc</type>
+
+		<ranged>true</ranged>
+		<rangedAmmo>rockball</rangedAmmo>
+		<rangedCharges>20</rangedCharges>
+
+		<location>WEAPON</location>
+		<attackSpeed>-3</attackSpeed>
+		<defense>0</defense>
+		<damage>0</damage>
+		<LOS>0</LOS>
+		<verb esES="golpea">hits</verb>
+		<verbInfinitive esES="golpear">hit</verbInfinitive>
+		<value>100</value>
+	</throwingrock>
+
+	<rockball>
+		<name esES="Bola de piedra">Rock ball</name>
+	</rockball>
+
+	<finebeaterclub>
+		<level>12</level>
+		<name esES="Garrote del Sacudidor">Fine beater club</name>
+		<type>weapon.misc</type>
+
+		<location>WEAPON</location>
+		<attack>1d134+383</attack>
+		<defense>1d164+468</defense>
+		<damage>1d239+680</damage>
+		<verb esES="aporrea">clubs</verb>
+		<verbInfinitive esES="aporrear">club</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>club</tags>
+		<value>100</value>
+	</finebeaterclub>
+
+	<ogreclub>
+		<level>10</level>
+		<name esES="Garrote de ogro">Ogre club</name>
+		<type>weapon.misc</type>
+
+		<location>WEAPON</location>
+		<attack>1d74+213</attack>
+		<defense>1d104+298</defense>
+		<damage>1d179+510</damage>
+		<verb esES="aporrea">clubs</verb>
+		<verbInfinitive esES="aporrear">club</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>club</tags>
+		<value>100</value>
+	</ogreclub>
+	
+	<bamboostick>
+		<level>7</level>
+		<name esES="Palo de bambú">Bamboo stick</name>
+		<description esES="Cuidado no lo cojas por el extremo que corta">Make sure you hold the right end of it</description>
+		<type>weapon.misc</type>
+
+		<location>WEAPON</location>
+		<attack>1d179+510</attack>
+		<defense>1d88+289</defense>
+		<damage>1d104+298</damage>
+		<verb esES="perfora">smashes</verb>
+		<verbInfinitive esES="perforar">smash</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>spear</tags>
+		<value>100</value>
+	</bamboostick>
+
+	<stonespear>
+		<level>7</level>
+		<name esES="Lanza de piedra">Stone spear</name>
+		<description esES="Echamos un pinchito?">It's the goblin skewer 2000!</description>
+		<type>weapon.stone</type>
+
+		<location>WEAPON</location>
+		<attack>1d179+510</attack>
+		<defense>1d88+289</defense>
+		<damage>1d104+298</damage>
+		<verb esES="perfora">pierces</verb>
+		<verbInfinitive esES="perforar">pierce</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>spear</tags>
+		<value>100</value>
+	</stonespear>
+
+	<stonemace>
+		<level>9</level>
+		<name esES="Maza de piedra">Stone mace</name>
+		<description esES="PUMBA!">UMAD BRO?</description>
+		<type>weapon.stone</type>
+
+		<location>WEAPON</location>
+		<attack>1d209+595</attack>
+		<defense>1d29+85</defense>
+		<damage>1d149+425</damage>
+		<verb esES="aporrea">bludgeons</verb>
+		<verbInfinitive esES="aporrear">bludgeon</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>mace</tags>
+		<value>100</value>
+	</stonemace>
+
+	<ironmace>
+		<level>14</level>
+		<name esES="Maza de hierro">Iron mace</name>
+		<description esES="Zas!">LolWut??</description>
+		<type>weapon.iron</type>
+
+		<location>WEAPON</location>
+		<attack>1d299+850</attack>
+		<defense>1d29+85</defense>
+		<damage>1d239+680</damage>
+		<verb esES="aporrea">bludgeons</verb>
+		<verbInfinitive esES="aporrear">bludgeon</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>mace</tags>
+		<value>100</value>
+	</ironmace>
+
+	<bentsword>
+		<level>11</level>
+		<name esES="Espada curvada">Curved blade</name>
+		<type>weapon.iron</type>
+
+		<location>WEAPON</location>
+		<attack>1d89+255</attack>
+		<defense>1d29+85</defense>
+		<damage>1d224+638</damage>
+		<attackSpeed>-1</attackSpeed>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>100</value>
+	</bentsword>
+
+	<boneclub>
+		<level>8</level>
+		<name esES="Garrote de hueso">Bone club</name>
+		<type>weapon.bone</type>
+
+		<location>WEAPON</location>
+		<attack>1d119+340</attack>
+		<defense>1d61+170</defense>
+		<damage>1d149+425</damage>
+		<attackSpeed>-1</attackSpeed>
+		<verb esES="aporrea">clubs</verb>
+		<verbInfinitive esES="aporrear">club</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>club</tags>
+		<value>100</value>
+	</boneclub>
+
+	<boneaxe>
+		<level>12</level>
+		<name esES="Hacha de hueso">Bone axe</name>
+		<type>weapon.bone</type>
+
+		<location>WEAPON</location>
+		<attack>1d149+425</attack>
+		<defense>1d91+255</defense>
+		<damage>1d209+595</damage>
+		<attackSpeed>-1</attackSpeed>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>axe</tags>
+		<value>100</value>
+	</boneaxe>
+
+	<bonesword>
+		<level>13</level>
+		<name esES="Espada de hueso">Bone sword</name>
+		<type>weapon.bone</type>
+
+		<location>WEAPON</location>
+		<attack>1d224+638</attack>
+		<defense>1d121+340</defense>
+		<damage>1d269+765</damage>
+		<attackSpeed>-1</attackSpeed>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>100</value>
+	</bonesword>
+
+	<spiderbow>
+		<level>8</level>
+		<name esES="Arco arácnido">Arachnid bow</name>
+		<type>weapon.spiderite</type>
+
+		<ranged>true</ranged>
+		<rangedAmmo>woodenarrow</rangedAmmo>
+		<rangedCharges>200</rangedCharges>
+
+		<location>WEAPON</location>
+		<attack>1d44+128</attack>
+		<defense>1d59+170</defense>
+		<damage>1d74+213</damage>
+		<LOS>1d3</LOS>
+		<verb esES="ensarta">sticks</verb>
+		<verbInfinitive esES="ensartar">stick</verbInfinitive>
+
+		<wearEffects>cripplingshot</wearEffects>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>bow</tags>
+		<value>1000</value>
+	</spiderbow>
+
+	<elvenbow>
+		<level>9</level>
+		<name esES="Arco élfico">Elven bow</name>
+		<type>weapon.misc</type>
+
+		<ranged>true</ranged>
+		<rangedAmmo>woodenarrow</rangedAmmo>
+		<rangedCharges>INFINITE</rangedCharges>
+
+		<location>WEAPON</location>
+
+		<defense>1d59+170</defense>
+		<damage>1d74+313</damage>
+		<attackSpeed>2</attackSpeed>
+
+		<verb esES="ensarta">sticks</verb>
+		<verbInfinitive esES="ensartar">stick</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>bow</tags>
+		<value>100</value>
+	</elvenbow>
+
+	<woodenarrow>
+		<name esES="Flecha">Arrow</name>
+	</woodenarrow>
+
+	<!-- ITE Armors -->
+
+	<direitearmor>
+		<level>13</level>
+		<name esES="Armadura de direite">Direite breastplate</name>
+		<type>armor.direite</type>
+
+		<walkSpeed>-2</walkSpeed>
+		<location>BODY</location>
+		<attack>1d89+255</attack>
+		<defense>1d359+1020</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</direitearmor>
+
+	<direiteaxe>
+		<level>17</level>
+		<name esES="Hacha de direite">Direite axe</name>
+		<description esES="Tiene pelillos">A mangy axe</description>
+		<type>weapon.direite</type>
+
+		<location>WEAPON</location>
+		<attack>1d359+1020</attack>
+		<defense>1d149+425</defense>
+		<damage>1d389+1105</damage>
+		<verb esES="corta">chops</verb>
+		<verbInfinitive esES="cortar">chop</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>axe</tags>
+		<value>100</value>
+	</direiteaxe>
+
+	<speedboots>
+		<level>5</level>
+		<name esES="Botas de velocidad">Boots of haste</name>
+		<description esES="Ándele, Ándele, Arriba!!">Andele, andele, arriba!!</description>
+		<type>armor.misc</type>
+
+		<location>FEET</location>
+		<attack>1d14+43</attack>
+		<defense>1d179+510</defense>
+		<walkSpeed>25</walkSpeed>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>cloth</tags>
+		<value>100</value>
+	</speedboots>
+
+	<direiteboots>
+		<level>13</level>
+		<name esES="Botas de direite">Direite boots</name>
+		<type>armor.direite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d89+255</attack>
+		<defense>1d209+595</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</direiteboots>
+
+	<direitehelmet>
+		<level>13</level>
+		<name esES="Casco de direite">Direite helmet</name>
+		<type>armor.direite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d89+255</attack>
+		<defense>1d209+595</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</direitehelmet>
+
+	<direitepants>
+		<level>13</level>
+		<name esES="Pantalones de direite">Direite greaves</name>
+		<type>armor.direite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d89+255</attack>
+		<defense>1d209+595</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</direitepants>
+
+	<pigslayerhelmet>
+		<level>11</level>
+		<name esES="Casco del Matacerdos">Helmet of the Pigslayer</name>
+		<description esES="Mataste a un cerdo, que valiente!">You killed a pig, how brave of you</description>
+		<type>armor.misc</type>
+		<walkSpeed>5</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d89+255</attack>
+		<defense>1d524+938</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</pigslayerhelmet>
+
+	<ghoulitearmor>
+		<level>20</level>
+		<name esES="Armadura de ghoulite">Ghoulite breastplate</name>
+		<type>armor.ghoulite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d89+255</attack>
+		<defense>1d569+1615</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ghoulitearmor>
+
+	<ghouliteblade>
+		<level>20</level>
+		<name esES="Guja de ghoulite">Ghoulite glaive</name>
+		<description esES="Su esencia perfora el alma">It's essence will pierce your soul</description>
+		<type>weapon.ghoulite</type>
+
+		<location>WEAPON</location>
+		<attack>1d569+1615</attack>
+		<defense>1d164+468</defense>
+		<damage>1d539+1530</damage>
+		<verb esES="perfora">pierces</verb>
+		<verbInfinitive esES="perforar">pierce</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>100</value>
+	</ghouliteblade>
+
+	<ghouliteboots>
+		<level>20</level>
+		<name esES="Botas de ghoulite">Ghoulite boots</name>
+		<type>armor.ghoulite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d89+255</attack>
+		<defense>1d359+1020</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ghouliteboots>
+
+	<ghoulitehelmet>
+		<level>20</level>
+		<name esES="Casco de ghoulite">Ghoulite helmet</name>
+		<type>armor.ghoulite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d89+255</attack>
+		<defense>1d359+1020</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ghoulitehelmet>
+
+	<ghoulitepants>
+		<level>20</level>
+		<name esES="Pantalones de ghoulite">Ghoulite greaves</name>
+		<type>armor.ghoulite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d89+255</attack>
+		<defense>1d359+1020</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ghoulitepants>
+
+	<goblinitespear>
+		<level>15</level>
+		<name esES="Lanza de goblinite">Goblinite spear</name>
+		<description esES="Huele FATAL!">Wow, that stinks!</description>
+		<type>weapon.goblinite</type>
+
+		<location>WEAPON</location>
+		<attack>1d239+680</attack>
+		<defense>1d119+340</defense>
+		<damage>1d359+1020</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>spear</tags>
+		<value>100</value>
+	</goblinitespear>
+
+	<goblinitearmor>
+		<level>10</level>
+		<name esES="Armadura de goblinite">Goblinite breastplate</name>
+		<type>armor.goblinite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d89+255</attack>
+		<defense>1d329+935</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</goblinitearmor>
+
+	<gobliniteboots>
+		<level>10</level>
+		<name esES="Botas de goblinite">Goblinite boots</name>
+		<type>armor.goblinite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d59+170</attack>
+		<defense>1d179+510</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</gobliniteboots>
+
+	<goblinitehelmet>
+		<level>10</level>
+		<name esES="Casco de goblinite">Goblinite helmet</name>
+		<type>armor.goblinite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d59+170</attack>
+		<defense>1d179+510</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</goblinitehelmet>
+
+	<goblinitepants>
+		<level>10</level>
+		<name esES="Pantalones de goblinite">Goblinite greaves</name>
+		<type>armor.goblinite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d59+170</attack>
+		<defense>1d179+510</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</goblinitepants>
+
+	<hobgoblinitearmor>
+		<level>15</level>
+		<name esES="Armadura de hobgoblinite">Hobgoblinite breastplate</name>
+		<type>armor.hobgoblinite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d89+255</attack>
+		<defense>1d449+1275</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</hobgoblinitearmor>
+
+	<hobgoblinitebentsword>
+		<level>16</level>
+		<name esES="Khopesh de hobgoblinite">Hobgoblinite Khopesh</name>
+		<description esES="Amarillo y curvado">Thick... long.. yellow</description>
+		<type>weapon.hobgoblinite</type>
+
+		<location>WEAPON</location>
+		<attack>1d329+935</attack>
+		<defense>1d119+340</defense>
+		<damage>1d359+1020</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>100</value>
+	</hobgoblinitebentsword>
+
+	<hobgobliniteboots>
+		<level>15</level>
+		<name esES="Botas de hobgoblinite">Hobgoblinite boots</name>
+		<type>armor.hobgoblinite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d89+255</attack>
+		<defense>1d239+680</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</hobgobliniteboots>
+
+	<hobgoblinitehelmet>
+		<level>15</level>
+		<name esES="Casco de hobgoblinite">Hobgoblinite helmet</name>
+		<type>armor.hobgoblinite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d89+255</attack>
+		<defense>1d239+680</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</hobgoblinitehelmet>
+
+	<hobgoblinitepants>
+		<level>15</level>
+		<name esES="Pantalones de hobgoblinite">Hobgoblinite greaves</name>
+		<type>armor.hobgoblinite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d89+255</attack>
+		<defense>1d239+680</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</hobgoblinitepants>
+
+	<ironarmor>
+		<level>5</level>
+		<name esES="Armadura de hierro">Iron breastplate</name>
+		<description esES="Mejor que madera, peor que acero">Better than wood, worse than steel</description>
+		<type>armor.iron</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d59+170</attack>
+		<defense>1d179+510</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ironarmor>
+
+	<ironaxe>
+		<level>3</level>
+		<name esES="Hacha de hierro">Iron axe</name>
+		<type>weapon.iron</type>
+
+		<location>WEAPON</location>
+		<attack>1d149+425</attack>
+		<defense>1d29+85</defense>
+		<damage>1d179+510</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>axe</tags>
+		<value>100</value>
+	</ironaxe>
+
+	<ironboots>
+		<level>5</level>
+		<name esES="Botas de hierro">Iron boots</name>
+		<description esES="Serán feas, pero útiles">These boots were made for walking ...</description>
+		<type>armor.iron</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d14+43</attack>
+		<defense>1d179+510</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ironboots>
+
+	<ironhelmet>
+		<level>5</level>
+		<name esES="Casco de hierro">Iron helmet</name>
+		<description esES="Un guardabolos de hierro">Your standard skull protector</description>
+		<type>armor.iron</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d14+43</attack>
+		<defense>1d119+340</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ironhelmet>
+
+	<ironlongsword>
+		<level>11</level>
+		<name esES="Espada larga de hierro">Iron longsword</name>
+		<description esES="Wow, es ENORME!">Wow, it's so HUGE!</description>
+		<type>weapon.iron</type>
+
+		<location>WEAPON</location>
+		<attack>1d89+255</attack>
+		<defense>1d89+255</defense>
+		<damage>1d239+680</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>100</value>
+	</ironlongsword>
+
+	<ironpants>
+		<level>5</level>
+		<name esES="Pantalones de hierro">Iron greaves</name>
+		<description esES="Que fríos están!">Wow! These are cold!</description>
+		<type>armor.iron</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d89+255</attack>
+		<defense>1d149+425</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ironpants>
+
+	<ironshortsword>
+		<level>9</level>
+		<name esES="Espada corta de hierro">Iron shortsword</name>
+		<description esES="Todas las niñas se reían de su estatura diminuta">All the girls laughed at it's tiny size</description>
+		<type>weapon.iron</type>
+
+		<location>WEAPON</location>
+		<attack>1d59+170</attack>
+		<defense>1d14+43</defense>
+		<damage>1d149+425</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>100</value>
+	</ironshortsword>
+
+	<ogreitearmor>
+		<level>21</level>
+		<name esES="Armadura de ogreite">Ogreite breastplate</name>
+		<type>armor.ogreite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d119+340</attack>
+		<defense>1d719+2040</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ogreitearmor>
+
+	<ogreiteboots>
+		<level>21</level>
+		<name esES="Botas de ogreite">Ogreite boots</name>
+		<type>armor.ogreite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d119+340</attack>
+		<defense>1d419+1190</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ogreiteboots>
+
+	<ogreitehelmet>
+		<level>21</level>
+		<name esES="Casco de ogreite">Ogreite helmet</name>
+		<type>armor.ogreite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d119+340</attack>
+		<defense>1d419+1190</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ogreitehelmet>
+
+	<ogreitemace>
+		<level>21</level>
+		<name esES="Aplastador de ogreite">Ogreite smasher</name>
+		<description esES="Un aplastador de ogro, poco original, ¿y qué?">An ogre basher, so unoriginal, sue me...</description>
+		<type>weapon.ogreite</type>
+
+		<location>WEAPON</location>
+		<attack>1d599+1700</attack>
+		<defense>1d209+595</defense>
+		<damage>1d599+1700</damage>
+		<verb esES="aplasta">smashes</verb>
+		<verbInfinitive esES="aplastar">smash</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>mace</tags>
+		<value>100</value>
+	</ogreitemace>
+
+	<ogreitepants>
+		<level>21</level>
+		<name esES="Pantalones de ogreite">Ogreite greaves</name>
+		<type>armor.ogreite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d119+340</attack>
+		<defense>1d419+1190</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</ogreitepants>
+
+	<spideritearmor>
+		<level>8</level>
+		<name esES="Armadura de spiderite">Spiderite breastplate</name>
+		<type>armor.spiderite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d59+170</attack>
+		<defense>1d239+680</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</spideritearmor>
+
+	<spideriteboots>
+		<level>8</level>
+		<name esES="Botas de spiderite">Spiderite boots</name>
+		<type>armor.spiderite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d59+170</attack>
+		<defense>1d119+340</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</spideriteboots>
+
+	<spideritehelmet>
+		<level>8</level>
+		<name esES="Casco de spiderite">Spiderite helmet</name>
+		<type>armor.spiderite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d59+170</attack>
+		<defense>1d119+340</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</spideritehelmet>
+
+	<spideritepants>
+		<level>8</level>
+		<name esES="Grebas de spiderite">Spiderite greaves</name>
+		<type>armor.spiderite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d59+170</attack>
+		<defense>1d119+340</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</spideritepants>
+
+	<spideritesword>
+		<level>13</level>
+		<name esES="Espada de spiderite">Spiderite sword</name>
+		<description esES="Tiene ocho puntitas!">It's fuzzy!</description>
+		<type>weapon.spiderite</type>
+
+		<location>WEAPON</location>
+		<attack>1d149+425</attack>
+		<defense>1d74+213</defense>
+		<damage>1d299+850</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>100</value>
+	</spideritesword>
+
+	<snickeritearmor>
+		<level>17</level>
+		<name esES="Armadura de snickerite">Snickerite breastplate</name>
+		<type>armor.snickerite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d89+255</attack>
+		<defense>1d479+1360</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</snickeritearmor>
+
+	<snickeriteblade>
+		<level>18</level>
+		<name esES="Hoja de snickerite">Snickerblade blade</name>
+		<description esES="Una hoja de snickerhoja, valga la redundancia">A double edged blade with a double edged name!</description>
+		<type>weapon.snickerite</type>
+
+		<location>WEAPON</location>
+		<attack>1d449+1275</attack>
+		<defense>1d119+340</defense>
+		<damage>1d404+1148</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<tags>sword</tags>
+		<value>100</value>
+	</snickeriteblade>
+
+	<snickeriteboots>
+		<level>17</level>
+		<name esES="Botas de snickerite">Snickerite boots</name>
+		<type>armor.snickerite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d89+255</attack>
+		<defense>1d269+765</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</snickeriteboots>
+
+	<snickeritehelmet>
+		<level>17</level>
+		<name esES="Casco de snickerite">Snickerite helmet</name>
+		<type>armor.snickerite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d89+255</attack>
+		<defense>1d269+765</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</snickeritehelmet>
+
+	<snickeritepants>
+		<level>17</level>
+		<name esES="Pantalones de snickerite">Snickerite greaves</name>
+		<type>armor.snickerite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d89+255</attack>
+		<defense>1d269+765</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</snickeritepants>
+
+	<woodenarmor>
+		<level>1</level>
+		<name esES="Armadura de madera">Wooden breastplate</name>
+		<type>armor.wood</type>
+
+		<location>BODY</location>
+		<attack>1d14+43</attack>
+		<defense>1d89+255</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>wood</tags>
+		<value>100</value>
+	</woodenarmor>
+
+	<woodenboots>
+		<level>1</level>
+		<name esES="Botas de madera">Wooden boots</name>
+		<type>armor.wood</type>
+
+		<location>FEET</location>
+		<attack>1d14+43</attack>
+		<defense>1d59+170</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>wood</tags>
+		<value>100</value>
+	</woodenboots>
+
+	<woodenbow>
+		<level>4</level>
+		<name esES="Arco de madera">Wooden bow</name>
+		<type>weapon.wood</type>
+
+		<ranged>true</ranged>
+		<rangedAmmo>woodenarrow</rangedAmmo>
+		<rangedCharges>100</rangedCharges>
+
+		<location>WEAPON</location>
+		<attack>1d44+128</attack>
+		<defense>1d14+43</defense>
+		<damage>1d89+255</damage>
+		<LOS>1d3</LOS>
+		<verb esES="ensarta">sticks</verb>
+		<verbInfinitive esES="ensartar">stick</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>bow</tags>
+		<value>100</value>
+	</woodenbow>
+
+	<woodenhelmet>
+		<level>1</level>
+		<name esES="Casco de madera">Wooden helmet</name>
+		<type>armor.wood</type>
+
+		<location>HEAD</location>
+		<attack>1d14+43</attack>
+		<defense>1d59+170</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>wood</tags>
+		<value>100</value>
+	</woodenhelmet>
+
+	<woodenlongsword>
+		<level>5</level>
+		<name esES="Espada larga de madera">Wooden longsword</name>
+		<description esES="Llámame... Palote">Call me... Woody</description>
+		<type>weapon.wood</type>
+
+		<location>WEAPON</location>
+		<attack>1d59+170</attack>
+		<defense>1d59+170</defense>
+		<damage>1d89+255</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>100</value>
+	</woodenlongsword>
+
+	
+	<woodensnakesword>
+		<level>8</level>
+		<name esES="Espada de serpiente de madera">Wooden snake sword</name>
+		<description esES="Bzzzzzzzzzzz">Psssssssssss</description>
+		<type>weapon.wood</type>
+
+		<location>WEAPON</location>
+		<attack>1d59+170</attack>
+		<defense>1d59+170</defense>
+		<damage>1d89+255</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<wearEffects>atkpoisonlow</wearEffects>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>300</value>
+	</woodensnakesword>
+
+
+	<woodenpants>
+		<level>1</level>
+		<name esES="Pantalones de madera">Wooden greaves</name>
+		<type>armor.wood</type>
+		<location>LEGS</location>
+		<attack>1d14+43</attack>
+		<defense>1d89+255</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>wood</tags>
+		<value>100</value>
+	</woodenpants>
+
+	<woodenshortsword>
+		<level>1</level>
+		<name esES="Espada corta de madera">Wooden shortsword</name>
+		<description esES="¿Es una astilla lo que abulta?">Is that a splinter in your pocket?</description>
+		<type>weapon.wood</type>
+
+		<location>WEAPON</location>
+		<attack>1d14+43</attack>
+		<defense>1d14+43</defense>
+		<damage>1d14+43</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>100</value>
+	</woodenshortsword>
+
+	<bonehelmet>
+		<level>3</level>
+		<name esES="Casco de hueso">Bone helmet</name>
+		<type>armor.bone</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d44+128</attack>
+		<defense>1d89+255</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>bone</tags>
+		<value>100</value>
+	</bonehelmet>
+
+	<bonearmor>
+		<level>3</level>
+		<name esES="Armadura de hueso">Bone breastplate</name>
+		<type>armor.bone</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d14+43</attack>
+		<defense>1d119+340</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>bone</tags>
+		<value>100</value>
+	</bonearmor>
+
+	<bonepants>
+		<level>3</level>
+		<name esES="Grebas de hueso">Bone greaves</name>
+		<type>armor.bone</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d14+43</attack>
+		<defense>1d119+340</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>bone</tags>
+		<value>100</value>
+	</bonepants>
+
+	<boneboots>
+		<level>3</level>
+		<name esES="Botas de hueso">Bone boots</name>
+		<type>armor.bone</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d14+43</attack>
+		<defense>1d119+340</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>bone</tags>
+		<value>100</value>
+	</boneboots>
+
+	<zombitearmor>
+		<level>19</level>
+		<name esES="Armadura de zombite">Zombite breastplate</name>
+		<type>armor.zombite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d89+255</attack>
+		<defense>1d539+1530</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</zombitearmor>
+
+	<zombiteboots>
+		<level>19</level>
+		<name esES="Botas de zombite">Zombite boots</name>
+		<type>armor.zombite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d89+255</attack>
+		<defense>1d299+850</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</zombiteboots>
+
+	<zombitehelmet>
+		<level>19</level>
+		<name esES="Casco de zombite">Zombite helmet</name>
+		<type>armor.zombite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d89+255</attack>
+		<defense>1d299+850</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</zombitehelmet>
+
+	<zombitemace>
+		<level>19</level>
+		<name esES="Maza de zombite">Zombite mace</name>
+		<description esES="Se cae a cachos">It's falling apart</description>
+		<type>weapon.zombite</type>
+
+		<location>WEAPON</location>
+		<attack>1d479+1360</attack>
+		<defense>1d149+425</defense>
+		<damage>1d464+1318</damage>
+		<verb esES="aporrea">bludgeons</verb>
+		<verbInfinitive esES="aporrear">bludgeon</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>mace</tags>
+		<value>100</value>
+	</zombitemace>
+
+	<zombitepants>
+		<level>19</level>
+		<name esES="Pantalones de zombite">Zombite greaves</name>
+		<type>armor.zombite</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d89+255</attack>
+		<defense>1d299+850</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</zombitepants>
+
+	<silverarmor>
+		<level>24</level>
+		<name esES="Armadura plateada">Silver breastplate</name>
+		<type>armor.silver</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d119+340</attack>
+		<defense>1d819+2140</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</silverarmor>
+
+	<silverboots>
+		<level>23</level>
+		<name esES="Botas plateadas">Silver boots</name>
+		<type>armor.silver</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d119+340</attack>
+		<defense>1d519+1290</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</silverboots>
+
+	<silverhelmet>
+		<level>23</level>
+		<name esES="Casco plateado">Silver helmet</name>
+		<type>armor.silver</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d119+340</attack>
+		<defense>1d519+1290</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</silverhelmet>
+
+	<silverpants>
+		<level>23</level>
+		<name esES="Pantalones plateados">Silver greaves</name>
+		<type>armor.silver</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d119+340</attack>
+		<defense>1d519+1290</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</silverpants>
+
+	<goldenarmor>
+		<level>26</level>
+		<name esES="Armadura dorada">Golden breastplate</name>
+		<type>armor.gold</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d119+340</attack>
+		<defense>1d935+2215</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</goldenarmor>
+
+	<goldenboots>
+		<level>25</level>
+		<name esES="Botas doradas">Golden boots</name>
+		<type>armor.gold</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>FEET</location>
+		<attack>1d119+340</attack>
+		<defense>1d499+1400</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</goldenboots>
+
+	<goldenhelmet>
+		<level>25</level>
+		<name esES="Casco dorado">Golden helmet</name>
+		<type>armor.gold</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d119+340</attack>
+		<defense>1d505+1400</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</goldenhelmet>
+
+	<goldenpants>
+		<level>25</level>
+		<name esES="Pantalones dorados">Golden greaves</name>
+		<type>armor.gold</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>LEGS</location>
+		<attack>1d119+340</attack>
+		<defense>1d505+1400</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>100</value>
+	</goldenpants>
+
+	<!--/ITE Armors -->
+
+	<!--Workshop Benches -->
+
+	<bakeroven>
+		<name esES="Horno de panadero">Baker's oven</name>
+		<description esES="El típico horno.... de panadero">A typical... baker's... oven</description>
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<zone>zbakery</zone>
+		<value>212</value>
+	</bakeroven>
+
+	<bakertable>
+		<name esES="Mesa de panadero">Baker's table</name>
+		<description esES="La típica mesa... de panadero">A typical... baker's... table</description>
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<zone>zbakery</zone>
+		<value>212</value>
+	</bakertable>
+
+	<carpentrybench>
+		<name esES="Mesa de carpintero">Carpenters bench</name>
+		<description esES="Una mesa de carpintero oxidado">A rusted wooden carpenter's bench</description>
+		<description esES="Con ella construirás objetos de madera">Used to make wooden objects</description>
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<zone>zcarpentry</zone>
+		<value>106</value>
+	</carpentrybench>
+
+	<skinner>
+		<name esES="Mesa de curtidor">Hide skinning table</name>
+
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<zone>zatelier</zone>
+		<value>212</value>
+	</skinner>
+
+	<colormixer>
+		<name esES="Tabla para mezclar colores">Color mixing bench</name>
+
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<zone>zatelier</zone>
+		<value>212</value>
+	</colormixer>
+
+	<carvingbench>
+		<name esES="Mesa de tallador">Bonecarving bench</name>
+		<description esES="Se usa para fabricar objetos de hueso">Used to make bone objects</description>
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<zone>zcarpentry</zone>
+		<value>212</value>
+	</carvingbench>
+
+	<masonbench>
+		<name esES="Mesa de albañil">Mason's bench</name>
+		<description esES="Una mesa de albañil">A stonemason's stone table</description>
+		<description esES="Útil para crear objetos de piedra">Used to make stone objects</description>
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<zone>zmasonry</zone>
+		<value>212</value>
+	</masonbench>
+
+	<wooddetailer>
+		<name esES="Curtidor de madera">Wood detailer</name>
+		<description esES="Usada en la creación de objetos de madera avanzados">Allows for advanced wooden items</description>
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<zone>zcarpentry</zone>
+		<value>212</value>
+	</wooddetailer>
+
+	<!--/Workshop Benches -->
+
+	<!--Decorative items -->
+
+	<clock>
+		<name esES="Reloj">Clock</name>
+		<description esES="Los tiempos están cambiando...">But the times they are a changin...</description>
+
+		<happiness>2</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<zone>zpersonal</zone>
+		<zone>zdining</zone>
+		<zone>ztavernroom</zone>
+		<zone>ztavern</zone>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>139</value>
+	</clock>
+
+	<redlongflag>
+		<name esES="Bandera roja larga">Red long flag</name>
+
+		<happiness>1</happiness>
+
+		<glue>true</glue>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wallConnector>true</wallConnector>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>139</value>
+	</redlongflag>
+
+	<redshortflag>
+		<name esES="Bandera roja corta">Red short flag</name>
+
+		<happiness>1</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>130</value>
+	</redshortflag>
+
+	<doorsignswords>
+		<name esES="Cartel de madera para puertas">Wooden door sign</name>
+		<description esES="Tiene una espada pintado en él">It has sword painted on it</description>
+
+		<glue>true</glue>
+		<canBeBuiltOnHoles>true</canBeBuiltOnHoles>
+		<wallConnector>true</wallConnector>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>109</value>
+	</doorsignswords>
+
+	<necromancerstatue>
+		<name esES="Estatua de Wizardjian">Wizardjian statue</name>
+		<description esES="Una estatua de Wizardjian, el nigromante malvado">A statue of Wizardjian, the evil necromancer</description>
+
+		<type>decorative.outdoor</type>
+
+		<happiness>1</happiness>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>200</value>
+	</necromancerstatue>
+
+	<gargoylestatue>
+		<name esES="Estatua de gárgola">Gargoyle statue</name>
+
+		<type>decorative.outdoor</type>
+
+		<happiness>1</happiness>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>200</value>
+	</gargoylestatue>
+
+	<bunnyhat>
+		<level>1</level>
+		<name esES="Somrero conejo">Bunny hat</name>
+		<type>armor.vanity</type>
+
+		<location>HEAD</location>
+		<attack>1d5+20</attack>
+		<defense>1d35+50</defense>
+
+		<happiness>1</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>cloth</tags>
+		<value>50</value>
+	</bunnyhat>
+
+	<strawhat>
+		<level>1</level>
+		<name esES="Sombrero de paja">Straw hat</name>
+		<type>armor.vanity</type>
+
+		<location>HEAD</location>
+		<attack>1d5+20</attack>
+		<defense>1d35+50</defense>
+
+		<happiness>1</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>cloth</tags>
+		<value>50</value>
+	</strawhat>
+
+	<bluehat>
+		<level>1</level>
+		<name esES="Sombrero azul">Blue hat</name>
+		<type>armor.vanity</type>
+
+		<location>HEAD</location>
+		<attack>1d5+20</attack>
+		<defense>1d35+50</defense>
+
+		<happiness>1</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>cloth</tags>
+		<value>50</value>
+	</bluehat>
+
+	<redhat>
+		<level>1</level>
+		<name esES="Sombrero rojo">Red hat</name>
+		<type>armor.vanity</type>
+
+		<location>HEAD</location>
+		<attack>1d5+20</attack>
+		<defense>1d35+50</defense>
+
+		<happiness>1</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>cloth</tags>
+		<value>50</value>
+	</redhat>
+
+	<yellowhat>
+		<level>1</level>
+		<name esES="Sombrero Amarillo">Yellow hat</name>
+		<type>armor.vanity</type>
+
+		<location>HEAD</location>
+		<attack>1d5+20</attack>
+		<defense>1d35+50</defense>
+
+		<happiness>1</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>cloth</tags>
+		<value>50</value>
+	</yellowhat>
+
+	<greenhat>
+		<level>1</level>
+		<name esES="Sombrero verde">green hat</name>
+		<type>armor.vanity</type>
+
+		<location>HEAD</location>
+		<attack>1d5+20</attack>
+		<defense>1d35+50</defense>
+
+		<happiness>1</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>cloth</tags>
+		<value>50</value>
+	</greenhat>
+
+	<badgerhat>
+		<level>1</level>
+		<name esES="Sombrero de tejón">Badger hat</name>
+		<type>armor.vanity</type>
+
+		<location>HEAD</location>
+		<attack>1d5+20</attack>
+		<defense>1d35+50</defense>
+
+		<happiness>2</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>cloth</tags>
+		<value>150</value>
+	</badgerhat>
+
+	<featherhat>
+		<level>1</level>
+		<name esES="Sombrero de pluma">Feather hat</name>
+		<type>armor.vanity</type>
+
+		<location>HEAD</location>
+		<attack>1d5+20</attack>
+		<defense>1d35+50</defense>
+
+		<happiness>2</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>cloth</tags>
+		<value>150</value>
+	</featherhat>
+
+
+	<barrel>
+		<name esES="Barril">Barrel</name>
+		<description esES="Un barril aburrido">Do a barrel roll!</description>
+		<type>decorative.indoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+		<value>95</value>
+	</barrel>
+
+	<burner>
+		<name esES="Quemador">Burner</name>
+		
+		<type>utils.workshops</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<value>70</value>
+	</burner>
+
+	<chest>
+		<name esES="Cofre">Chest</name>
+		<description esES="Un cofre con candado">A chest (treasureless)</description>
+		<type>decorative.indoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+		<value>95</value>
+	</chest>
+
+	<candle>
+		<name esES="Vela">Wooden candlestick</name>
+		<description esES="Una vela voluminosa">An incandescent candle</description>
+		<type>decorative.indoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>95</value>
+	</candle>
+
+	<bonecandle>
+		<name esES="Vela de hueso">Bone candle</name>
+		<description esES="Una vela voluminosa">An incandescent candle</description>
+		<type>decorative.indoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>93</value>
+	</bonecandle>
+
+	<goblinpole>
+		<name esES="Estaca goblin">Goblin pole</name>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+		<value>155</value>
+	</goblinpole>
+
+	<hobgoblinpole>
+		<name esES="Estaca hobgoblin">Hobgoblin pole</name>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+		<value>165</value>
+	</hobgoblinpole>
+
+	<ghoulpole>
+		<name esES="Estaca ghoul">Ghoul pole</name>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+		<value>255</value>
+	</ghoulpole>
+
+	<trollpole>
+		<name esES="Estaca troll">Troll pole</name>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+		<value>185</value>
+	</trollpole>
+
+	<birdincage>
+		<name esES="Pajarito en jaula de oro">Bird in a golden cage</name>
+		<type>decorative.indoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>4</happiness>
+		<value>181</value>
+	</birdincage>
+
+	<stonemalestatue>
+		<name esES="Estatua de piedra">Stone statue</name>
+		<description esES="Una estatua de piedra de un héroe legendario">A stone statue of a legendary hero</description>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+
+		<value>200</value>
+	</stonemalestatue>
+
+	<goldunifallowstatue>
+		<name esES="Estatua de unifallow de oro">Gold unifallow statue</name>
+		<description esES="Brilla demasiado! Te puedes quedar ciego mirándola">It's so shiny, you would go blind looking at it too long!</description>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>3</happiness>
+		<value>301</value>
+	</goldunifallowstatue>
+
+	<goldnuxstatue>
+		<name esES="Estatua dorada de Nux, el rey de los dioses">Gold statue of Nux, the god king</name>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>3</happiness>
+		<value>301</value>
+	</goldnuxstatue>
+
+	<silverskootenbeetenstatue>
+		<name esES="Estatua de skootenbeeten plateada">Silver skootenbeeten statue</name>
+		<description esES="Una obra maestra">A masterpiece</description>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>2</happiness>
+		<value>281</value>
+	</silverskootenbeetenstatue>
+
+	<snickerpole>
+		<name esES="Estaca snicker">Snicker pole</name>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+		<value>185</value>
+	</snickerpole>
+
+	<chimney>
+		<name esES="Chimenea">Chimney</name>
+		<description esES="Te mantendrá caliente">It gets you warm and fuzzy</description>
+		<type>furniture</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+		<value>180</value>
+	</chimney>
+
+	<animalfireplace>
+		<name esES="Chimenea con cabeza de toro">Bull head decorated fireplace</name>
+		<description esES="Haz que no me mire!">Make it stop staring at me!</description>
+		<type>furniture</type>
+
+		<wallConnector>true</wallConnector>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>2</happiness>
+		<value>280</value>
+	</animalfireplace>
+
+	<potplant>
+		<name esES="Planta">Potted plant</name>
+		<description esES="Una pequeña planta perfecta">A pretty pristine potted plant</description>
+		<type>decorative.indoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>55</value>
+	</potplant>
+
+	<chesstable>
+		<name esES="Mesa de ajedrez">Chess table</name>
+		<description esES="Para los aldeanos ingeniosos">For those witty townies</description>
+		<type>decorative.indoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>1</happiness>
+		<value>175</value>
+	</chesstable>
+
+	<harp>
+		<name esES="Arpa">Harp</name>
+		<description esES="Deja que suene">Just play along</description>
+		<type>decorative.indoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>2</happiness>
+		<value>96</value>
+	</harp>
+
+	<bonsai>
+		<name esES="Bonsai">Bonsai tree</name>
+		<description esES="Tu propio árbol!">Your very own tree</description>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>2</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>102</value>
+	</bonsai>
+
+	<bonsaired>
+		<name esES="Bonsai rojo">Red bonsai tree</name>
+		<description esES="Tu propio árbol rojo!">Your very own red tree</description>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>2</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>102</value>
+	</bonsaired>
+
+	<gardenred>
+		<name esES="Jardín de flores rojas">Red flowers garden</name>
+		<description esES="Jardín en miniatura">Miniature garden</description>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>2</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>102</value>
+	</gardenred>
+
+	<gardenblue>
+		<name esES="Jardín de flores azules">Blue flowers garden</name>
+		<description esES="Jardín en miniatura">Miniature garden</description>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>2</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>102</value>
+	</gardenblue>
+
+	<gardenyellow>
+		<name esES="Jardín de flores amarillas">Yellow flowers garden</name>
+		<description esES="Jardín en miniatura">Miniature garden</description>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>2</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>102</value>
+	</gardenyellow>
+
+	<gardenbush1>
+		<name esES="Jardín de arbusto cúbico">Cubical bush garden</name>
+		<description esES="Jardín en miniatura">Miniature garden</description>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>2</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>102</value>
+	</gardenbush1>
+
+	<gardenbush2>
+		<name esES="Jardín de arbusto esférico">Spherical bush garden</name>
+		<description esES="Jardín en miniatura">Miniature garden</description>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>2</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>102</value>
+	</gardenbush2>
+
+	<gardenbush3>
+		<name esES="Jardín de dos niveles">Two levels garden</name>
+		<description esES="Jardín en miniatura">Miniature garden</description>
+		<type>decorative.outdoor</type>
+
+		<alwaysOperative>false</alwaysOperative>
+		<happiness>2</happiness>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>102</value>
+	</gardenbush3>
+
+	<corpse>
+		<name esES="Cuerpo humano">Human corpse</name>
+		<type>rawmaterials.misc</type>
+
+		<maxAge>1d4320+432</maxAge>
+		<maxAgeItem>humanremains</maxAgeItem>
+
+		<happiness>-15</happiness>
+
+		<spawn>stinkcloud</spawn>
+		<spawnMaxItems>8</spawnMaxItems>
+		<spawnTurns>160</spawnTurns>
+
+		<stackable>true</stackable>
+		<stackableSize>2</stackableSize>
+		<value>12</value>
+	</corpse>
+
+	<humanremains>
+		<name esES="Restos humanos">Human remains</name>
+		<type>rawmaterials.misc</type>
+
+		<happiness>-10</happiness>
+
+		<spawn>ghost</spawn>
+		<spawnTurns>1d14400+1440</spawnTurns>
+
+		<foodValue>1</foodValue>
+		<foodFillPCT>100</foodFillPCT>
+		<foodEatTime>180</foodEatTime>
+		<foodEffects>bellyache,slow</foodEffects>
+
+		<stackable>true</stackable>
+		<stackableSize>2</stackableSize>
+
+		<value>2</value>
+	</humanremains>
+
+	<stinkcloud>
+		<name esES="Nube apestosa">Stink cloud</name>
+
+		<maxAge>1d720+620</maxAge>
+
+		<happiness>-20</happiness>
+
+		<spawn>stinkcloud</spawn>
+		<spawnMaxItems>2</spawnMaxItems>
+		<spawnTurns>1d4320</spawnTurns>
+
+		<locked>true</locked>
+	</stinkcloud>
+
+	<grave>
+		<name esES="Tumba (Grave)">Grave</name>
+		<type>decorative.outdoor</type>
+		<alwaysOperative>false</alwaysOperative>
+
+		<locked>true</locked>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>22</value>
+	</grave>
+
+	<tomb>
+		<name esES="Tumba">Tomb</name>
+		<type>decorative.outdoor</type>
+		<alwaysOperative>false</alwaysOperative>
+
+		<locked>true</locked>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>122</value>
+	</tomb>
+
+	<mosstomb>
+		<name esES="Tumba cubierta de musgo">Moss covered tomb</name>
+
+		<type>decorative.outdoor</type>
+		<alwaysOperative>false</alwaysOperative>
+
+		<locked>true</locked>
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>120</value>
+	</mosstomb>
+	
+	<lizardtomb>
+		<name esES="Tumba lagarto">Lizard tomb</name>
+		<type>decorative.outdoor</type>
+		<alwaysOperative>false</alwaysOperative>
+
+		<locked>true</locked>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>122</value>
+	</lizardtomb>
+
+
+	<redbadgerdummy>
+		<name esES="Tejón rojo">Red badger</name>
+
+		<alwaysOperative>false</alwaysOperative>
+
+		<maxAge>1</maxAge>
+		<zone>zarena</zone>
+		<locked>true</locked>
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+	</redbadgerdummy>
+
+	<greenbadgerdummy>
+		<name esES="Tejón verde">Green badger</name>
+
+		<alwaysOperative>false</alwaysOperative>
+
+		<maxAge>1</maxAge>
+		<zone>zarena</zone>
+
+
+		<locked>true</locked>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+	</greenbadgerdummy>
+
+	<bluebadgerdummy>
+		<name esES="Tejón azul">Blue badger</name>
+
+		<alwaysOperative>false</alwaysOperative>
+
+		<maxAge>1</maxAge>
+		<zone>zarena</zone>
+
+		<locked>true</locked>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+	</bluebadgerdummy>
+
+	<badgerden>
+		<name esES="Madrigera de tejones">Badger den</name>
+		<type>rawmaterials.misc</type>
+		<alwaysOperative>false</alwaysOperative>
+
+		<spawn>bate</spawn>
+		<spawnTurns>1d500+750</spawnTurns>
+
+		<locked>true</locked>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>106</value>
+	</badgerden>
+
+	<batedummy>
+		<name esES="Cebo">Bait</name>
+
+		<alwaysOperative>false</alwaysOperative>
+
+		<maxAge>1</maxAge>
+		<locked>true</locked>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+	</batedummy>
+
+	<guardbadgerdummy>
+		<name esES="Tejón guardián">Guard badger</name>
+
+		<alwaysOperative>false</alwaysOperative>
+
+		<maxAge>1</maxAge>
+
+		<locked>true</locked>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+	</guardbadgerdummy>
+
+
+	<deadtree>
+		<name esES="Árbol muerto">Dead tree</name>
+
+		<habitat>lavadirt</habitat>
+
+		<action>qchop</action>
+	</deadtree>
+
+
+	<deadtree2>
+		<name esES="Árbol muerto">Dead tree</name>
+
+		<habitat>lavadirt</habitat>
+
+		<action>qchop</action>
+	</deadtree2>
+
+
+	<deadtree3>
+		<name esES="Árbol muerto">Dead tree</name>
+
+		<habitat>lavadirt</habitat>
+
+		<action>qchop</action>
+	</deadtree3>
+
+	<!--/Decorative items -->
+
+	<goldenspear>
+		<level>22</level>
+		<name esES="Lanza dorada">Golden spear</name>
+		<description esES="Su esencia perfora el alma">It's essence will pierce your soul</description>
+		<type>weapon.gold</type>
+
+		<location>WEAPON</location>
+		<attack>1d769+1915</attack>
+		<defense>1d164+468</defense>
+		<damage>1d739+1930</damage>
+		<verb esES="perfora">pierces</verb>
+		<verbInfinitive esES="perforar">pierce</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>spear</tags>
+		<value>200</value>
+	</goldenspear>
+
+	<goldenaxe>
+		<level>25</level>
+		<name esES="Hacha dorada">Golden axe</name>
+		<description esES="Puede matar dragones">It can kill dragons</description>
+		<type>weapon.gold</type>
+
+		<location>WEAPON</location>
+		<attack>1d790+2215</attack>
+		<defense>1d164+668</defense>
+		<damage>1d839+2430</damage>
+		<verb esES="corta">slash</verb>
+		<verbInfinitive esES="cortar">slash</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>axe</tags>
+		<value>200</value>
+	</goldenaxe>
+
+	<goldenbow>
+		<level>24</level>
+		<name esES="Arco dorado">Golden bow</name>
+		<type>weapon.gold</type>
+
+		<ranged>true</ranged>
+		<rangedAmmo>woodenarrow</rangedAmmo>
+		<rangedCharges>INFINITE</rangedCharges>
+
+		<location>WEAPON</location>
+		<attack>1d444+1828</attack>
+		<defense>1d144+254</defense>
+		<damage>1d750+2155</damage>
+		<LOS>1d5</LOS>
+		<verb esES="ensarta">sticks</verb>
+		<verbInfinitive esES="ensartar">stick</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>bow</tags>
+		<value>200</value>
+	</goldenbow>
+
+	<goldenstaff>
+		<level>23</level>
+		<name esES="Vara dorada">Golden staff</name>
+		<type>weapon.gold</type>
+
+		<ranged>true</ranged>
+		<rangedAmmo>fireball</rangedAmmo>
+		<rangedCharges>INFINITE</rangedCharges>
+
+		<location>WEAPON</location>
+		<attack>1d464+2128</attack>
+		<defense>1d344+354</defense>
+		<damage>1d670+2155</damage>
+		<LOS>1d5</LOS>
+		<verb esES="quema">burns</verb>
+		<verbInfinitive esES="quemar">burn</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>wand</tags>
+		<value>200</value>
+	</goldenstaff>
+
+	<goldenhammer>
+		<level>26</level>
+		<name esES="Martillo dorado">Golden hammer</name>
+		<description esES="El martillo de los dioses">The hammer of the gods</description>
+		<type>weapon.gold</type>
+
+		<location>WEAPON</location>
+		<attack>1d790+2715</attack>
+		<defense>1d364+768</defense>
+		<damage>1d939+3130</damage>
+		<verb esES="quiebra">crash</verb>
+		<verbInfinitive esES="quebrar">crash</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>hammer</tags>
+		<value>200</value>
+	</goldenhammer>
+
+	<goldenitemace>
+		<level>28</level>
+		<name esES="Maza dorada mágica">Golden magical mace</name>
+		<description esES="La muerte dorada">The golden death</description>
+		<type>weapon.gold</type>
+
+		<location>WEAPON</location>
+		<attack>1d990+3515</attack>
+		<defense>1d464+968</defense>
+		<damage>1d1010+3430</damage>
+		<verb esES="quiebra">crash</verb>
+		<verbInfinitive esES="quebrar">crash</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>mace</tags>
+		<value>230</value>
+	</goldenitemace>
+
+	<silverspear>
+		<level>20</level>
+		<name esES="Lanza plateada">Silver spear</name>
+		<description esES="Su esencia perfora el alma">It's essence will pierce your soul</description>
+		<type>weapon.silver</type>
+
+		<location>WEAPON</location>
+		<attack>1d669+1715</attack>
+		<defense>1d164+468</defense>
+		<damage>1d629+1830</damage>
+		<verb esES="perfora">pierces</verb>
+		<verbInfinitive esES="perforar">pierce</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>spear</tags>
+		<value>175</value>
+	</silverspear>
+
+	<silverbow>
+		<level>21</level>
+		<name esES="Arco plateado">Silver bow</name>
+		<type>weapon.silver</type>
+
+		<ranged>true</ranged>
+		<rangedAmmo>woodenarrow</rangedAmmo>
+		<rangedCharges>INFINITE</rangedCharges>
+
+		<location>WEAPON</location>
+		<attack>1d344+1728</attack>
+		<defense>1d144+254</defense>
+		<damage>1d700+2055</damage>
+		<LOS>1d4</LOS>
+		<verb esES="ensarta">sticks</verb>
+		<verbInfinitive esES="ensartar">stick</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>bow</tags>
+		<value>175</value>
+	</silverbow>
+
+	<silvershortsword>
+		<level>23</level>
+		<name esES="Espada corta plateada">Silver short sword</name>
+		<description esES="Brilla y corta">Shine and slice</description>
+		<type>weapon.silver</type>
+
+		<location>WEAPON</location>
+		<attack>1d699+2615</attack>
+		<defense>1d364+468</defense>
+		<damage>1d839+2730</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>175</value>
+	</silvershortsword>
+
+	<silverlongsword>
+		<level>25</level>
+		<name esES="Espada larga plateada">Silver long sword</name>
+		<description esES="Brilla y corta">Shine and slice</description>
+		<type>weapon.silver</type>
+
+		<location>WEAPON</location>
+		<attack>1d699+2815</attack>
+		<defense>1d364+568</defense>
+		<damage>1d900+2930</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>175</value>
+	</silverlongsword>
+
+	<silveritebentsword>
+		<level>27</level>
+		<name esES="Espada curvada mágica dorada">Silver magical bent sword</name>
+		<description esES="Brilla y corta">Shine and slice</description>
+		<type>weapon.silver</type>
+
+		<location>WEAPON</location>
+		<attack>1d899+3215</attack>
+		<defense>1d424+768</defense>
+		<damage>1d890+3230</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>200</value>
+	</silveritebentsword>
+
+	<flamingsword>
+		<level>29</level>
+		<name esES="Espada llameante">Flaming Death</name>
+		<description esES="Quema a través de la piel">Burns through the skin</description>
+		<type>weapon.misc</type>
+
+		<location>WEAPON</location>
+		<attack>1d1070+3615</attack>
+		<defense>1d724+868</defense>
+		<damage>1d990+3430</damage>
+		<verb esES="quema">burns</verb>
+		<verbInfinitive esES="quemar">burn</verbInfinitive>
+		<wearEffects>flameattack</wearEffects>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>7000</value>
+	</flamingsword>
+
+	<planttrapseed>
+		<name esES="Semilla de planta de trampa">Plant trap seedling</name>
+		<type>rawmaterials.materials</type>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+	</planttrapseed>
+	
+	<plantedplanttrapseed>
+		<name esES="Planta carnívora plantada">Carnivorous planted plant</name>
+		
+		<maxAge>200</maxAge>
+		<maxAgeItem>plantedplanttrap</maxAgeItem>
+		<action>qcut</action>
+	</plantedplanttrapseed>
+
+	<planttrap>
+		<name esES="Planta carnívora">Carnivorous plant</name>
+		<type>trap</type>
+		<habitat>grass2</habitat>
+
+		<alwaysOperative>true</alwaysOperative>
+		<locked>true</locked>
+
+		<trap>true</trap>
+		<trapEffects>stunned,dotbleeding</trapEffects>
+		<trapCooldown>1d220+220</trapCooldown>
+		<trapOnIcon>planttrapon</trapOnIcon>
+		<trapTargets>CITIZEN,FRIENDLY,ENEMY</trapTargets>
+		<value>120</value>
+		<action>qcut</action>
+		<action>qharvestplanttrap</action>
+	</planttrap>
+
+	<plantedplanttrap>
+		<name esES="Planta carnívora plantada">Carnivorous planted plant</name>
+		<type>trap</type>
+		
+		<alwaysOperative>true</alwaysOperative>
+		<locked>true</locked>
+
+		<trap>true</trap>
+		<trapEffects>stunned,dotbleeding</trapEffects>
+		<trapCooldown>1d220+220</trapCooldown>
+		<trapOnIcon>planttrapon</trapOnIcon>
+		<trapTargets>ENEMY</trapTargets>
+		<value>120</value>
+		<action>qcut</action>
+	</plantedplanttrap>
+
+	<beartrap>
+		<name esES="Trampa para osos">Bear trap</name>
+		<type>trap</type>
+
+		<alwaysOperative>false</alwaysOperative>
+
+		<trap>true</trap>
+		<trapEffects>stunned,dotbleeding</trapEffects>
+		<trapCooldown>1d120+120</trapCooldown>
+		<trapOnIcon>beartrapon</trapOnIcon>
+		<trapTargets>FRIENDLY,ENEMY</trapTargets>
+		<value>165</value>
+	</beartrap>
+
+	<poisontrap>
+		<name esES="Trampa de veneno">Poison trap</name>
+		<type>trap</type>
+
+		<alwaysOperative>false</alwaysOperative>
+
+		<trap>true</trap>
+		<trapEffects>dotpoison100</trapEffects>
+		<trapCooldown>1d24+24</trapCooldown>
+		<trapOnIcon>poisontrapon</trapOnIcon>
+		<trapTargets>FRIENDLY,ENEMY</trapTargets>
+		<value>165</value>
+	</poisontrap>
+
+	<logtrap>
+		<name esES="Trampa de troncos">Log trap</name>
+		<type>trap</type>
+
+		<alwaysOperative>false</alwaysOperative>
+
+		<trap>true</trap>
+		<trapEffects>damage62</trapEffects>
+		<trapCooldown>1d74+74</trapCooldown>
+		<trapOnIcon>logtrapon</trapOnIcon>
+		<trapTargets>FRIENDLY,ENEMY</trapTargets>
+		<value>165</value>
+	</logtrap>
+
+	<spiketrap>
+		<name esES="Trampa de puntas">Spike trap</name>
+		<type>trap</type>
+
+		<alwaysOperative>false</alwaysOperative>
+
+		<trap>true</trap>
+		<trapEffects>slow</trapEffects>
+		<trapCooldown>1d24+24</trapCooldown>
+		<trapOnIcon>spiketrapon</trapOnIcon>
+		<trapTargets>FRIENDLY,ENEMY</trapTargets>
+		<value>165</value>
+	</spiketrap>
+
+	<emptybottle>
+		<name esES="Botella vacía">Empty bottle</name>
+		<type>utils</type>
+
+		<alwaysOperative>true</alwaysOperative>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>60</value>
+	</emptybottle>
+
+	<poisonbottle>
+		<name esES="Botella de veneno">Poison bottle</name>
+		<type>utils</type>
+
+		<alwaysOperative>true</alwaysOperative>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<value>90</value>
+	</poisonbottle>
+
+	<!-- special weapons /special weapons -->
+
+	<plaguebringer>
+		<level>23</level>
+		<name esES="Portador de plagas">Plague bringer</name>
+		<type>weapon.special</type>
+
+		<location>WEAPON</location>
+		<attack>1d2224+638</attack>
+		<defense>1d121+540</defense>
+		<damage>1d226+850</damage>
+		<attackSpeed>-2</attackSpeed>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+		<wearEffects>plague</wearEffects>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>sword</tags>
+		<value>5000</value>
+	</plaguebringer>
+
+	<divinearmor>
+		<level>20</level>
+		<name esES="Coraza divina de hierro">Divine iron breastplate</name>
+		<type>armor.special</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<wearEffects>armorheal</wearEffects>
+
+		<location>BODY</location>
+		<attack>1d59+170</attack>
+		<defense>1d179+510</defense>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>2500</value>
+	</divinearmor>
+
+	<blessedarmor>
+		<level>20</level>
+		<name esES="Coraza bendecida de hierro">Blessed iron breastplate</name>
+		<type>armor.special</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d59+170</attack>
+		<defense>1d179+510</defense>
+
+		<wearEffects>magicshield</wearEffects>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>1199</value>
+	</blessedarmor>
+
+	<firearmor>
+		<level>20</level>
+		<name esES="Armadura de fuego">Fire breastplate</name>
+		<type>armor.special</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>BODY</location>
+		<attack>1d59+170</attack>
+		<defense>1d179+510</defense>
+
+		<wearEffects>fireresist,fireaura</wearEffects>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>2500</value>
+	</firearmor>
+
+	<headcrusher>
+		<level>26</level>
+		<name esES="El tritura cabezas">The head crusher</name>
+		<description esES="El martillo de los dioses">The hammer of the gods</description>
+		<type>weapon.special</type>
+
+		<location>WEAPON</location>
+		<attack>1d790+2715</attack>
+		<defense>1d364+768</defense>
+		<damage>1d939+3130</damage>
+		<verb esES="quiebra">crash</verb>
+		<verbInfinitive esES="quebrar">crash</verbInfinitive>
+
+		<wearEffects>weaponstun</wearEffects>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>hammer</tags>
+		<value>7000</value>
+	</headcrusher>
+
+	<lightning>
+		<level>26</level>
+		<name esES="El relámpago">The lightning</name>
+		<description esES="Su esencia perfora el alma">It's essence will pierce your soul</description>
+		<type>weapon.special</type>
+
+		<ranged>true</ranged>
+		<rangedAmmo>lightningbolt</rangedAmmo>
+		<rangedCharges>INFINITE</rangedCharges>
+
+		<location>WEAPON</location>
+		<attack>1d669+1715</attack>
+		<defense>1d164+468</defense>
+		<damage>1d629+1830</damage>
+		<verb esES="perfora">pierces</verb>
+		<verbInfinitive esES="perforar">pierce</verbInfinitive>
+
+		<wearEffects>lightningattack</wearEffects>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>spear</tags>
+		<value>5000</value>
+	</lightning>
+
+	
+	<lightningbolt>
+		<name esES="Relámpago">Lightning bolt</name>
+	</lightningbolt>
+
+	<beastmask>
+		<level>25</level>
+		<name esES="Máscara de la bestia">Mask of the beast</name>
+		<type>armor.special</type>
+		<walkSpeed>-2</walkSpeed>
+
+		<location>HEAD</location>
+		<attack>1d119+340</attack>
+		<defense>1d419+1190</defense>
+
+		<wearEffects>beastmask</wearEffects>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+		<tags>metal</tags>
+		<value>1500</value>
+	</beastmask>
+
+	<trickster>
+		<level>18</level>
+		<name esES="La tramposa">The trickster</name>
+		
+		<type>weapon.special</type>
+
+		<location>WEAPON</location>
+		<attack>1d449+1275</attack>
+		<defense>1d119+340</defense>
+		<damage>1d404+1148</damage>
+		<verb esES="corta">cuts</verb>
+		<verbInfinitive esES="cortar">cut</verbInfinitive>
+
+		<stackable>true</stackable>
+		<stackableSize>1</stackableSize>
+
+		<wearEffects>trickster</wearEffects>
+
+		<tags>sword</tags>
+		<value>3500</value>
+	</trickster>
+
+
+	<!--Tavern items <bench> <name esES="Sillón cómodo">Comfortable bench</name> <description esES="Lleva la forma de mis nalgas">It has two butt-shaped grooves in it to maximize comfort</description> <type>furniture</type> <usedToSit>true</usedToSit> <happiness>1</happiness> <alwaysOperative>false</alwaysOperative> 
+		</bench> <taverncounter> <name esES="Mostrador de taberna">Tavern counter</name> <description esES="Está lleno de escupitajos">Saliva included!</description> <type>furniture</type> <usedToSit>false</usedToSit> <happiness>1</happiness> <alwaysOperative>false</alwaysOperative> </taverncounter> <barreltable> 
+		<name esES="Mesa de barril">Barrel table</name> <description esES="Qué poco original no?">Wow, how utterly unoriginal!</description> <type>furniture</type> <happiness>1</happiness> <alwaysOperative>false</alwaysOperative> </barreltable> /Tavern items -->
+
+</items>

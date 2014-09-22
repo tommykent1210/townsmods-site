@@ -1,0 +1,8006 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<actions>
+	<!-- non AP actions -->
+	<action>
+		<id>qcut</id>
+		<name esES="Cortar">Cut</name>
+
+		<priorityID>terrainchange</priorityID>
+		<queue>
+			<move useSource="true">bush,planttrap,plantedplanttrap</move>
+			<wait>9</wait>
+			<destroyCellItem />
+		</queue>
+	</action>
+
+	<action>
+		<id>qtill</id>
+		<priorityID>terrainchange</priorityID>
+		<name esES="Arar">Till</name>
+
+		<queue>
+			<moveTerrain />
+			<wait>54</wait>
+			<moveTerrain />
+			<changeTerrain>humus</changeTerrain>
+		</queue>
+	</action>
+
+	<action>
+		<id>quntillgrass</id>
+		<priorityID>terrainchange</priorityID>
+		<name esES="Des-arar">Untill</name>
+
+		<queue>
+			<moveTerrain />
+			<wait>54</wait>
+			<moveTerrain />
+			<changeTerrain>grass</changeTerrain>
+		</queue>
+	</action>
+
+	<action>
+		<id>qtilljungle</id>
+		<priorityID>terrainchange</priorityID>
+		<name esES="Arar">Till</name>
+
+		<queue>
+			<moveTerrain />
+			<wait>54</wait>
+			<moveTerrain />
+			<changeTerrain>junglehumus</changeTerrain>
+		</queue>
+	</action>
+
+	<action>
+		<id>quntilljungle</id>
+		<priorityID>terrainchange</priorityID>
+		<name esES="Des-arar">Untill</name>
+
+		<queue>
+			<moveTerrain />
+			<wait>54</wait>
+			<moveTerrain />
+			<changeTerrain>jungle</changeTerrain>
+		</queue>
+	</action>
+
+	<action>
+		<id>qtillsnow</id>
+		<priorityID>terrainchange</priorityID>
+		<name esES="Arar">Till</name>
+
+		<queue>
+			<moveTerrain />
+			<wait>54</wait>
+			<moveTerrain />
+			<changeTerrain>snowhumus</changeTerrain>
+		</queue>
+	</action>
+
+	<action>
+		<id>quntillsnow</id>
+		<priorityID>terrainchange</priorityID>
+		<name esES="Des-arar">Untill</name>
+
+		<queue>
+			<moveTerrain />
+			<wait>54</wait>
+			<moveTerrain />
+			<changeTerrain>snow</changeTerrain>
+		</queue>
+	</action>
+
+	<action>
+		<id>qtillsand</id>
+		<priorityID>terrainchange</priorityID>
+		<name esES="Arar">Till</name>
+
+		<queue>
+			<moveTerrain />
+			<wait>54</wait>
+			<moveTerrain />
+			<changeTerrain>sandhumus</changeTerrain>
+		</queue>
+	</action>
+
+	<action>
+		<id>quntillsand</id>
+		<priorityID>terrainchange</priorityID>
+		<name esES="Des-arar">Untill</name>
+
+		<queue>
+			<moveTerrain />
+			<wait>54</wait>
+			<moveTerrain />
+			<changeTerrain>sand</changeTerrain>
+		</queue>
+	</action>
+
+	<!-- Planting Seedlings -->
+	<action>
+		<id>qappleseed</id>
+		<name esES="Plantar semilla de manzano">Plant apple tree seedling</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pick>apple</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createitem>appleseed</createitem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpearseed</id>
+		<name esES="Plantar semilla de peral">Plant pear tree seedling</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<pick>pear</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createitem>pearseed</createitem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwheatseed</id>
+		<name esES="Plantar grano">Plant wheat</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<pick>wheat</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>wheatseed</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qjunglemushroomseed</id>
+		<name esES="Plantar semilla de seta de jungla">Plant jungle mushroom seed</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<pick>junglemushroom</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createitem>plantedjunglemushroomseed</createitem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcavemushroomseed</id>
+		<name esES="Plantar semilla de seta de caverna">Plant cave mushroom seed</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<pick>pickedcavemushroom</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createitem>cavemushroomseed</createitem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcactusseed</id>
+		<name esES="Plantar semilla de cactus">Plant cactus seedling</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<pick>cactusfruit</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createitem>cactusseed</createitem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qtreeseed</id>
+		<name esES="Plantar semilla de árbol">Plant tree seedling</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<pick>bush</pick>
+			<wait>20</wait>
+			<createitem>treeseed</createitem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qtree2seed</id>
+		<name esES="Plantar semilla de pino">Plant pine tree seedling</name>
+
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pick>bush2</pick>
+			<wait>20</wait>
+			<createitem>tree2seed</createitem>
+		</queue>
+
+	</action>
+
+	<action>
+		<id>qsnowcherryseed</id>
+		<name esES="Plantar semilla de cerezo de nieve">Plant snowcherry seedling</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pick>snowcherry</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createitem>snowcherryseed</createitem>
+		</queue>
+
+	</action>
+
+	<action>
+		<id>qbananaseed</id>
+		<name esES="Plantar semilla de banano">Plant banana tree seedling</name>
+
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pick>banana</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createitem>bananaseed</createitem>
+		</queue>
+
+	</action>
+
+	<action>
+		<id>qblueradishseed</id>
+		<name esES="Plantar semilla de rábano azul">Plant blue radish seedling</name>
+
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pick>blueradish</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createitem>blueradishseed</createitem>
+		</queue>
+
+	</action>
+
+
+	<action>
+		<id>qjungleseed</id>
+		<name esES="Plantar semilla de árbol de jungla">Plant jungle tree seedling</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pick>junglebush</pick>
+			<wait>20</wait>
+			<createitem>jungleseed</createitem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qsnowseed</id>
+		<name esES="Plantar semilla de árbol de nieve">Plant snow tree seedling</name>
+
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pick>snowbush</pick>
+			<wait>20</wait>
+			<unlock />
+			<createitem>snowseed</createitem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpalmseed</id>
+		<name esES="Plantar semilla de palmera">Plant palm tree seedling</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pick>bushpalmtree</pick>
+			<wait>20</wait>
+			<unlock />
+			<createitem>palmtreeseed</createitem>
+		</queue>
+	</action>
+
+	<!-- Workshop Utils etc -->
+	<action>
+		<id>qgrave</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>corpse,humanremains</pick>
+			<wait>21</wait>
+			<createItem>grave</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qmill</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>mill</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qtomb</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>corpse,humanremains</pick>
+			<wait>21</wait>
+			<createItem>tomb</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qmosstomb</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>corpse,humanremains</pick>
+			<wait>21</wait>
+			<createItem>mosstomb</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qlizardtomb</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>corpse,humanremains</pick>
+			<wait>21</wait>
+			<createItem>lizardtomb</createItem>
+		</queue>
+	</action>
+
+	<!-- carpentry -->
+
+	<action>
+		<id>qburner</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>burner</createItem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qcarpentrybench</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>carpentrybench</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcolormixer</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>colormixer</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qskinner</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>skinner</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwooddetailer</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>wooddetailer</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcarvingbench</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>carvingbench</createItem>
+		</queue>
+	</action>
+
+	<!-- kitchen -->
+	<action>
+		<id>qkitchentable</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>kitchentable</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbutchertable</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>butchertable</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcookingbowl</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>torch</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>cookingbowl</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcookingfire</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmflint</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>cookingfire</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstove</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>stove</createItem>
+		</queue>
+	</action>
+
+	<!-- bakery -->
+	<action>
+		<id>qbakertable</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bakertable</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbakeroven</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bakeroven</createItem>
+		</queue>
+	</action>
+
+	<!-- mason -->
+	<action>
+		<id>qmasonbench</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>masonbench</createItem>
+		</queue>
+	</action>
+
+	<!-- BlackSmithy -->
+	<action>
+		<id>qanvil</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>tongs</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>stonehammer</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>anvil</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsmelter</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>smelter</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qitesmithy</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>spiderite</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>spiderite</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>itesmithy</createItem>
+		</queue>
+	</action>
+
+	<!-- Hospital -->
+	<action>
+		<id>qmedicinecabinet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>medicinecabinet</createItem>
+		</queue>
+	</action>
+
+
+
+	<!-- AP QUEUES -->
+
+	<!-- Materials -->
+	<action>
+		<id>qharvestplanttrap</id>
+		<name esES="Recolectar">Gather</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">planttrap</move>
+			<wait>10</wait>
+			<destroyCellItem />
+			<createItem>planttrapseed</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qchop</id>
+		<name esES="Talar">Chop</name>
+
+		<generatedItem>rmwood</generatedItem>
+		<priorityID>terrainchange</priorityID>
+		<queue>
+			<move useSource="true">tree,tree2,snowtree,jungletree,palmtree,deadtree</move>
+			<wait fx="fxchop" fxTurns="5">27</wait>
+			<move useSource="true">tree,tree2,snowtree,jungletree,palmtree,deadtree</move>
+			<destroyCellItem />
+			<createItem>rmwood</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qchopsleeper</id>
+		<name esES="Talar">Chop</name>
+
+		<generatedItem>rmwood</generatedItem>
+		<priorityID>terrainchange</priorityID>
+		<queue>
+			<move useSource="true">treekeepersleep</move>
+			<wait>1</wait>
+			<destroyCellItem />
+			<createFriendly>treekeeper</createFriendly>
+		</queue>
+	</action>
+
+	<action>
+		<id>qchopsleeper2</id>
+		<name esES="Talar">Chop</name>
+
+		<generatedItem>rmwood</generatedItem>
+		<priorityID>terrainchange</priorityID>
+		<queue>
+			<move useSource="true">treekeepersleep2</move>
+			<wait>1</wait>
+			<destroyCellItem />
+			<createFriendly>treekeeper2</createFriendly>
+		</queue>
+	</action>
+
+	<action>
+		<id>qchopplantedtree</id>
+		<name esES="Talar">Chop</name>
+
+		<generatedItem>rmwood</generatedItem>
+		<priorityID>terrainchange</priorityID>
+		<queue>
+			<move useSource="true">plantedtree</move>
+			<wait fx="fxchop" fxTurns="5">27</wait>
+			<move useSource="true">plantedtree</move>
+			<replaceCellItem>plantedbush</replaceCellItem>
+			<createItem>rmwood</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qchopplantedtree2</id>
+		<name esES="Talar">Chop</name>
+
+		<generatedItem>rmwood</generatedItem>
+		<priorityID>terrainchange</priorityID>
+		<queue>
+			<move useSource="true">plantedtree2</move>
+			<wait fx="fxchop" fxTurns="5">27</wait>
+			<move useSource="true">plantedtree2</move>
+			<replaceCellItem>plantedbush2</replaceCellItem>
+			<createItem>rmwood</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qchopplantedsnowtree</id>
+		<name esES="Talar">Chop</name>
+
+		<generatedItem>rmwood</generatedItem>
+		<priorityID>terrainchange</priorityID>
+		<queue>
+			<move useSource="true">plantedsnowtree</move>
+			<wait fx="fxchop" fxTurns="5">27</wait>
+			<move useSource="true">plantedsnowtree</move>
+			<replaceCellItem>plantedsnowbush</replaceCellItem>
+			<createItem>rmwood</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qchopplantedpalmtree</id>
+		<name esES="Talar">Chop</name>
+
+		<generatedItem>rmwood</generatedItem>
+		<priorityID>terrainchange</priorityID>
+		<queue>
+			<move useSource="true">plantedpalmtree</move>
+			<wait fx="fxchop" fxTurns="5">27</wait>
+			<move useSource="true">plantedpalmtree</move>
+			<replaceCellItem>plantedbushpalmtree</replaceCellItem>
+			<createItem>rmwood</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qchopplantedjungletree</id>
+		<name esES="Talar">Chop</name>
+
+		<generatedItem>rmwood</generatedItem>
+		<priorityID>terrainchange</priorityID>
+		<queue>
+			<move useSource="true">plantedjungletree</move>
+			<wait fx="fxchop" fxTurns="5">27</wait>
+			<move useSource="true">plantedjungletree</move>
+			<replaceCellItem>plantedjunglebush</replaceCellItem>
+			<createItem>rmwood</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qchopfruittrees</id>
+		<name esES="Talar">Chop</name>
+
+		<generatedItem>rmwood</generatedItem>
+
+		<priorityID>terrainchange</priorityID>
+
+		<queue>
+			<move useSource="true">appletree,peartree,bananatree,snowcherrytree,palmtree</move>
+			<wait fx="fxchop" fxTurns="5">27</wait>
+			<move useSource="true">appletree,peartree,bananatree,snowcherrytree,palmtree</move>
+			<destroyCellItem />
+			<createItem>rmwood</createItem>
+		</queue>
+	</action>
+
+	<!-- Food related -->
+
+	<!-- Foods (Gathering/Harvesting/Processing) -->
+
+	<action>
+		<id>qgatherchickenegg</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>chicken</pickFriendly>
+			<wait>32</wait>
+			<createFriendly>layedeggchicken</createFriendly>
+			<createItem>egg</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgatherwildchickenegg</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>wildchicken</pickFriendly>
+			<wait>32</wait>
+			<createFriendly>layedeggwildchicken</createFriendly>
+			<createItem>egg</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgatherskootenegg</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>skootenbeeten</pickFriendly>
+			<wait>32</wait>
+			<createFriendly>layedeggskooten</createFriendly>
+			<createItem>egg</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgatherwildskootenegg</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>wildskootenbeeten</pickFriendly>
+			<wait>32</wait>
+			<createFriendly>layedeggwildskooten</createFriendly>
+			<createItem>egg</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qmilkcow</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>cow</pickFriendly>
+			<wait>32</wait>
+			<createFriendly>milkedcow</createFriendly>
+			<createItem>milk</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qmilkwildcow</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>wildcow</pickFriendly>
+			<wait>32</wait>
+			<createFriendly>milkedwildcow</createFriendly>
+			<createItem>milk</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qmilkdoe</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>doe</pickFriendly>
+			<wait>32</wait>
+			<createFriendly>milkeddoe</createFriendly>
+			<createItem>milk</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qmilkunifallow</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>unifallow</pickFriendly>
+			<wait>32</wait>
+			<createFriendly>milkedunifallow</createFriendly>
+			<createItem>milk</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qmilkwildunifallow</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>wildunifallow</pickFriendly>
+			<wait>32</wait>
+			<createFriendly>milkedwildunifallow</createFriendly>
+			<createItem>milk</createItem>
+		</queue>
+	</action>
+
+	<!-- <action> <id>qsnowbucket</id> <priorityID>gatheringharvesting</priorityID> <queue> <pick>snowpile</pick> <wait>20</wait> <destroyItem /> <createItem>snowbucket</createItem> </queue> </action> -->
+
+	<action>
+		<id>qrenewfire</id>
+		<name esES="Renovar fuego">Renew fire</name>
+
+		<generatedItem>cookingfirelow</generatedItem>
+
+		<priorityID>itemconstruction</priorityID>
+		<queue>
+			<pick>rmwood</pick>
+			<move useSource="true">cookingfirelow</move>
+			<wait>5</wait>
+			<destroyItem />
+			<replaceCellItem>cookingfire</replaceCellItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qrenewburnt</id>
+		<name esES="Renovar fuego">Renew fire</name>
+
+		<generatedItem>cookingfireburnt</generatedItem>
+
+		<priorityID>itemconstruction</priorityID>
+		<queue>
+			<pick>rmwood</pick>
+			<move useSource="true">cookingfireburnt</move>
+			<wait>5</wait>
+			<destroyItem />
+			<pick>rmflint</pick>
+			<move useSource="true">cookingfireburnt</move>
+			<wait>5</wait>
+			<destroyItem />
+			<replaceCellItem>cookingfire</replaceCellItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgathersnowpile</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>snowbucket</generatedItem>
+
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">snowpile</move>
+			<wait>27</wait>
+			<replaceCellItem>snowbucket</replaceCellItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgatherredflower</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>gatheredredflower</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">redflower</move>
+			<wait>30</wait>
+			<destroyCellItem />
+			<createItem>gatheredredflower</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qredflowerseed</id>
+		<name esES="Plantar flor roja">Plant red flower</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<pick>gatheredredflower,redflower</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>redflowerseed</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgatherplantedredflower</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>gatheredredflower</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">plantedredflower</move>
+			<wait>36</wait>
+			<replaceCellItem>redflowerseed</replaceCellItem>
+			<createItem>gatheredredflower</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgatherblueflower</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>gatheredblueflower</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">blueflower</move>
+			<wait>30</wait>
+			<destroyCellItem />
+			<createItem>gatheredblueflower</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qblueflowerseed</id>
+		<name esES="Plantar flor azul">Plant blue flower</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<pick>gatheredblueflower,blueflower</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>blueflowerseed</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgatherplantedblueflower</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>gatheredblueflower</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">plantedblueflower</move>
+			<wait>36</wait>
+			<replaceCellItem>blueflowerseed</replaceCellItem>
+			<createItem>gatheredblueflower</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgatheryellowflower</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>gatheredyellowflower</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">yellowflower</move>
+			<wait>30</wait>
+			<destroyCellItem />
+			<createItem>gatheredyellowflower</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgatherplantedyellowflower</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>gatheredyellowflower</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">plantedyellowflower</move>
+			<wait>36</wait>
+			<replaceCellItem>yellowflowerseed</replaceCellItem>
+			<createItem>gatheredyellowflower</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qyellowflowerseed</id>
+		<name esES="Plantar flor amarilla">Plant yellow flower</name>
+
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<pick>gatheredyellowflower,yellowflower</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>yellowflowerseed</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestpear</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>pear</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">peartree</move>
+			<wait>36</wait>
+			<replaceCellItem>harvestingpeartree</replaceCellItem>
+			<createItem>pear</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestppear</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>pear</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">plantedpeartree</move>
+			<wait>36</wait>
+			<replaceCellItem>plantedharvestingpeartree</replaceCellItem>
+			<createItem>pear</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestwheat</id>
+		<name esES="Segar">Harvest</name>
+
+		<generatedItem>wheat</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">plantedwheat</move>
+			<wait>36</wait>
+			<replaceCellItem>wheatseed</replaceCellItem>
+			<createItem>wheat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestwildwheat</id>
+		<name esES="Segar">Harvest</name>
+
+		<generatedItem>wheat</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">wildwheat</move>
+			<wait>36</wait>
+			<destroyCellItem />
+			<createItem>wheat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestapple</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>apple</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">appletree</move>
+			<wait>36</wait>
+			<replaceCellItem>harvestingappletree</replaceCellItem>
+			<createItem>apple</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestpapple</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>apple</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">plantedappletree</move>
+			<wait>36</wait>
+			<replaceCellItem>plantedharvestingappletree</replaceCellItem>
+			<createItem>apple</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestbanana</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>banana</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">bananatree</move>
+			<wait>36</wait>
+			<replaceCellItem>harvestingbananatree</replaceCellItem>
+			<createItem>banana</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestpbanana</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>banana</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">plantedbananatree</move>
+			<wait>36</wait>
+			<replaceCellItem>plantedharvestingbananatree</replaceCellItem>
+			<createItem>banana</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestsnowcherry</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>snowcherry</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">snowcherrytree</move>
+			<wait>36</wait>
+			<replaceCellItem>harvestingsnowcherrytree</replaceCellItem>
+			<createItem>snowcherry</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestpsnowcherry</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>snowcherry</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">plantedsnowcherrytree</move>
+			<wait>36</wait>
+			<replaceCellItem>plantedharvestingsnowcherrytree</replaceCellItem>
+			<createItem>snowcherry</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestblueradish</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>blueradish</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">blueradishplant</move>
+			<wait>36</wait>
+			<replaceCellItem>harvestingblueradishplant</replaceCellItem>
+			<createItem>blueradish</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestpblueradish</id>
+		<name esES="Recolectar">Gather</name>
+
+		<generatedItem>blueradish</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">plantedblueradishplant</move>
+			<wait>36</wait>
+			<replaceCellItem>plantedharvestingblueradishplant</replaceCellItem>
+			<createItem>blueradish</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpickmushroom</id>
+		<name esES="Recoger">Pick</name>
+
+		<generatedItem>junglemushroom</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">mushroom</move>
+			<wait>9</wait>
+			<destroyitem />
+			<replaceCellItem>junglemushroomseed</replaceCellItem>
+			<createItem>junglemushroom</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpickpmushroom</id>
+		<name esES="Recoger">Pick</name>
+
+		<generatedItem>junglemushroom</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+
+			<move useSource="true">plantedmushroom</move>
+			<wait>9</wait>
+			<destroyitem />
+			<replaceCellItem>plantedjunglemushroomseed</replaceCellItem>
+			<createItem>junglemushroom</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpickcavemushroom</id>
+		<name esES="Recoger">Pick</name>
+
+		<generatedItem>pickedcavemushroom</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">cavemushroom</move>
+			<wait>9</wait>
+			<destroyitem />
+			<replaceCellItem>cavemushroomseed</replaceCellItem>
+			<createItem>pickedcavemushroom</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpickpcavemushroom</id>
+		<name esES="Recoger">Pick</name>
+
+		<generatedItem>pickedcavemushroom</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+
+			<move useSource="true">plantedcavemushroom</move>
+			<wait>9</wait>
+			<destroyitem />
+			<replaceCellItem>cavemushroomseed</replaceCellItem>
+			<createItem>pickedcavemushroom</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestcactus</id>
+		<name esES="Recolectar">Harvest</name>
+
+		<generatedItem>cactusfruit</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">cactus</move>
+			<wait>36</wait>
+			<replaceCellItem>harvestingcactus</replaceCellItem>
+			<createItem>cactusfruit</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharvestpcactus</id>
+		<name esES="Recolectar">Harvest</name>
+
+		<generatedItem>cactusfruit</generatedItem>
+		<priorityID>gatheringharvesting</priorityID>
+		<queue>
+			<move useSource="true">plantedcactus</move>
+			<wait>36</wait>
+			<replaceCellItem>plantedharvestingcactus</replaceCellItem>
+			<createItem>cactusfruit</createItem>
+		</queue>
+	</action>
+
+	<!-- Foods (bakery) -->
+	<action>
+		<id>qbread</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>flour</pick>
+			<move>bakertable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>bakeroven</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>bread</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qflour</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>wheat</pick>
+			<move>mill</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>wheat</pick>
+			<move>mill</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>flour</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbananabread</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>bread</pick>
+			<move>bakertable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>banana</pick>
+			<move>bakertable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>bakeroven</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>bananabread</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcookie</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>flour</pick>
+			<move>bakertable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>egg</pick>
+			<move>bakertable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>bakeroven</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>cookie</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsnowcherrypie</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>flour</pick>
+			<move>bakertable</move>
+			<destroyItem />
+			<pick>snowcherry</pick>
+			<move>bakertable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>bakeroven</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>snowcherrypie</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbananapie</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>flour</pick>
+			<move>bakertable</move>
+			<destroyItem />
+			<pick>banana</pick>
+			<move>bakertable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>bakeroven</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>bananapie</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpearpie</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>flour</pick>
+			<move>bakertable</move>
+			<destroyItem />
+			<pick>pear</pick>
+			<move>bakertable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>bakeroven</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>pearpie</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qmeatpie</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>flour</pick>
+			<move>bakertable</move>
+			<destroyItem />
+			<pick>rawpork,rawsteak</pick>
+			<move>bakertable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>bakeroven</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>meatpie</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qapplepie</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>flour</pick>
+			<move>bakertable</move>
+			<destroyItem />
+			<pick>apple</pick>
+			<move>bakertable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>bakeroven</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>applepie</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qjunglesalad</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>banana</pick>
+			<move>bakertable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>blueradish</pick>
+			<move>bakertable</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>junglesalad</createItem>
+		</queue>
+	</action>
+
+
+	<!-- Foods (butchering) -->
+	<action>
+		<id>qkillpig</id>
+		<name esES="Matar">Kill</name>
+
+		<generatedItem>rawpork</generatedItem>
+		<priorityID>butcheringkilling</priorityID>
+		<queue>
+			<pickFriendly useSource="true">pig,boar,wildpig</pickFriendly>
+			<wait>36</wait>
+			<destroyFriendly />
+			<createItem>rawpork</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qkillreindeer</id>
+		<name esES="Matar">Kill</name>
+
+		<generatedItem>rawdeersteak</generatedItem>
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly useSource="true">reindeer,doe</pickFriendly>
+			<wait>36</wait>
+			<destroyFriendly />
+			<createItem>rawdeersteak</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qkillcow</id>
+		<name esES="Matar">Kill</name>
+
+		<generatedItem>rawsteak</generatedItem>
+		<priorityID>butcheringkilling</priorityID>
+		<queue>
+			<pickFriendly useSource="true">cow,milkedcow,wildcow,milkedwildcow,bull</pickFriendly>
+			<wait>36</wait>
+			<destroyFriendly />
+			<createItem>rawsteak</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qkillunifallow</id>
+		<name esES="Matar">Kill</name>
+
+		<generatedItem>rawsteak</generatedItem>
+		<priorityID>butcheringkilling</priorityID>
+		<queue>
+			<pickFriendly useSource="true">unifallow,wildunifallow</pickFriendly>
+			<wait>36</wait>
+			<destroyFriendly />
+			<createItem>rawsteak</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qkillchicken</id>
+		<name esES="Matar">Kill</name>
+
+		<generatedItem>rawpoultry</generatedItem>
+		<priorityID>butcheringkilling</priorityID>
+		<queue>
+			<pickFriendly useSource="true">chicken,rooster,layedeggchicken,wildchicken,layedeggwildchicken</pickFriendly>
+			<wait>36</wait>
+			<destroyFriendly />
+			<createItem>rawpoultry</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qkillbird</id>
+		<name esES="Matar">Kill</name>
+
+		<generatedItem>rawpoultry</generatedItem>
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly useSource="true">bird,bird2,bird3,bird4,bird5,snowbird,snowbird1,snowbird2</pickFriendly>
+			<wait>4</wait>
+			<destroyFriendly />
+			<createItem>rawpoultry</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qkillskootenbeeten</id>
+		<name esES="Matar">Kill</name>
+
+		<generatedItem>rawpoultry</generatedItem>
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly useSource="true">skootenbeeten,layedeggskooten,wildskootenbeeten,layedeggwildskooten</pickFriendly>
+			<wait>36</wait>
+			<destroyFriendly />
+			<createItem>rawpoultry</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qkillbadger</id>
+		<name esES="Matar">Kill</name>
+
+		<generatedItem>rawbadgermeat</generatedItem>
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly useSource="true">badger,wildbadger</pickFriendly>
+			<wait>36</wait>
+			<destroyFriendly />
+			<createItem>rawbadgermeat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qanimalhide</id>
+
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly>cow,bull,milkedcow,wildcow,milkedwildcow,reindeer,doe</pickFriendly>
+			<move>skinner</move>
+			<wait>32</wait>
+			<destroyFriendly />
+			<unlock />
+			<createItem>animalhide</createItem>
+		</queue>
+
+	</action>
+
+	<action>
+		<id>qbadgerhide</id>
+
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly>badger,wildbadger</pickFriendly>
+			<move>skinner</move>
+			<wait>32</wait>
+			<destroyFriendly />
+			<unlock />
+			<createItem>badgerhide</createItem>
+		</queue>
+
+	</action>
+
+	<action>
+		<id>qunifallowhide</id>
+
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly>unifallow,milkedunifallow,wildunifallow,milkedwildunifallow</pickFriendly>
+			<move>skinner</move>
+			<wait>32</wait>
+			<destroyFriendly />
+			<unlock />
+			<createItem>unifallowhide</createItem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qskootenfeather</id>
+
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly>skootenbeeten,layedeggskooten,wildskootenbeeten,layedeggwildskooten</pickFriendly>
+			<move>skinner</move>
+			<wait>32</wait>
+			<destroyFriendly />
+			<unlock />
+			<createItem>skootenfeather</createItem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qbutcherpig</id>
+
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly>pig,wildpig</pickFriendly>
+			<move>butchertable</move>
+			<wait>32</wait>
+			<destroyFriendly />
+			<unlock />
+			<createItem>rawpork</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbutcherforbones</id>
+
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly>pig,cow,unifallow,milkedcow,milkedunifallow,wildpig,wildcow,wildunifallow,milkedwildcow,milkedwildunifallow</pickFriendly>
+			<move>butchertable</move>
+			<wait>32</wait>
+			<destroyFriendly />
+			<unlock />
+			<createItem>bones</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbutcherbadger</id>
+
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly>badger,wildbadger</pickFriendly>
+			<move>butchertable</move>
+			<wait>32</wait>
+			<destroyFriendly />
+			<unlock />
+			<createItem>rawbadgermeat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbutchercow</id>
+
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly>cow,unifallow,milkedcow,milkedunifallow,wildcow,wildunifallow,milkedwildcow,milkedwildunifallow</pickFriendly>
+			<move>butchertable</move>
+			<wait>32</wait>
+			<destroyFriendly />
+			<unlock />
+			<createItem>rawsteak</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbutcherpoultry</id>
+
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly>chicken,skootenbeeten,layedeggchicken,layedeggskooten,wildchicken,wildskootenbeeten,layedeggwildchicken,layedeggwildskooten</pickFriendly>
+			<move>butchertable</move>
+			<wait>32</wait>
+			<destroyFriendly />
+			<unlock />
+			<createItem>rawpoultry</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbutcherreindeer</id>
+
+		<priorityID>butcheringkilling</priorityID>
+
+		<queue>
+			<pickFriendly>reindeer</pickFriendly>
+			<move>butchertable</move>
+			<wait>32</wait>
+			<destroyFriendly />
+			<unlock />
+			<createItem>rawdeersteak</createItem>
+		</queue>
+	</action>
+
+	<!-- Food (kitchen/campfire) -->
+	<action>
+		<id>qsoup</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>pickedcavemushroom,junglemushroom</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>pickedcavemushroom,junglemushroom</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>waterbucket,junglebush,milk</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>soup</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcactussoup</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>cactusfruit</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>cactusfruit</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>milk</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>cactussoup</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qomelette</id>
+
+
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>egg</pick>
+			<move>kitchentable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>egg</pick>
+			<move>stove,cookingfire,cookingfirelow</move>
+			<wait>21</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>omelette</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qhamandeggs</id>
+
+
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>rawpork</pick>
+			<move>kitchentable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>egg</pick>
+			<move>kitchentable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>egg</pick>
+			<move>stove,cookingfire,cookingfirelow</move>
+			<wait>21</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>hamandeggs</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qmountainstew</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>pickedcavemushroom,junglemushroom</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>pickedcavemushroom,junglemushroom</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rawdeersteak,rawsteak,rawpork</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>waterbucket,junglebush,milk</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>mountainstew</createItem>
+		</queue>
+	</action>
+
+	
+	<action>
+		<id>qcookedfish</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>rawfish</pick>
+			<move>kitchentable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>stove,cookingfire,cookingfirelow</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>cookedfish</createItem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qcookedbadgermeat</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>rawbadgermeat</pick>
+			<move>kitchentable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>stove,cookingfire,cookingfirelow</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>cookedbadgermeat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbakedbanana</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>banana</pick>
+			<move>kitchentable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>banana</pick>
+			<move>kitchentable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>stove,cookingfire,cookingfirelow</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>bakedbanana</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcookedpoultry</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>rawpoultry</pick>
+			<move>kitchentable</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<move>stove,cookingfire,cookingfirelow</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>cookedpoultry</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcookedpork</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>rawpork</pick>
+			<move>kitchentable</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<move>stove,cookingfire,cookingfirelow</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>cookedpork</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcookedsteak</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>rawsteak</pick>
+			<move>kitchentable</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<move>stove,cookingfire,cookingfirelow</move>
+			<wait>32</wait>
+			<unlock />
+			<createItem>cookedsteak</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qroast</id>
+
+		<priorityID>foodmaking</priorityID>
+
+		<queue>
+			<pick>rawsteak</pick>
+			<move>kitchentable</move>
+			<wait>20</wait>
+			<move>stove,cookingfire,cookingfirelow</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rawpoultry</pick>
+			<move>kitchentable</move>
+			<wait>20</wait>
+			<unlock />
+			<move>stove,cookingfire,cookingfirelow</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rawpork</pick>
+			<move>kitchentable</move>
+			<wait>20</wait>
+			<unlock />
+			<move>stove,cookingfire,cookingfirelow</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>roast</createItem>
+		</queue>
+	</action>
+
+	<!-- Items -->
+	<!-- Containers -->
+	<action>
+		<id>qchest</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>chest</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbarrel</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>barrel</createItem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qrmbarrel</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>rmbarrel</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qrawfoodbarrel</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>rawfoodbarrel</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qprepfoodbarrel</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>prepfoodbarrel</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qutilschest</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>utilschest</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qdecorativechest</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>decorativechest</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qitechest</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>itechest</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qarmorcabinet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>armorcabinet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qweaponcabinet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>weaponcabinet</createItem>
+		</queue>
+	</action>
+
+
+	<!-- Walls -->
+	<action>
+		<id>qmudwall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmmud</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<createItem>mudwall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsandwall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmsand</pick>
+			<move>masonbench</move>
+			<wait>25</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>49</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>sandwall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qhedge</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>bush,bush2,bush3</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<createItem>hedge</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qredhedge</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>gatheredredflower</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<pick>bush,bush2,bush3</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<createItem>redflowerhedge</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbluehedge</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>gatheredblueflower</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<pick>bush,bush2,bush3</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<createItem>blueflowerhedge</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qyellowhedge</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>gatheredyellowflower</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<pick>bush,bush2,bush3</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<createItem>yellowflowerhedge</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qhedgegate</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bush,bush2,bush3</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<pick>bush,bush2,bush3</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<createItem>hedgegate</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qlogwall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<wait>13</wait>
+			<destroyItem />
+			<createItem>logwall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qhedgebrickfence</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>25</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bush,bush2,bush3</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<createItem>hedgebrickfence</createItem>
+		</queue>
+	</action>
+
+	
+	<action>
+		<id>qfancybrickfence</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>25</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>25</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>fancybrickfence</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qfarmfence</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>farmfence</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qclaybrickwall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock />
+			<createItem>claybrickwall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenwall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>15</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenwall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qlightwoodblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>38</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>lightwoodblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodendarkwall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>15</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodendarkwall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbonewall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>48</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bonewall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstonewall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>49</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>stonewall</createItem>
+		</queue>
+	</action>
+
+	<!-- Decorations -->
+	<action>
+		<id>qbirdincage</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<move>anvil</move>
+			<wait>30</wait>
+			<unlock />
+			<pickFriendly>bird,bird2,bird3,bird4,bird5</pickFriendly>
+			<wait>72</wait>
+			<destroyFriendly />
+			<createItem>birdincage</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsilverskootenbeetenstatue</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<move>anvil</move>
+			<wait>72</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>silverskootenbeetenstatue</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldunifallowstatue</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<move>anvil</move>
+			<wait>72</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldunifallowstatue</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldnuxstatue</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<move>anvil</move>
+			<wait>72</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldnuxstatue</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstonemalestatue</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>stonemalestatue</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgargoylestatue</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>gargoylestatue</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qnecromancerstatue</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>necromancerstatue</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qironbars</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ironbars</createItem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qglass</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsand,rmmud</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>glass</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qchimney</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>torch</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>chimney</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qanimalfireplace</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>torch</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pickFriendly>bull</pickFriendly>
+			<wait>32</wait>
+			<destroyFriendly />
+			<unlock />
+			<createItem>animalfireplace</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qharp</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<createItem>harp</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbonsai</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bush,bush2,bush3</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmmud</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<createItem>bonsai</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbonsaired</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bush,bush2,bush3</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmmud</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<createItem>bonsaired</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgardenred</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>gatheredredflower</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmmud</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<createItem>gardenred</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgardenblue</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>gatheredblueflower</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmmud</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<createItem>gardenblue</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgardenyellow</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>gatheredyellowflower</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmmud</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<createItem>gardenyellow</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgardenbush1</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bush,bush2,bush3</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmmud</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<createItem>gardenbush1</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgardenbush2</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bush,bush2,bush3</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmmud</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<createItem>gardenbush2</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgardenbush3</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bush,bush2,bush3</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>bush,bush2,bush3</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmmud</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<createItem>gardenbush3</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenwindow</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>glass</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenwindow</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstonewindow</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>glass</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>stonewindow</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qfloodgate</id>
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<!-- <pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem /> -->
+			<createItem>floodgate</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstonearcdoor1</id>
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<createItem>stonearcdoor1</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstonearcdoor2</id>
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<createItem>stonearcdoor2</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qflagblockyellow</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>flagblockyellow</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qflagblockred</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<createItem>flagblockred</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qflagblockgray</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<createItem>flagblockgray</createItem>
+		</queue>
+	</action>
+
+	
+	<action>
+		<id>qflagblockwhite</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<createItem>flagblockwhite</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qflagblockwhitearc</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>flagblockwhitearc</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qroughbrickarc</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>roughbrickarc</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qlimestoneblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<createItem>limestoneblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qlimestoneramp</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<createItem>limestoneramp</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>38</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>woodenblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenmossblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>38</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>woodenmossblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qengravedstonewall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>engravedstonewall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qengravedgreenwall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<pick>greengel,gatheredyellowflower</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>engravedgreenwall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qengravedredwall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<pick>redgel,gatheredredflower</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>engravedredwall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qengravedbluewall</id>
+
+
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem />
+			<pick>bluegel,gatheredblueflower</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>engravedbluewall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoblinpole</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>goblinhead</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goblinpole</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qhobgoblinpole</id>
+
+
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>hobgoblinhead</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>hobgoblinpole</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsnickerpole</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>snickerhead</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>snickerpole</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qghoulpole</id>
+
+
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>ghoulhead</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ghoulpole</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qtrollpole</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>trollhead</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>trollpole</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcandle</id>
+
+
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>candle</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbonecandle</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bonecandle</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpotplant</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bush,bush2,bush3</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>potplant</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qclock</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>clock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qredlongflag</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>redlongflag</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qredshortflag</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>redshortflag</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qdoorsignswords</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>doorsignswords</createItem>
+		</queue>
+	</action>
+
+	<!-- Utils -->
+	<action>
+		<id>qbonecarver</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bonecarver</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qtorch</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcoal</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>torch</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qtongs</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>tongs</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstonehammer</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>wooddetailer</move>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>wooddetailer</move>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>stonehammer</createItem>
+		</queue>
+	</action>
+
+	<!-- Roads Ladders -->
+
+	<action>
+		<id>qancientwall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem/>
+			<createItem>ancientwall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qscaffold</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<createItem>scaffold</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsandwallblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmsand</pick>
+			<wait>32</wait>
+			<destroyItem/>
+			<createItem>sandwallblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qclayblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem/>
+			<unlock />
+			<createItem>clayblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcolombages</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>colombages</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qcolombagesx</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>colombagesx</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qlogblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<wait>32</wait>
+			<destroyItem/> 
+			<createItem>logblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qancientblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>ancientblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qancientmossblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>ancientblockmoss</createItem>
+		</queue>
+	</action>
+
+	
+	<action>
+		<id>qmayanblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem/>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>mayanblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldenblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock />
+			<pick>rmstone</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>goldenblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenstoneblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>26</wait>
+			<destroyItem/>
+			<unlock />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>26</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>woodenstoneblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodsticks</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>woodsticks</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodspikes</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>30</wait>
+			<destroyItem/>
+			<unlock /> 
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>38</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>woodspikes</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstonebrickblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>stonebrickblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwhitebrickblock</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>38</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>whitebrickblock</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpillar</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>pillar</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qlapedrera</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock />
+			<createItem>lapedrera</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qlapedrera2</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>lapedrera2</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qroughbricks</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>36</wait>
+			<destroyItem/>
+			<unlock /> 
+			<createItem>roughbricks</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenglasswindow</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem/>
+			<unlock />
+			<pick>glass</pick>
+			<wait>32</wait>
+			<destroyItem/>
+			<createItem>woodenglasswindow</createItem>
+		</queue>
+	</action>
+
+	
+	<action>
+		<id>qicewall</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>snowbucket,snowpile</pick>
+			<wait>32</wait>
+			<destroyitem />
+			<createItem>icewall</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qladder</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ladder</createItem> -->
+		</queue>
+	</action>
+
+	<action>
+		<id>qverticalladder</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>verticalladder</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbonestairs</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bonestairs</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenladder</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenladder</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstoneladder</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>stoneladder</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qlogladder</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>logladder</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstonespindleladder</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>stonespindleladder</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qancientladder</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ancientladder</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodendarkroofitem</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodendarkroofitem</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstrawroofitem</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>wheat</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>strawroofitem</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qmarketroof</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bluecolor</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>marketroof</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbrokenroof</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>brokenroof</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qclayroof</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>clayroof</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qredtileroof</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>redcolor</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>redtileroof</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbluetileroof</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bluecolor</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>bluetileroof</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgreentileroof</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>greencolor</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>greentileroof</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpurpletileroof</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>purplecolor</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>purpletileroof</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qyellowtileroof</id>
+
+		<priorityID>wallconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>yellowcolor</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>yellowtileroof</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpavementtile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>pavementroadtile</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qredpavementtile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>redcolor</pick>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>redpavementroadtile</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwhitepavementtile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>whitepavementroadtile</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbluepavementtile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bluecolor</pick>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bluepavementroadtile</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qyellowpavementtile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>yellowcolor</pick>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>yellowpavementroadtile</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qorangepavementtile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>orangecolor</pick>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>orangepavementroadtile</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgreenpavementtile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>greencolor,greengel</pick>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>greenpavementroadtile</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpurplepavementtile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>purplecolor</pick>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>41</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>purplepavementroadtile</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstonetile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<wait>21</wait>
+			<destroyItem />
+			<createItem>stoneroadtile</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgreentile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>greengel,gatheredyellowflower</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>greenroadtile</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qredtile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>redgel,gatheredredflower</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>redroadtile</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbluetile</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>21</wait>
+			<destroyItem />
+			<pick>bluegel,gatheredblueflower</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>blueroadtile</createItem>
+		</queue>
+	</action>
+
+	<!-- Furnature -->
+	<action>
+		<id>qwoodenchair</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenchair</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpurplethrone</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>purplethrone</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstonechair</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>stonechair</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodentable</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodentable</createItem>
+		</queue>
+	</action>
+	
+	<action>
+		<id>qarchitecttable</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>architecttable</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qchesstable</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>chesstable</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsquarestable</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>squarestable</createItem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qtaverntable</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>taverntable</createItem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qstonetable</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>stonetable</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodencupboard</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodencupboard</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qhalfdoor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>halfdoor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qblockdoor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>blockdoor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodendoor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodendoor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qfencedoor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>fencedoor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qlogdoor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<wait>13</wait>
+			<destroyItem />
+			<createItem>logdoor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbonedoor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bonedoor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenbed</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenbed</createItem>
+		</queue>
+	</action>
+
+	
+	<action>
+		<id>qwoodendormbed</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodendormbed</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstrawhat</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>wheat</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>wheat</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>strawhat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbunnyhat</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>animalhide,unifallowhide</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>animalhide,unifallowhide</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>bunnyhat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbluehat</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>animalhide,unifallowhide</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bluecolor,bluegel</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>bluehat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qredhat</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>animalhide,unifallowhide</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>redcolor,redgel</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>redhat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgreenhat</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>animalhide,unifallowhide</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>greencolor,greengel</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>greenhat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qyellowhat</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>animalhide,unifallowhide</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>yellowcolor</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>yellowhat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbadgerhat</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>badgerhide</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>badgerhat</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qfeatherhat</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>animalhide,unifallowhide</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>skootenfeather</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<createItem>featherhat</createItem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qbonebed</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bones</pick>
+			<move>carpentrybench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bonebed</createItem>
+		</queue>
+	</action>
+
+	<!-- Traps -->
+	<action>
+		<id>qbeartrap</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>beartrap</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpoisontrap</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>10</wait>
+			<destroyItem />
+			<unlock />
+			<pick>poisonbottle</pick>
+			<wait>10</wait>
+			<destroyItem />
+			<createItem>poisontrap</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qlogtrap</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>logtrap</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qspiketrap</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>spiketrap</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qplantedplanttrap</id>
+
+		<priorityID>itemconstruction</priorityID>
+		<generatedItem>plantedplanttrap</generatedItem>
+
+		<queue>
+			<pick>planttrapseed</pick>
+			<destroyItem />
+			<createItem>plantedplanttrapseed</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpoisonbottle</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>pickedcavemushroom,junglemushroom</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>pickedcavemushroom,junglemushroom</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>emptybottle</pick>
+			<move>cookingbowl</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>poisonbottle</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qemptybottle</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsand,rmmud</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmsand,rmmud</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>emptybottle</createItem>
+		</queue>
+	</action>
+
+	<!-- Armor / Weapons -->
+	<!-- Wooden -->
+	<action>
+		<id>qwoodenhelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenhelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenarmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenarmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenpants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenpants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenboots</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenshortsword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenshortsword</createItem>
+		</queue>
+	</action>
+
+	<!-- Bone -->
+	<action>
+		<id>qbonehelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bonecarver</pick>
+			<move>carvingbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bonehelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbonearmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>bonecarver</pick>
+			<move>carvingbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bonearmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbonepants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bonecarver</pick>
+			<move>carvingbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bonepants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qboneboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bonecarver</pick>
+			<move>carvingbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>boneboots</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qboneclub</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bones</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>boneclub</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qboneaxe</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bones</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>boneaxe</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbonesword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>bones</pick>
+			<move>carvingbench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>bones</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bones</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bonesword</createItem>
+		</queue>
+	</action>
+
+	<!-- wood and other materials -->
+
+	<action>
+		<id>qbamboostick</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bamboostick</createItem>
+		</queue>
+	</action>
+	
+	<action>
+		<id>qwoodensnakesword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>snaketooth</pick>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodensnakesword</createItem>
+		</queue>
+	</action>
+
+
+	<action>
+		<id>qwoodenlongsword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenlongsword</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbentsword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bentsword</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qwoodenbow</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<move>carpentrybench</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>woodenbow</createItem>
+		</queue>
+	</action>
+
+	<!-- Stone -->
+	<action>
+		<id>qstonespear</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>stonespear</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qstonemace</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>rmstone</pick>
+			<move>masonbench</move>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>stonemace</createItem>
+		</queue>
+	</action>
+
+
+	<!-- Iron -->
+	<action>
+		<id>qironhelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcoal</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ironhelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qironarmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcoal</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ironarmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qspeedboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>ironboots</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>goblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pickFriendly>bird,bird2,bird3,bird4,bird5,snowbird,snowbird1,snowbird2</pickFriendly>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyFriendly />
+			<createItem>speedboots</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qironboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcoal</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ironboots</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qironpants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcoal</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ironpants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qironlongsword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcoal</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ironlongsword</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qironshortsword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcoal</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ironshortsword</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qironaxe</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcoal</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ironaxe</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qironmace</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcoal</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>anvil</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ironmace</createItem>
+		</queue>
+	</action>
+
+
+	<!-- Spiderite -->
+	<action>
+		<id>qspideritesword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>spideritesword</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qspideritehelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>spideritehelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qspideritearmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>spideritearmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qspiderbow</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>spiderbow</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qspideritepants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>spideritepants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qspideriteboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>spiderite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>spideriteboots</createItem>
+		</queue>
+	</action>
+
+	<!-- Goblinite -->
+	<action>
+		<id>qgoblinitehelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>goblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>goblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goblinitehelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoblinitespear</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>goblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>goblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goblinitespear</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qdireiteaxe</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>direite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>direite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>direiteaxe</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoblinitearmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>goblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>goblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goblinitearmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoblinitepants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>goblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>goblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goblinitepants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgobliniteboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>goblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>goblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>gobliniteboots</createItem>
+		</queue>
+	</action>
+
+	<!-- Direite -->
+	<action>
+		<id>qdireitehelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>direite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>direite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>direitehelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qdireitearmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>direite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>direite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>direitearmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qdireitepants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>direite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>direite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>direitepants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qdireiteboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>direite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>direite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>direiteboots</createItem>
+		</queue>
+	</action>
+
+	<!-- hobgoblinite -->
+	<action>
+		<id>qhobgoblinitehelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>hobgoblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>hobgoblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>hobgoblinitehelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qhobgoblinitearmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>hobgoblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>hobgoblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>hobgoblinitearmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qhobgoblinitepants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>hobgoblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>hobgoblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>hobgoblinitepants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qhobgobliniteboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>hobgoblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>hobgoblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>hobgobliniteboots</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qhobgoblinitebentsword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>hobgoblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>hobgoblinite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>hobgoblinitebentsword</createItem>
+		</queue>
+	</action>
+
+	<!-- Snickerite -->
+	<action>
+		<id>qsnickeritehelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>snickerite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>snickerite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>snickeritehelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsnickeritearmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>snickerite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>snickerite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>snickeritearmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsnickeriteblade</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>snickerite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>snickerite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>snickeriteblade</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsnickeritepants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>snickerite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>snickerite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>snickeritepants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsnickeriteboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>snickerite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>snickerite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>snickeriteboots</createItem>
+		</queue>
+	</action>
+
+
+	<!-- Zombite -->
+	<action>
+		<id>qzombitehelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>zombitehelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qzombitearmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>zombitearmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qzombitemace</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmstone</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>zombitemace</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qzombitepants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>zombitepants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qzombiteboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>zombiteboots</createItem>
+		</queue>
+	</action>
+
+	<!--ghoulite -->
+	<action>
+		<id>qghouliteblade</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>ghoulite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>ghoulite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ghouliteblade</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qghoulitehelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>ghoulite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>ghoulite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ghoulitehelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qghoulitearmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>ghoulite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>ghoulite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ghoulitearmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qghoulitepants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>ghoulite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>ghoulite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ghoulitepants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qghouliteboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>ghoulite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>ghoulite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ghouliteboots</createItem>
+		</queue>
+	</action>
+
+	<!-- orgreite -->
+	<action>
+		<id>qogreitehelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>ogreite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>ogreite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ogreitehelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qogreitemace</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>ogreite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>ogreite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ogreitemace</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qogreitearmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>ogreite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>ogreite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ogreitearmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qogreitepants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>ogreite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>ogreite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ogreitepants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qogreiteboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<pick>rmcopper</pick>
+			<move>smelter</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>ogreite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>ogreite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>ogreiteboots</createItem>
+		</queue>
+	</action>
+
+	<!-- Golden -->
+	<action>
+		<id>qgoldenhelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldenhelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldenarmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldenarmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldenpants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldenpants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldenboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldenboots</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldenspear</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldenspear</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldenaxe</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldenaxe</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldenbow</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldenbow</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldenstaff</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldenstaff</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldenhammer</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldenhammer</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgoldenitemace</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<wait>15</wait>
+			<destroyItem />
+			<pick>rmgold</pick>
+			<move>smelter</move>
+			<wait>15</wait>
+			<destroyItem />
+			<unlock />
+			<pick>spiderite,direite,ghoulite,goblinite,hobgoblinite,ogreite,snickerite,burnite,zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>spiderite,direite,ghoulite,goblinite,hobgoblinite,ogreite,snickerite,burnite,zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>16</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>goldenitemace</createItem>
+		</queue>
+	</action>
+
+	<!-- Silver -->
+	<action>
+		<id>qsilverhelmet</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>42</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>silverhelmet</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsilverarmor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>42</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>silverarmor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsilverpants</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>42</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>silverpants</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsilverboots</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmiron</pick>
+			<move>smelter</move>
+			<wait>42</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>silverboots</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsilverspear</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>silverspear</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsilverbow</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<destroyItem />
+			<pick>rmwood</pick>
+			<move>wooddetailer</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>silverbow</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsilvershortsword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>silvershortsword</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsilverlongsword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>silverlongsword</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qsilveritebentsword</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<wait>15</wait>
+			<destroyItem />
+			<pick>rmsilver</pick>
+			<move>smelter</move>
+			<wait>15</wait>
+			<destroyItem />
+			<unlock />
+			<pick>spiderite,direite,ghoulite,goblinite,hobgoblinite,ogreite,snickerite,burnite,zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<pick>spiderite,direite,ghoulite,goblinite,hobgoblinite,ogreite,snickerite,burnite,zombite</pick>
+			<move>itesmithy</move>
+			<wait>32</wait>
+			<destroyItem />
+			<unlock />
+			<pick>rmwood</pick>
+			<move>masonbench</move>
+			<wait>16</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>silveritebentsword</createItem>
+		</queue>
+	</action>
+
+	<!-- Animal training -->
+
+	<action>
+		<id>qredarenabadger</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>badger,wildbadger</pickFriendly>
+			<wait>32</wait>
+			<destroyFriendly />
+			<createItem>redbadgerdummy</createItem>
+			<createFriendly>redarenabadger</createFriendly>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbluearenabadger</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>badger,wildbadger</pickFriendly>
+			<wait>32</wait>
+			<destroyFriendly />
+			<createItem>bluebadgerdummy</createItem>
+			<createFriendly>bluearenabadger</createFriendly>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgreenarenabadger</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<pickFriendly>badger,wildbadger</pickFriendly>
+			<wait>32</wait>
+			<destroyFriendly />
+			<createItem>greenbadgerdummy</createItem>
+			<createFriendly>greenarenabadger</createFriendly>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbate</id>
+
+		<priorityID>gatheringharvesting</priorityID>
+
+		<queue>
+			<wait>10</wait>
+			<createFriendly>bate</createFriendly>
+			<createItem>batedummy</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbadgerden</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>rmwood</pick>
+			<wait>25</wait>
+			<destroyItem />
+			<pickFriendly>badger,wildbadger</pickFriendly>
+			<wait>32</wait>
+			<destroyFriendly />
+			<createFriendly>guardbadger</createFriendly>
+			<createItem>badgerden</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qguardbadger</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pickFriendly>badger,wildbadger</pickFriendly>
+			<move>badgerden</move>
+			<wait>35</wait>
+			<destroyFriendly />
+			<createFriendly>guardbadger</createFriendly>
+			<createItem>guardbadgerdummy</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qbluecolor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>gatheredblueflower,bluegel</pick>
+			<move>colormixer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>bluecolor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qredcolor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>gatheredredflower,redgel</pick>
+			<move>colormixer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>redcolor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qyellowcolor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>gatheredyellowflower</pick>
+			<move>colormixer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>yellowcolor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qgreencolor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>yellowcolor</pick>
+			<move>colormixer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bluecolor</pick>
+			<move>colormixer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>greencolor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qpurplecolor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>redcolor</pick>
+			<move>colormixer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>bluecolor</pick>
+			<move>colormixer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>purplecolor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qorangecolor</id>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+			<pick>redcolor</pick>
+			<move>colormixer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<pick>yellowcolor</pick>
+			<move>colormixer</move>
+			<wait>20</wait>
+			<destroyItem />
+			<unlock />
+			<createItem>orangecolor</createItem>
+		</queue>
+	</action>
+
+	<action>
+		<id>qdestroymud</id>
+
+		<priorityID>itemconstruction</priorityID>
+		<generatedItem>rmmud</generatedItem>
+
+		<queue>
+			
+			<pick>rmmud</pick>
+			<move>burner</move>
+			<wait>10</wait>
+			<destroyItem />
+		</queue>
+	</action>
+
+	<action>
+		<id>qdestroywood</id>
+
+		<priorityID>itemconstruction</priorityID>
+		<generatedItem>rmwood</generatedItem>
+
+		<queue>
+			
+			<pick>rmwood</pick>
+			<move>burner</move>
+			<wait>10</wait>
+			<destroyItem />
+		</queue>
+	</action>
+
+	<action>
+		<id>qdestroyflour</id>
+
+		<priorityID>itemconstruction</priorityID>
+		<generatedItem>flour</generatedItem>
+
+		<queue>
+			
+			<pick>flour</pick>
+			<move>burner</move>
+			<wait>10</wait>
+			<destroyItem />
+		</queue>
+	</action>
+
+	<action>
+		<id>qdestroybones</id>
+
+		<priorityID>itemconstruction</priorityID>
+		<generatedItem>bones</generatedItem>
+
+		<queue>
+			
+			<pick>bones</pick>
+			<move>burner</move>
+			<wait>10</wait>
+			<destroyItem />
+		</queue>
+	</action>
+
+	<action>
+		<id>destroyscaffold</id>
+		<name esES="Eliminar">Delete</name>
+
+		<priorityID>itemconstruction</priorityID>
+
+		<queue>
+
+			<move useSource="true">scaffold</move>
+			<destroyCellItem />
+		</queue>
+	</action>
+
+	<!-- /QUEUES -->
+</actions>
